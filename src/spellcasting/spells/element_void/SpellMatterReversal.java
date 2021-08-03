@@ -16,7 +16,7 @@ public class SpellMatterReversal extends BaseSpell
 
 	public SpellMatterReversal()
 	{
-		super(Material.ENDER_PEARL, "§r§7§ko§r§7§lSpell: §r§fMatter Reversal§r§7§ko§r", 5, false, "§r§fElement: §r§3§lVOID§r§f.","§r§fExpell a burst of §r§3§lVOID§r§f energy","§r§fstrong enough to distort matter.","§r§fCause any target block to decompose,","§r§flaying waste any natural materials.","§r§fRange: 1 meter.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.ENDER_PEARL, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fMatter ReversalÂ§rÂ§7Â§koÂ§r", 5, false, "Â§rÂ§fElement: Â§rÂ§3Â§lVOIDÂ§rÂ§f.","Â§rÂ§fExpell a burst of Â§rÂ§3Â§lVOIDÂ§rÂ§f energy","Â§rÂ§fstrong enough to distort matter.","Â§rÂ§fCause any target block to decompose,","Â§rÂ§flaying waste any natural materials.","Â§rÂ§fRange: 1 meter.","Â§rÂ§fMana cost: 5 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -23,7 +23,7 @@ public class SpellLifeSteal extends BaseSpell
 
 	public SpellLifeSteal()
 	{
-		super(Material.BLACK_DYE, "§r§7§ko§r§7§lSpell: §r§fLife Steal§r§7§ko§r", 5, false, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fSteal the lifeforce of any target.","§r§fDeals 2 hearts of §r§cdamage§r§f.","§r§4Drain§r§f 1 heart.","§r§fRange: 10 meters.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.BLACK_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fLife StealÂ§rÂ§7Â§koÂ§r", 5, false, "Â§rÂ§fElement: Â§rÂ§4Â§oÂ§lUnholyÂ§rÂ§f.","Â§rÂ§fSteal the lifeforce of any target.","Â§rÂ§fDeals 2 hearts of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§4DrainÂ§rÂ§f 1 heart.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fMana cost: 5 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

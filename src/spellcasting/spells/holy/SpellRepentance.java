@@ -20,7 +20,7 @@ public class SpellRepentance extends BaseSpell
 
 	public SpellRepentance()
 	{
-		super(Material.SNOWBALL, "§r§7§ko§r§7§lSpell: §r§fRepentance§r§7§ko§r", 15, false, "§r§fElement: §r§f§o§lHoly§r§f.","§r§fBlesses all within close proximity.","§r§fGrants increased movement speed","§r§fand vision for a short time.","§r§fDuration: 20 seconds.","§r§fRange: 10 meters.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.SNOWBALL, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fRepentanceÂ§rÂ§7Â§koÂ§r", 15, false, "Â§rÂ§fElement: Â§rÂ§fÂ§oÂ§lHolyÂ§rÂ§f.","Â§rÂ§fBlesses all within close proximity.","Â§rÂ§fGrants increased movement speed","Â§rÂ§fand vision for a short time.","Â§rÂ§fDuration: 20 seconds.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

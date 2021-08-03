@@ -19,8 +19,8 @@ public class ItemRecipe_ManaPotion
 	public static void Init() 
 	{
 		final_item = new ItemStack(Material.POTION);
-		ItemUtils.applyName(final_item, "§r§9Mana §r§fPotion");
-		ItemUtils.applyLore(final_item, "§r§fReplenishes a small portion of §r§9Mana§r§f.");
+		ItemUtils.applyName(final_item, "Â§rÂ§9Mana Â§rÂ§fPotion");
+		ItemUtils.applyLore(final_item, "Â§rÂ§fReplenishes a small portion of Â§rÂ§9ManaÂ§rÂ§f.");
 		ItemUtils.saveToNamespacedKey(final_item, "ManaPotionID", "true");
 		
 		ItemMeta meta = final_item.getItemMeta();

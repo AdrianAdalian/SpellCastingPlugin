@@ -19,7 +19,7 @@ public class SpellEtherContinuity extends BaseSpell
 
 	public SpellEtherContinuity()
 	{
-		super(Material.END_CRYSTAL, "งrง7งkoงrง7งlSpell: งrงfEther Continuityงrง7งkoงr", 0, false, "งrงfElement: งrง3งlVOIDงrงf.","งrงfA crystal formed from pure งrง3งlVOIDงrงf energy.","งrงfThis spell's effect differ from time of day.","งrงfDuring the งrง6Dayงrงf, channel mana into health.","งrงfDuring the งrง7Nightงrงf, channel health into mana.","งrงfIf งrง7Nightงrงf:","งrงfTake 3 hearts of งrงcdamageงrงf.","งrงfRestore 75 งrง9manaงrงf.","งrงfIf งrง6Dayงrงf:","งrงaHealงrงf 5 hearts.","งrงfMana cost: 25 งrง9manaงrงf.");
+		super(Material.END_CRYSTAL, "ยงrยง7ยงkoยงrยง7ยงlSpell: ยงrยงfEther Continuityยงrยง7ยงkoยงr", 0, false, "ยงrยงfElement: ยงrยง3ยงlVOIDยงrยงf.","ยงrยงfA crystal formed from pure ยงrยง3ยงlVOIDยงrยงf energy.","ยงrยงfThis spell's effect differ from time of day.","ยงrยงfDuring the ยงrยง6Dayยงrยงf, channel mana into health.","ยงrยงfDuring the ยงrยง7Nightยงrยงf, channel health into mana.","ยงrยงfIf ยงrยง7Nightยงrยงf:","ยงrยงfTake 3 hearts of ยงrยงcdamageยงrยงf.","ยงrยงfRestore 75 ยงrยง9manaยงrยงf.","ยงrยงfIf ยงrยง6Dayยงrยงf:","ยงrยงaHealยงrยงf 5 hearts.","ยงrยงfMana cost: 25 ยงrยง9manaยงrยงf.");
 		
 	}
 

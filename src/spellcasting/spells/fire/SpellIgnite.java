@@ -23,7 +23,7 @@ public class SpellIgnite extends BaseSpell
 	
 	public SpellIgnite()
 	{
-		super(Material.BLAZE_POWDER, "§r§7§ko§r§7§lSpell: §r§fIgnite§r§7§ko§r", 5, false, "§r§fElement: §r§cFire§r§f.","§r§fSet any target ablaze within a small radius.","§r§fDeals 5 hearts of §r§cdamage§r§f over 8 seconds.","§r§fRange: 5 meters.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.BLAZE_POWDER, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fIgniteÂ§rÂ§7Â§koÂ§r", 5, false, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.","Â§rÂ§fSet any target ablaze within a small radius.","Â§rÂ§fDeals 5 hearts of Â§rÂ§cdamageÂ§rÂ§f over 8 seconds.","Â§rÂ§fRange: 5 meters.","Â§rÂ§fMana cost: 5 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

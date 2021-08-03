@@ -13,7 +13,7 @@ public class SpellMendingVoidPrecept extends BaseSpell
 
 	public SpellMendingVoidPrecept()
 	{
-		super(Material.PAPER, "งrง7งkoงrง7งlSpell: งrงfLevitateงrง7งkoงr", 15, true, "");
+		super(Material.PAPER, "ยงrยง7ยงkoยงrยง7ยงlSpell: ยงrยงfLevitateยงrยง7ยงkoยงr", 15, true, "");
 	}
 
 	@Override

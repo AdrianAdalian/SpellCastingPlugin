@@ -14,7 +14,7 @@ public class SpellVoidBolt extends BaseSpell
 
 	public SpellVoidBolt()
 	{
-		super(Material.ENDER_PEARL, "§r§7§ko§r§7§lSpell: §r§fVoid Bolt§r§7§ko§r", 10, false, "§r§fElement: §r§3§lVOID§r§f.","§r§fExpell a bolt of §r§3§lVOID§r§f energy.","§r§fThe receiver is briefly weakened,","§r§fslowed, and fatigued.","§r§fDuration: 10 seconds.","§r§fRange: 20 meters.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.ENDER_PEARL, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fVoid BoltÂ§rÂ§7Â§koÂ§r", 10, false, "Â§rÂ§fElement: Â§rÂ§3Â§lVOIDÂ§rÂ§f.","Â§rÂ§fExpell a bolt of Â§rÂ§3Â§lVOIDÂ§rÂ§f energy.","Â§rÂ§fThe receiver is briefly weakened,","Â§rÂ§fslowed, and fatigued.","Â§rÂ§fDuration: 10 seconds.","Â§rÂ§fRange: 20 meters.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

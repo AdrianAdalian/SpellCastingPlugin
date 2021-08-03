@@ -20,7 +20,7 @@ public class SpellRadiance extends BaseSpell
 
 	public SpellRadiance()
 	{
-		super(Material.SNOWBALL, "§r§7§ko§r§7§lSpell: §r§fRadiance§r§7§ko§r", 10, false, "§r§fElement: §r§f§o§lHoly§r§f.","§r§fEmit a burst of divine energy within a radius.","§r§fCauses those effected to glow.","§r§fDuration: 20 seconds.","§r§fRange: 30 meters.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.SNOWBALL, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fRadianceÂ§rÂ§7Â§koÂ§r", 10, false, "Â§rÂ§fElement: Â§rÂ§fÂ§oÂ§lHolyÂ§rÂ§f.","Â§rÂ§fEmit a burst of divine energy within a radius.","Â§rÂ§fCauses those effected to glow.","Â§rÂ§fDuration: 20 seconds.","Â§rÂ§fRange: 30 meters.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -18,7 +18,7 @@ public class SpellNautilusCharm extends BaseSpell
 
 	public SpellNautilusCharm()
 	{
-		super(Material.NAUTILUS_SHELL, "§r§e§ko§r§e§lRelic: §r§fNautilus Charm§r§e§ko§r", 20, true, "§r§fElement: §r§9Water§r§f.","§r§f§oA charm made by a long forgotten civilization.","§r§fGrants the caster increased mobility and visibility under water.","§r§fDuration: 30 seconds.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.NAUTILUS_SHELL, "Â§rÂ§eÂ§koÂ§rÂ§eÂ§lRelic: Â§rÂ§fNautilus CharmÂ§rÂ§eÂ§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§9WaterÂ§rÂ§f.","Â§rÂ§fÂ§oA charm made by a long forgotten civilization.","Â§rÂ§fGrants the caster increased mobility and visibility under water.","Â§rÂ§fDuration: 30 seconds.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

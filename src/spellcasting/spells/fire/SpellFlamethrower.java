@@ -18,7 +18,7 @@ public class SpellFlamethrower extends BaseSpell
 
 	public SpellFlamethrower()
 	{
-		super(Material.FIRE_CHARGE, "§r§7§ko§r§7§lSpell: §r§fFlamethrower§r§7§ko§r", 20, true, "§r§fElement: §r§cFire§r§f.", "§r§fSummons three consective balls of flame.","§r§fThird ball deals 5 hearts of §r§cdamage§r§f.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.FIRE_CHARGE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fFlamethrowerÂ§rÂ§7Â§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.", "Â§rÂ§fSummons three consective balls of flame.","Â§rÂ§fThird ball deals 5 hearts of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

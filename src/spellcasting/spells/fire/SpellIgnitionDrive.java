@@ -18,7 +18,7 @@ public class SpellIgnitionDrive extends BaseSpell
 
 	public SpellIgnitionDrive()
 	{
-		super(Material.RED_DYE, "§r§7§ko§r§7§lSpell: §r§fIgnition Drive§r§7§ko§r", 10, false, "§r§fElement: §r§cFire§r§f.","§r§fOverclocks caster's offensive","§r§fperformance granting a 150% §r§cdamage§r§f increase.","§r§fDuration: 20 seconds.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.RED_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fIgnition DriveÂ§rÂ§7Â§koÂ§r", 10, false, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.","Â§rÂ§fOverclocks caster's offensive","Â§rÂ§fperformance granting a 150% Â§rÂ§cdamageÂ§rÂ§f increase.","Â§rÂ§fDuration: 20 seconds.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

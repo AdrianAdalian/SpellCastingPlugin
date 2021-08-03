@@ -18,7 +18,7 @@ public class SpellStaticCharge extends BaseSpell
 
 	public SpellStaticCharge()
 	{
-		super(Material.MAGENTA_DYE, "§r§7§ko§r§7§lSpell: §r§fStatic Charge§r§7§ko§r", 15, true, "§r§fElement: §r§dStorm§r§f.","§r§fModerately increases caster movement and interact speed.","§r§fDuration: 30 seconds.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.MAGENTA_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fStatic ChargeÂ§rÂ§7Â§koÂ§r", 15, true, "Â§rÂ§fElement: Â§rÂ§dStormÂ§rÂ§f.","Â§rÂ§fModerately increases caster movement and interact speed.","Â§rÂ§fDuration: 30 seconds.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

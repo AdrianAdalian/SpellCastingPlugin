@@ -24,7 +24,7 @@ public class SpellWaterLash extends BaseSpell
 
 	public SpellWaterLash()
 	{
-		super(Material.BLUE_DYE, "§r§7§ko§r§7§lSpell: §r§fWater Lash§r§7§ko§r", 5, false, "§r§fElement: §r§9Water§r§f.","§r§fConduct a current of water,","§r§fdamaging and slowing the target.","§r§fDeals 2 hearts of §r§cdamage§r§f.","§r§fDuration: 10 seconds.","§r§fRange: 10 meters.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.BLUE_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fWater LashÂ§rÂ§7Â§koÂ§r", 5, false, "Â§rÂ§fElement: Â§rÂ§9WaterÂ§rÂ§f.","Â§rÂ§fConduct a current of water,","Â§rÂ§fdamaging and slowing the target.","Â§rÂ§fDeals 2 hearts of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fDuration: 10 seconds.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fMana cost: 5 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -15,7 +15,7 @@ public class SpellPoseidonsGift extends BaseSpell
 
 	public SpellPoseidonsGift()
 	{
-		super(Material.BOOK, "§r§f§ko§r§fTome: §r§fPoseidon's Gift§r§f§ko§r", 0, false, "§r§fElement: §r§9Water§r§f.","§r§fAn enchantment used to soothe one's body.","§r§fRegenerate the caster's mana while in swimming.","§r§fRestores 20 §r§9Mana§r§f.");
+		super(Material.BOOK, "Â§rÂ§fÂ§koÂ§rÂ§fTome: Â§rÂ§fPoseidon's GiftÂ§rÂ§fÂ§koÂ§r", 0, false, "Â§rÂ§fElement: Â§rÂ§9WaterÂ§rÂ§f.","Â§rÂ§fAn enchantment used to soothe one's body.","Â§rÂ§fRegenerate the caster's mana while in swimming.","Â§rÂ§fRestores 20 Â§rÂ§9ManaÂ§rÂ§f.");
 	}
 
 	@Override

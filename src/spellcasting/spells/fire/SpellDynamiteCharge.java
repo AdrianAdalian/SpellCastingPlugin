@@ -14,7 +14,7 @@ public class SpellDynamiteCharge extends BaseSpell
 
 	public SpellDynamiteCharge()
 	{
-		super(Material.RED_CANDLE, "§r§e§ko§r§e§lRelic: §r§fDynamite Charge§r§e§ko§r", 20, true, "§r§fElement: §r§cFire§r§f.","§r§fAn old dynamite charge enchanted with §r§cFire§r§f magic.","§r§fCast a projectile that explodes upon impact.","§r§fRange: 20 meters.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.RED_CANDLE, "Â§rÂ§eÂ§koÂ§rÂ§eÂ§lRelic: Â§rÂ§fDynamite ChargeÂ§rÂ§eÂ§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.","Â§rÂ§fAn old dynamite charge enchanted with Â§rÂ§cFireÂ§rÂ§f magic.","Â§rÂ§fCast a projectile that explodes upon impact.","Â§rÂ§fRange: 20 meters.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

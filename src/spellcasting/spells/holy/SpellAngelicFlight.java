@@ -16,7 +16,7 @@ public class SpellAngelicFlight extends BaseSpell
 
 	public SpellAngelicFlight()
 	{
-		super(Material.NETHER_STAR, "§r§7§ko§r§7§lSpell: §r§fAngelic Flight§r§7§ko§r", 20, true, "§r§fElement: §r§f§o§lHoly§r§f.","§r§fGrants the caster temporary flight.","§r§fDuration: 20 seconds.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.NETHER_STAR, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fAngelic FlightÂ§rÂ§7Â§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§fÂ§oÂ§lHolyÂ§rÂ§f.","Â§rÂ§fGrants the caster temporary flight.","Â§rÂ§fDuration: 20 seconds.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

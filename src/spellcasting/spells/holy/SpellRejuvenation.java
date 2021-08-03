@@ -20,7 +20,7 @@ public class SpellRejuvenation extends BaseSpell
 
 	public SpellRejuvenation()
 	{
-		super(Material.SNOWBALL, "§r§7§ko§r§7§lSpell: §r§fRejuvenation§r§7§ko§r", 15, false, "§r§fElement: §r§f§o§lHoly§r§f.","§r§fEmit a §r§ahealing§r§f aura within a small radius.","§r§aHeal§r§f 4 hearts over 10 seconds to players within radius.","§r§fRange: 15 meters.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.SNOWBALL, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fRejuvenationÂ§rÂ§7Â§koÂ§r", 15, false, "Â§rÂ§fElement: Â§rÂ§fÂ§oÂ§lHolyÂ§rÂ§f.","Â§rÂ§fEmit a Â§rÂ§ahealingÂ§rÂ§f aura within a small radius.","Â§rÂ§aHealÂ§rÂ§f 4 hearts over 10 seconds to players within radius.","Â§rÂ§fRange: 15 meters.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

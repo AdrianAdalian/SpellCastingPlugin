@@ -23,7 +23,7 @@ public class SpellRiftTalisman extends BaseSpell
 
 	public SpellRiftTalisman()
 	{
-		super(Material.NAME_TAG, "§r§e§ko§r§e§lRelic: §r§fRift Talisman§r§e§ko§r", 20, true, "§r§fElement: §r§dStorm§r§f.","§r§f§oA magic talisman with two unique effects.","§r§fTeleports caster between targets within a 100 block radius.","§r§fTeleports caster within a 50 block radius.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.NAME_TAG, "Â§rÂ§eÂ§koÂ§rÂ§eÂ§lRelic: Â§rÂ§fRift TalismanÂ§rÂ§eÂ§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§dStormÂ§rÂ§f.","Â§rÂ§fÂ§oA magic talisman with two unique effects.","Â§rÂ§fTeleports caster between targets within a 100 block radius.","Â§rÂ§fTeleports caster within a 50 block radius.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

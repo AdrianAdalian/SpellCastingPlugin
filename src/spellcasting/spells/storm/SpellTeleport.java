@@ -18,7 +18,7 @@ public class SpellTeleport extends BaseSpell
 
 	public SpellTeleport()
 	{
-		super(Material.STRING, "§r§7§ko§r§7§lSpell: §r§fTeleport§r§7§ko§r", 15, true, "§r§fElement: §r§dStorm§r§f.","§r§fTeleport a far distance away.","§r§fRange: 25 meters.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.STRING, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fTeleportÂ§rÂ§7Â§koÂ§r", 15, true, "Â§rÂ§fElement: Â§rÂ§dStormÂ§rÂ§f.","Â§rÂ§fTeleport a far distance away.","Â§rÂ§fRange: 25 meters.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

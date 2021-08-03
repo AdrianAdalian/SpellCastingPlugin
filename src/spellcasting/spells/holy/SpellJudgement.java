@@ -22,7 +22,7 @@ public class SpellJudgement extends BaseSpell
 
 	public SpellJudgement()
 	{
-		super(Material.NETHER_STAR, "§r§7§ko§r§7§lSpell: §r§fJudgement§r§7§ko§r", 25, false, "§r§fElement: §r§f§o§lHoly§r§f.","§r§fEnact divine judgement upon any target.","§r§fIf target max health is <= 50%, kill that target.","§r§fIf target max health is > 50%, heal that target to full.","§r§fMana cost: 25 §r§9mana§r§f.");
+		super(Material.NETHER_STAR, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fJudgementÂ§rÂ§7Â§koÂ§r", 25, false, "Â§rÂ§fElement: Â§rÂ§fÂ§oÂ§lHolyÂ§rÂ§f.","Â§rÂ§fEnact divine judgement upon any target.","Â§rÂ§fIf target max health is <= 50%, kill that target.","Â§rÂ§fIf target max health is > 50%, heal that target to full.","Â§rÂ§fMana cost: 25 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

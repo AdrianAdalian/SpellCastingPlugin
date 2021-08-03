@@ -18,7 +18,7 @@ public class SpellDemonSight extends BaseSpell
 
 	public SpellDemonSight()
 	{
-		super(Material.GRAY_DYE, "งrง7งkoงrง7งlSpell: งrงfDemon Sightงrง7งkoงr", 10, false, "งrงfElement: งrง4งoงlUnholyงrงf.","งrงfGrant caster temporary Night Vision.","งrงfDuration: 30 seconds.","งrงfMana cost: 10 งrง9manaงrงf.");
+		super(Material.GRAY_DYE, "ยงrยง7ยงkoยงrยง7ยงlSpell: ยงrยงfDemon Sightยงrยง7ยงkoยงr", 10, false, "ยงrยงfElement: ยงrยง4ยงoยงlUnholyยงrยงf.","ยงrยงfGrant caster temporary Night Vision.","ยงrยงfDuration: 30 seconds.","ยงrยงfMana cost: 10 ยงrยง9manaยงrยงf.");
 	}
 
 	@Override

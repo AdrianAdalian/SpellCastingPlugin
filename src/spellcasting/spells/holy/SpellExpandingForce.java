@@ -14,7 +14,7 @@ public class SpellExpandingForce extends BaseSpell
 
 	public SpellExpandingForce()
 	{
-		super(Material.BOOK, "§r§f§ko§r§fTome: §r§fExpanding Force§r§f§ko§r", 5, false, "§r§fElement: §r§f§o§lHoly§r§f.","§r§fEmits a radial force.","§r§fRange: 5 meters.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.BOOK, "Â§rÂ§fÂ§koÂ§rÂ§fTome: Â§rÂ§fExpanding ForceÂ§rÂ§fÂ§koÂ§r", 5, false, "Â§rÂ§fElement: Â§rÂ§fÂ§oÂ§lHolyÂ§rÂ§f.","Â§rÂ§fEmits a radial force.","Â§rÂ§fRange: 5 meters.","Â§rÂ§fMana cost: 5 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

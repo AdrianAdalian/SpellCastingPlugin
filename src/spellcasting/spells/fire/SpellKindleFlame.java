@@ -15,7 +15,7 @@ public class SpellKindleFlame extends BaseSpell
 
 	public SpellKindleFlame()
 	{
-		super(Material.BLAZE_POWDER, "§r§7§ko§r§7§lSpell: §r§fKindle Flame§r§7§ko§r", 5, false, "§r§fElement: §r§cFire§r§f.","§r§fIgnites the nearby target block on fire.","§r§fRange: 5 meters.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.BLAZE_POWDER, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fKindle FlameÂ§rÂ§7Â§koÂ§r", 5, false, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.","Â§rÂ§fIgnites the nearby target block on fire.","Â§rÂ§fRange: 5 meters.","Â§rÂ§fMana cost: 5 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

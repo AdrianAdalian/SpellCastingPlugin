@@ -18,7 +18,7 @@ public class SpellBarrier extends BaseSpell
 
 	public SpellBarrier()
 	{
-		super(Material.SNOWBALL, "§r§7§ko§r§7§lSpell: §r§fBarrier§r§7§ko§r", 10, true, "§r§fElement: §r§f§o§lHoly§r§f.","§r§fProtect the caster by raising a barrier around them.","§r§fApply a full health bar of absorption.","§r§fDuration: 20 seconds.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.SNOWBALL, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fBarrierÂ§rÂ§7Â§koÂ§r", 10, true, "Â§rÂ§fElement: Â§rÂ§fÂ§oÂ§lHolyÂ§rÂ§f.","Â§rÂ§fProtect the caster by raising a barrier around them.","Â§rÂ§fApply a full health bar of absorption.","Â§rÂ§fDuration: 20 seconds.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

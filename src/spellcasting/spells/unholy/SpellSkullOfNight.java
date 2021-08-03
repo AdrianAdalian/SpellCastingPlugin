@@ -23,7 +23,7 @@ public class SpellSkullOfNight extends BaseSpell
 
 	public SpellSkullOfNight()
 	{
-		super(Material.WITHER_SKELETON_SKULL, "§r§e§ko§r§e§lRelic: §r§fSkull of Night§r§e§ko§r", 15, true, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fDamage either target or nearby enemies.","§r§fDrain health for half the damage dealt.","§r§fTarget Range: 25 meters.","§r§fTarget Damage: Deals 4 hearts of §r§cdamage§r§f.","§r§fTarget Life Steal: §r§4Drain §r§f2 hearts.","§r§fAOE Range: 10 meters.","§r§fAOE Damage: Deals 1 hearts of §r§cdamage§r§f per entity.","§r§fAOE Life Steal: §r§4Drain §r§f 1/2 heart per entity.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.WITHER_SKELETON_SKULL, "Â§rÂ§eÂ§koÂ§rÂ§eÂ§lRelic: Â§rÂ§fSkull of NightÂ§rÂ§eÂ§koÂ§r", 15, true, "Â§rÂ§fElement: Â§rÂ§4Â§oÂ§lUnholyÂ§rÂ§f.","Â§rÂ§fDamage either target or nearby enemies.","Â§rÂ§fDrain health for half the damage dealt.","Â§rÂ§fTarget Range: 25 meters.","Â§rÂ§fTarget Damage: Deals 4 hearts of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fTarget Life Steal: Â§rÂ§4Drain Â§rÂ§f2 hearts.","Â§rÂ§fAOE Range: 10 meters.","Â§rÂ§fAOE Damage: Deals 1 hearts of Â§rÂ§cdamageÂ§rÂ§f per entity.","Â§rÂ§fAOE Life Steal: Â§rÂ§4Drain Â§rÂ§f 1/2 heart per entity.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

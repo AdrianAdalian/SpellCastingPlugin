@@ -14,7 +14,7 @@ public class SpellLightningStorm extends BaseSpell
 
 	public SpellLightningStorm()
 	{
-		super(Material.BOOK, "§r§f§ko§r§fTome: §r§fLightningStorm§r§f§ko§r", 20, false, "§r§fElement: §r§dStorm§r§f.","§r§fSummons lightning onto all enemies within a small radius.","§r§fRange: 15 meters.","§r§fDeals 2.5 hearts of §r§cdamage §r§fper lightning bolt.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.BOOK, "Â§rÂ§fÂ§koÂ§rÂ§fTome: Â§rÂ§fLightningStormÂ§rÂ§fÂ§koÂ§r", 20, false, "Â§rÂ§fElement: Â§rÂ§dStormÂ§rÂ§f.","Â§rÂ§fSummons lightning onto all enemies within a small radius.","Â§rÂ§fRange: 15 meters.","Â§rÂ§fDeals 2.5 hearts of Â§rÂ§cdamage Â§rÂ§fper lightning bolt.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

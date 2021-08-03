@@ -22,7 +22,7 @@ public class SpellVaporize extends BaseSpell
 
 	public SpellVaporize()
 	{
-		super(Material.PURPLE_DYE, "§r§7§ko§7§lSpell: §r§fVaporize§r§7§ko§r", 25, true, "§r§fElement: §r§dStorm§r§f.","§r§fSummons three consecutive lightning bolts at target.","§r§fRange: 50 meters.","§r§fDeals 7.5 hearts of §r§cdamage§r§f.","§r§fMana cost: 25 §r§9mana§r§f.");
+		super(Material.PURPLE_DYE, "Â§rÂ§7Â§koÂ§7Â§lSpell: Â§rÂ§fVaporizeÂ§rÂ§7Â§koÂ§r", 25, true, "Â§rÂ§fElement: Â§rÂ§dStormÂ§rÂ§f.","Â§rÂ§fSummons three consecutive lightning bolts at target.","Â§rÂ§fRange: 50 meters.","Â§rÂ§fDeals 7.5 hearts of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fMana cost: 25 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

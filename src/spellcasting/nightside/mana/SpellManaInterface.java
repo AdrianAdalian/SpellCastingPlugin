@@ -32,11 +32,11 @@ public class SpellManaInterface implements Listener
 	{
 		Scoreboard board = Bukkit.getScoreboardManager().getNewScoreboard();
 		//Makes a new scoreboard.
-        Objective obj = board.registerNewObjective("§r| §9Mana §f|", "§r| §9Mana §f|", "§r| §9Mana §f|");
+        Objective obj = board.registerNewObjective("Â§r| Â§9Mana Â§f|", "Â§r| Â§9Mana Â§f|", "Â§r| Â§9Mana Â§f|");
         //Creates our new objective and scoreboard. For whatever reason, Java wants a format of 3's in the cast of scoreboard titles.
         obj.setDisplaySlot(DisplaySlot.SIDEBAR);
         //Sets the display to the right side of the screen.
-        obj.getScore(ChatColor.BLACK + "§r§fCurrent Mana:" + ChatColor.WHITE).setScore(PlayerDataMap.getPlayerData(player).getCurrentMana());
+        obj.getScore(ChatColor.BLACK + "Â§rÂ§fCurrent Mana:" + ChatColor.WHITE).setScore(PlayerDataMap.getPlayerData(player).getCurrentMana());
         //Gets the title and the basic score for our mana.
         player.setScoreboard(board);
         //Sets the scoreboard once we've made it.
@@ -46,12 +46,12 @@ public class SpellManaInterface implements Listener
     	 Scoreboard board = player.getScoreboard();
     	 Objective obj = board.getObjective(DisplaySlot.SIDEBAR);
     	 
-    	 obj.getScore(ChatColor.BLACK + "§r§fCurrent Mana:" + ChatColor.WHITE).setScore(PlayerDataMap.getPlayerData(player).getCurrentMana());
+    	 obj.getScore(ChatColor.BLACK + "Â§rÂ§fCurrent Mana:" + ChatColor.WHITE).setScore(PlayerDataMap.getPlayerData(player).getCurrentMana());
 	}
 }
 
 
-//Score onlineName = obj.getScore(ChatColor.GRAY + "» Online");
+//Score onlineName = obj.getScore(ChatColor.GRAY + "Â§ Online");
 //onlineName.setScore(15);
 
 //Team onlineCounter = board.registerNewTeam("onlineCounter");

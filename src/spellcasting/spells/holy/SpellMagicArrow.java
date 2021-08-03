@@ -15,7 +15,7 @@ public class SpellMagicArrow extends BaseSpell
 
 	public SpellMagicArrow()
 	{
-		super(Material.SPECTRAL_ARROW, "งrงeงkoงrงeงlRelic: งrงfMagic Arrowงrงeงkoงr", 5, true, "งrงfElement: งrงfงoงlHolyงrงf.","งrงfSummons a wooden arrow.","งrงfDeals 1 heart of งrงcdamageงrงf.","งrงfMana cost: 5 งrง9manaงrงf.");
+		super(Material.SPECTRAL_ARROW, "ยงrยงeยงkoยงrยงeยงlRelic: ยงrยงfMagic Arrowยงrยงeยงkoยงr", 5, true, "ยงrยงfElement: ยงrยงfยงoยงlHolyยงrยงf.","ยงrยงfSummons a wooden arrow.","ยงrยงfDeals 1 heart of ยงrยงcdamageยงrยงf.","ยงrยงfMana cost: 5 ยงrยง9manaยงrยงf.");
 	}
 
 	@Override

@@ -18,7 +18,7 @@ public class SpellMetalMorph extends BaseSpell
 
 	public SpellMetalMorph()
 	{
-		super(Material.IRON_INGOT, "§r§7§ko§r§7§lSpell: §r§fMetalMorph§r§7§ko§r", 10, true, "§r§fElement: §r§6Geo§r§f.","§r§fModerately hardens the caster's skin.","§r§fGrant 40% damage reduction.","§r§fModerately decreases caster movment speed.","§r§fDuration: 25 seconds.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.IRON_INGOT, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fMetalMorphÂ§rÂ§7Â§koÂ§r", 10, true, "Â§rÂ§fElement: Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fModerately hardens the caster's skin.","Â§rÂ§fGrant 40% damage reduction.","Â§rÂ§fModerately decreases caster movment speed.","Â§rÂ§fDuration: 25 seconds.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

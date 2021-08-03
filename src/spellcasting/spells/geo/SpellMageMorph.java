@@ -18,7 +18,7 @@ public class SpellMageMorph extends BaseSpell
 
 	public SpellMageMorph()
 	{
-		super(Material.GOLD_INGOT, "§r§7§ko§r§7§lSpell: §r§fMageMorph§r§7§ko§r", 15, true, "§r§fElement: §r§6Geo§r§f.","§r§fSlighty hardens the caster's skin","§r§fwhile increasing movement speed.","§r§fAlso soothes the caster from high temperatures.","§r§fGrant 20% damage reduction and fire protection.","§r§fDuration: 25 seconds.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.GOLD_INGOT, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fMageMorphÂ§rÂ§7Â§koÂ§r", 15, true, "Â§rÂ§fElement: Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fSlighty hardens the caster's skin","Â§rÂ§fwhile increasing movement speed.","Â§rÂ§fAlso soothes the caster from high temperatures.","Â§rÂ§fGrant 20% damage reduction and fire protection.","Â§rÂ§fDuration: 25 seconds.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

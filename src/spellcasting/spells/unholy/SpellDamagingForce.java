@@ -15,7 +15,7 @@ public class SpellDamagingForce extends BaseSpell
 
 	public SpellDamagingForce()
 	{
-		super(Material.ENCHANTED_BOOK, "§r§f§ko§r§fEmpoweredTome: Damaging Force§r§f§ko§r", 5, false, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fEmits a brutal radial force.","§r§fRange: 4 meters.","§r§fDeals 2 hearts of §r§cdamage§r§f.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.ENCHANTED_BOOK, "Â§rÂ§fÂ§koÂ§rÂ§fEmpoweredTome: Damaging ForceÂ§rÂ§fÂ§koÂ§r", 5, false, "Â§rÂ§fElement: Â§rÂ§4Â§oÂ§lUnholyÂ§rÂ§f.","Â§rÂ§fEmits a brutal radial force.","Â§rÂ§fRange: 4 meters.","Â§rÂ§fDeals 2 hearts of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fMana cost: 5 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

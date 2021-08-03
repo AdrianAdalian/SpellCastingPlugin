@@ -14,7 +14,7 @@ public class SpellDaoCharm extends BaseSpell
 
 	public SpellDaoCharm()
 	{
-		super(Material.CLOCK, "งrงeงkoงrงeงlRelic: งrงfDao Charmงrงeงkoงr", 100, true, "งrงfElement: งrง3งlVOIDงrงf.","งrงfA pocket watch,","งrงfcrafted using the forces of the งrง3งlVOIDงrงf.","งrงfThis item has the power to swap","งrง6Day งrงfwith งrง7Night งrงfand vice versa.","งrงfMana cost: 100 งrง9manaงrงf.");
+		super(Material.CLOCK, "ยงrยงeยงkoยงrยงeยงlRelic: ยงrยงfDao Charmยงrยงeยงkoยงr", 100, true, "ยงrยงfElement: ยงrยง3ยงlVOIDยงrยงf.","ยงrยงfA pocket watch,","ยงrยงfcrafted using the forces of the ยงrยง3ยงlVOIDยงrยงf.","ยงrยงfThis item has the power to swap","ยงrยง6Day ยงrยงfwith ยงrยง7Night ยงrยงfand vice versa.","ยงrยงfMana cost: 100 ยงrยง9manaยงrยงf.");
 	}
 
 	@Override

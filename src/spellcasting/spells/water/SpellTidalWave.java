@@ -18,7 +18,7 @@ public class SpellTidalWave extends BaseSpell
 
 	public SpellTidalWave()
 	{
-		super(Material.BLUE_DYE, "§r§7§ko§r§7§lSpell: §r§fTidal Wave§r§7§ko§r", 15, true, "§r§fElement: §r§9Water§r§f.","§r§fConduct a current of water,","§r§fdamaging and slowing all within range.","§r§fDeals 3 hearts of §r§cdamage§r§f.","§r§fDuration: 10 seconds.","§r§fRange: 15 meters.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.BLUE_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fTidal WaveÂ§rÂ§7Â§koÂ§r", 15, true, "Â§rÂ§fElement: Â§rÂ§9WaterÂ§rÂ§f.","Â§rÂ§fConduct a current of water,","Â§rÂ§fdamaging and slowing all within range.","Â§rÂ§fDeals 3 hearts of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fDuration: 10 seconds.","Â§rÂ§fRange: 15 meters.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

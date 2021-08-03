@@ -18,7 +18,7 @@ public class SpellInscribeLuck extends BaseSpell
 
 	public SpellInscribeLuck()
 	{
-		super(Material.BOOK, "§r§f§ko§r§fTome: §r§fInscribe Luck§r§f§ko§r", 15, false, "§r§fElement: §r§6Geo§r§f.","§r§fUsing the forces of §r§6Geo§r§f,","§r§ftemporarily boost caster's luck stat.","§r§fDuration: 15 seconds.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.BOOK, "Â§rÂ§fÂ§koÂ§rÂ§fTome: Â§rÂ§fInscribe LuckÂ§rÂ§fÂ§koÂ§r", 15, false, "Â§rÂ§fElement: Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fUsing the forces of Â§rÂ§6GeoÂ§rÂ§f,","Â§rÂ§ftemporarily boost caster's luck stat.","Â§rÂ§fDuration: 15 seconds.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -13,7 +13,7 @@ public class SpellNullPointConfiguration extends BaseSpell
 
 	public SpellNullPointConfiguration()
 	{
-		super(Material.BOOK, "§r§f§ko§r§fTome: §r§fNullPoint Configuration§r§f§ko§r", 15, false, "§r§fElement: §r§3§lVOID§r§f.","§r§fA book containing the power to reconfigure all matter.","§r§fSummon a portable crafting bench at will.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.BOOK, "Â§rÂ§fÂ§koÂ§rÂ§fTome: Â§rÂ§fNullPoint ConfigurationÂ§rÂ§fÂ§koÂ§r", 15, false, "Â§rÂ§fElement: Â§rÂ§3Â§lVOIDÂ§rÂ§f.","Â§rÂ§fA book containing the power to reconfigure all matter.","Â§rÂ§fSummon a portable crafting bench at will.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

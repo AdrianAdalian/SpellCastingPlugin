@@ -23,7 +23,7 @@ public class SpellMeteor extends BaseSpell
 
 	public SpellMeteor()
 	{
-		super(Material.FIRE_CHARGE, "§r§7§ko§r§7§lSpell: §r§fMeteor§r§7§ko§r", 20, true, "§r§fElement: §r§cFire§r§f.", "§r§fSummon a large ball of fire in the air.","§r§fThe fire ball will then plummit downwards.","§r§fDeals 5 hearts of §r§cdamage§r§f.","§r§fRange: 30 meters.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.FIRE_CHARGE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fMeteorÂ§rÂ§7Â§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.", "Â§rÂ§fSummon a large ball of fire in the air.","Â§rÂ§fThe fire ball will then plummit downwards.","Â§rÂ§fDeals 5 hearts of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fRange: 30 meters.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

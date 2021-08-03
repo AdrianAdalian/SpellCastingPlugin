@@ -17,7 +17,7 @@ public class SpellSmokeScreen extends BaseSpell
 
 	public SpellSmokeScreen()
 	{
-		super(Material.GUNPOWDER, "§r§7§ko§r§7§lSpell: §r§fSmokeScreen§r§7§ko§r", 15, false, "§r§fElement: §r§cFire§r§f.","§r§fEmit a burst of ash that blinds","§r§fand slows all within radius.","§r§fDuration: 15 seconds.","§r§fRange: 7 meters.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.GUNPOWDER, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fSmokeScreenÂ§rÂ§7Â§koÂ§r", 15, false, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.","Â§rÂ§fEmit a burst of ash that blinds","Â§rÂ§fand slows all within radius.","Â§rÂ§fDuration: 15 seconds.","Â§rÂ§fRange: 7 meters.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

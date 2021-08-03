@@ -15,7 +15,7 @@ public class SpellDragonAshes extends BaseSpell
 	
 	public SpellDragonAshes()
 	{
-		super(Material.FIREWORK_STAR, "§r§e§ko§r§e§lRelic: §r§fDragon Ashes§r§e§ko§r", 30, true, "§r§fElement: §r§cFire§r§f.","§r§fAshes collected from the remains of a dragon.","§r§fThese ashes radiate pure §r§cFire§r§f energy.","§r§fSummon a blistering dragons' flame that","§r§fleaves behind a damaging AOE upon contact.","§r§fMana cost: 30 §r§9mana§r§f.");
+		super(Material.FIREWORK_STAR, "Â§rÂ§eÂ§koÂ§rÂ§eÂ§lRelic: Â§rÂ§fDragon AshesÂ§rÂ§eÂ§koÂ§r", 30, true, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.","Â§rÂ§fAshes collected from the remains of a dragon.","Â§rÂ§fThese ashes radiate pure Â§rÂ§cFireÂ§rÂ§f energy.","Â§rÂ§fSummon a blistering dragons' flame that","Â§rÂ§fleaves behind a damaging AOE upon contact.","Â§rÂ§fMana cost: 30 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

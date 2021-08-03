@@ -14,7 +14,7 @@ public class SpellBoulder extends BaseSpell
 
 	public SpellBoulder()
 	{
-		super(Material.BROWN_DYE, "§r§7§ko§r§7§lSpell: §r§fBoulder§r§7§ko§r", 10, false, "§r§fElement: §r§6Geo§r§f.","§r§fHurl a large boulder that stuns upon impact.","§r§fDeals 3 hearts of §r§cdamage§r§f.","§r§fStun for 3 seconds.","§r§fRange: 20 meters.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.BROWN_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fBoulderÂ§rÂ§7Â§koÂ§r", 10, false, "Â§rÂ§fElement: Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fHurl a large boulder that stuns upon impact.","Â§rÂ§fDeals 3 hearts of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fStun for 3 seconds.","Â§rÂ§fRange: 20 meters.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

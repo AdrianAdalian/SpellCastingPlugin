@@ -26,7 +26,7 @@ public class SpellAccolades extends BaseSpell
 
 	public SpellAccolades()
 	{
-		super(Material.NETHER_STAR, "§r§7§ko§r§7§lSpell: §r§fAccolades§r§7§ko§r", 25, true, "§r§fElement: §r§f§o§lHoly§r§f.","§r§fAllauds the target player accolades from the angels.","§r§fEffects: Speed, Haste, Strength, and Saturation.","§r§fRange: 20 meters.","§r§fDuration: 20 seconds.","§r§fMana cost: 25 §r§9mana§r§f.");
+		super(Material.NETHER_STAR, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fAccoladesÂ§rÂ§7Â§koÂ§r", 25, true, "Â§rÂ§fElement: Â§rÂ§fÂ§oÂ§lHolyÂ§rÂ§f.","Â§rÂ§fAllauds the target player accolades from the angels.","Â§rÂ§fEffects: Speed, Haste, Strength, and Saturation.","Â§rÂ§fRange: 20 meters.","Â§rÂ§fDuration: 20 seconds.","Â§rÂ§fMana cost: 25 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

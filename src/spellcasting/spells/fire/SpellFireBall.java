@@ -14,7 +14,7 @@ public class SpellFireBall extends BaseSpell
 
 	public SpellFireBall()
 	{
-		super(Material.FIRE_CHARGE, "งrง7งkoงrง7งlSpell: งrงfFireBallงrง7งkoงr", 10, false, "งrงfElement: งrงcFireงrงf.", "งrงfSummons a small ball of fire.","งrงfDeals 5 hearts of งrงcdamageงrงf.","งrงfMana cost: 10 งrง9manaงrงf.");
+		super(Material.FIRE_CHARGE, "ยงrยง7ยงkoยงrยง7ยงlSpell: ยงrยงfFireBallยงrยง7ยงkoยงr", 10, false, "ยงrยงfElement: ยงrยงcFireยงrยงf.", "ยงrยงfSummons a small ball of fire.","ยงrยงfDeals 5 hearts of ยงrยงcdamageยงrยงf.","ยงrยงfMana cost: 10 ยงrยง9manaยงrยงf.");
 	}
 
 	@Override

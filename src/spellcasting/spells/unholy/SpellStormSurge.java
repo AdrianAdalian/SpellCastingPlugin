@@ -15,7 +15,7 @@ public class SpellStormSurge extends BaseSpell
 
 	public SpellStormSurge()
 	{
-		super(Material.ENCHANTED_BOOK, "§r§f§ko§r§fEmpoweredTome: StormSurge§r§f§ko§r", 25, false, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fSummons lightning onto all enemies within a small radius.","§r§4Drain §r§f1/2 hearts health for each target hit.","§r§fRange: 10 meters.","§r§fDeals 2.5 hearts of §r§cdamage §r§fper lightning bolt.","§r§fMana cost: 25 §r§9mana§r§f.");
+		super(Material.ENCHANTED_BOOK, "Â§rÂ§fÂ§koÂ§rÂ§fEmpoweredTome: StormSurgeÂ§rÂ§fÂ§koÂ§r", 25, false, "Â§rÂ§fElement: Â§rÂ§4Â§oÂ§lUnholyÂ§rÂ§f.","Â§rÂ§fSummons lightning onto all enemies within a small radius.","Â§rÂ§4Drain Â§rÂ§f1/2 hearts health for each target hit.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fDeals 2.5 hearts of Â§rÂ§cdamage Â§rÂ§fper lightning bolt.","Â§rÂ§fMana cost: 25 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

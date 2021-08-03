@@ -26,7 +26,7 @@ public class SpellGuardianAngel extends BaseSpell
 
 	public SpellGuardianAngel()
 	{
-		super(Material.BOOK, "§r§f§ko§r§fTome: Guardian Angel§r§f§ko§r", 30, false, "§r§fElement: §r§f§o§lHoly§r§f.","§r§fGrant full regenerative §r§ahealing §r§fto either target or self.","§r§fThen, apply absorption and 20% damage reduction.","§r§aHeal §r§fto full over 3 seconds.","§r§fDuration: 15 seconds.","§r§fMana cost: 30 §r§9mana§r§f.");
+		super(Material.BOOK, "Â§rÂ§fÂ§koÂ§rÂ§fTome: Guardian AngelÂ§rÂ§fÂ§koÂ§r", 30, false, "Â§rÂ§fElement: Â§rÂ§fÂ§oÂ§lHolyÂ§rÂ§f.","Â§rÂ§fGrant full regenerative Â§rÂ§ahealing Â§rÂ§fto either target or self.","Â§rÂ§fThen, apply absorption and 20% damage reduction.","Â§rÂ§aHeal Â§rÂ§fto full over 3 seconds.","Â§rÂ§fDuration: 15 seconds.","Â§rÂ§fMana cost: 30 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 	@Override
 	public boolean cast(PlayerInteractEvent event)

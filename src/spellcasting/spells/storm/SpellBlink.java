@@ -15,7 +15,7 @@ public class SpellBlink extends BaseSpell
 
 	public SpellBlink()
 	{
-		super(Material.STRING, "§r§7§ko§r§7§lSpell: §r§fBlink§r§7§ko§r", 5, false, "§r§fElement: §r§dStorm§r§f.","§r§fTeleport a short distance away.","§r§fRange: 10 meters.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.STRING, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fBlinkÂ§rÂ§7Â§koÂ§r", 5, false, "Â§rÂ§fElement: Â§rÂ§dStormÂ§rÂ§f.","Â§rÂ§fTeleport a short distance away.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fMana cost: 5 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -19,7 +19,7 @@ public class SpellGust extends BaseSpell
 
 	public SpellGust()
 	{
-		super(Material.STRING, "§r§7§ko§r§7§lSpell: §r§fGust§r§7§kao§r", 5, false, "§r§fElement: §r§dStorm§r§f.","§r§fPushes the target a small distance away.","§r§fRange: 3 meters.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.STRING, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fGustÂ§rÂ§7Â§kaoÂ§r", 5, false, "Â§rÂ§fElement: Â§rÂ§dStormÂ§rÂ§f.","Â§rÂ§fPushes the target a small distance away.","Â§rÂ§fRange: 3 meters.","Â§rÂ§fMana cost: 5 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

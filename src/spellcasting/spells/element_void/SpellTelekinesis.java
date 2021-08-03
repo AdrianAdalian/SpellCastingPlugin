@@ -23,7 +23,7 @@ public class SpellTelekinesis extends BaseSpell
 
 	public SpellTelekinesis()
 	{
-		super(Material.CYAN_DYE, "§r§7§ko§r§7§lSpell: §r§fTelekinesis§r§7§ko§r", 20, true, "§r§fElement: §r§3§lVOID§r§f.","§r§fLevitate a target into the air,","§r§fdamaging them at their decent.","§r§fDuration: 3 seconds.","§r§fRange: 10 meters.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.CYAN_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fTelekinesisÂ§rÂ§7Â§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§3Â§lVOIDÂ§rÂ§f.","Â§rÂ§fLevitate a target into the air,","Â§rÂ§fdamaging them at their decent.","Â§rÂ§fDuration: 3 seconds.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

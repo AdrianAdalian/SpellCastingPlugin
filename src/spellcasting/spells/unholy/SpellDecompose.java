@@ -23,7 +23,7 @@ public class SpellDecompose extends BaseSpell
 
 	public SpellDecompose()
 	{
-		super(Material.BONE, "§r§7§ko§r§7§lSpell: §r§fDecompose§r§7§ko§r", 15, true, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fBegin to decompose any target within a small radius.","§r§fThe target is slowed as a result of acute necrosis.","§r§4Wither §r§f5 hearts over 10 seconds.","§r§fRange: 5 meters.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.BONE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fDecomposeÂ§rÂ§7Â§koÂ§r", 15, true, "Â§rÂ§fElement: Â§rÂ§4Â§oÂ§lUnholyÂ§rÂ§f.","Â§rÂ§fBegin to decompose any target within a small radius.","Â§rÂ§fThe target is slowed as a result of acute necrosis.","Â§rÂ§4Wither Â§rÂ§f5 hearts over 10 seconds.","Â§rÂ§fRange: 5 meters.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

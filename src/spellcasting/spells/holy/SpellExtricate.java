@@ -18,7 +18,7 @@ public class SpellExtricate extends BaseSpell
 
 	public SpellExtricate()
 	{
-		super(Material.WHITE_DYE, "§r§7§ko§r§7§lSpell: §r§fExtricate§r§7§ko§r", 20, true, "§r§fElement: §r§f§o§lHoly§r§f.","§r§fAmplify the caster's normal health pool.","§r§fAdd a second full health bar for 1 minute.","§r§fAlso restores saturation over 5 seconds.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.WHITE_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fExtricateÂ§rÂ§7Â§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§fÂ§oÂ§lHolyÂ§rÂ§f.","Â§rÂ§fAmplify the caster's normal health pool.","Â§rÂ§fAdd a second full health bar for 1 minute.","Â§rÂ§fAlso restores saturation over 5 seconds.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

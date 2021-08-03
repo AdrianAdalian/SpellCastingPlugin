@@ -18,7 +18,7 @@ public class SpellEarthquake extends BaseSpell
 	
 	public SpellEarthquake()
 	{
-		super(Material.BROWN_DYE, "§r§7§ko§r§7§lSpell: §r§fEarthquake§r§7§ko§r", 20, true, "§r§fElement: §r§6Geo§r§f.","§r§fCause an earthquake that damages","§r§fand stuns all within the radius.","§r§fDeals 1 heart of §r§cdamage§r§f to all effected.","§r§fRange: 15 meters.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.BROWN_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fEarthquakeÂ§rÂ§7Â§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fCause an earthquake that damages","Â§rÂ§fand stuns all within the radius.","Â§rÂ§fDeals 1 heart of Â§rÂ§cdamageÂ§rÂ§f to all effected.","Â§rÂ§fRange: 15 meters.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

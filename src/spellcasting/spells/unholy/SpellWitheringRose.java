@@ -23,7 +23,7 @@ public class SpellWitheringRose extends BaseSpell
 
 	public SpellWitheringRose()
 	{
-		super(Material.WITHER_ROSE, "§r§e§ko§r§e§lRelic: §r§fWithering Rose§r§e§ko§r", 20, false, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§f§oA rose that has all but withered down to the root.","§r§fSet withered effect on any target for a small duration.","§r§4Wither §r§f6 hearts over 35 seconds to target.","§r§fRange: 15 meters.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.WITHER_ROSE, "Â§rÂ§eÂ§koÂ§rÂ§eÂ§lRelic: Â§rÂ§fWithering RoseÂ§rÂ§eÂ§koÂ§r", 20, false, "Â§rÂ§fElement: Â§rÂ§4Â§oÂ§lUnholyÂ§rÂ§f.","Â§rÂ§fÂ§oA rose that has all but withered down to the root.","Â§rÂ§fSet withered effect on any target for a small duration.","Â§rÂ§4Wither Â§rÂ§f6 hearts over 35 seconds to target.","Â§rÂ§fRange: 15 meters.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

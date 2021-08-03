@@ -20,7 +20,7 @@ public class SpellWildBolt extends BaseSpell
 
 	public SpellWildBolt()
 	{
-		super(Material.BOOK, "§r§f§ko§r§fTome: §r§fWildBolt§r§f§ko§r", 20, false, "§r§fElement: §r§dStorm§r§f.","§r§fRandomly summons five bolts of lightning.","§r§fRange to cast: 30 meters.","§r§fRange of lightning: 7 meters.","§r§fDeals 2.5 hearts of §r§cdamage §r§fper lightning bolt.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.BOOK, "Â§rÂ§fÂ§koÂ§rÂ§fTome: Â§rÂ§fWildBoltÂ§rÂ§fÂ§koÂ§r", 20, false, "Â§rÂ§fElement: Â§rÂ§dStormÂ§rÂ§f.","Â§rÂ§fRandomly summons five bolts of lightning.","Â§rÂ§fRange to cast: 30 meters.","Â§rÂ§fRange of lightning: 7 meters.","Â§rÂ§fDeals 2.5 hearts of Â§rÂ§cdamage Â§rÂ§fper lightning bolt.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 		// TODO Auto-generated constructor stub
 	}
 

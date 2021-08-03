@@ -18,7 +18,7 @@ public class SpellOverclockProtocol extends BaseSpell
 
 	public SpellOverclockProtocol()
 	{
-		super(Material.RED_DYE, "§r§7§ko§r§7§lSpell: §r§fOverclock Protocol§r§7§ko§r", 20, true, "§r§fElement: §r§cFire§r§f.","§r§fDrastically overclocks caster's offensive","§r§fperformance granting a 200% §r§cdamage§r§f increase.","§r§fAlso slightly boosts interact speed.","§r§fDuration: 30 seconds.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.RED_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fOverclock ProtocolÂ§rÂ§7Â§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.","Â§rÂ§fDrastically overclocks caster's offensive","Â§rÂ§fperformance granting a 200% Â§rÂ§cdamageÂ§rÂ§f increase.","Â§rÂ§fAlso slightly boosts interact speed.","Â§rÂ§fDuration: 30 seconds.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

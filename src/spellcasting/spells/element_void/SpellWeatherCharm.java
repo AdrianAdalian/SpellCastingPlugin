@@ -14,7 +14,7 @@ public class SpellWeatherCharm extends BaseSpell
 
 	public SpellWeatherCharm()
 	{
-		super(Material.COMPASS, "§r§e§ko§r§e§lRelic: §r§fWeather Charm§r§e§ko§r", 100, false, "§r§fElement: §r§3§lVOID§r§f.","§r§fAn enchanted compass,","§r§fcrafted using the forces of the §r§3§lVOID§r§f.","§r§fThis item has the power to swap current weather conditions.","§r§fMana cost: 100 §r§9mana§r§f.");
+		super(Material.COMPASS, "Â§rÂ§eÂ§koÂ§rÂ§eÂ§lRelic: Â§rÂ§fWeather CharmÂ§rÂ§eÂ§koÂ§r", 100, false, "Â§rÂ§fElement: Â§rÂ§3Â§lVOIDÂ§rÂ§f.","Â§rÂ§fAn enchanted compass,","Â§rÂ§fcrafted using the forces of the Â§rÂ§3Â§lVOIDÂ§rÂ§f.","Â§rÂ§fThis item has the power to swap current weather conditions.","Â§rÂ§fMana cost: 100 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

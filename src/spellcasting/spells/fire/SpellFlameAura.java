@@ -17,7 +17,7 @@ public class SpellFlameAura extends BaseSpell
 
 	public SpellFlameAura()
 	{
-		super(Material.BOOK, "§r§f§ko§r§fTome: §r§fFlame Aura§r§f§ko§r", 15, false, "§r§fElement: §r§cFire§r§f.","§r§fCast an aura of fire that periodically sets all within range ablaze.","§r§fDuration: 10 seconds.","§r§fRange: 10 meters.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.BOOK, "Â§rÂ§fÂ§koÂ§rÂ§fTome: Â§rÂ§fFlame AuraÂ§rÂ§fÂ§koÂ§r", 15, false, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.","Â§rÂ§fCast an aura of fire that periodically sets all within range ablaze.","Â§rÂ§fDuration: 10 seconds.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -14,7 +14,7 @@ public class SpellCrystalShard extends BaseSpell
 
 	public SpellCrystalShard()
 	{
-		super(Material.PRISMARINE_SHARD, "§r§e§ko§r§e§lRelic: §r§fCrystal Shard§r§e§ko§r", 10, true, "§r§fElement: §r§9Water§r§f.","§r§fA prismarine shard enchanted by the forces of §r§9Water§r§f.","§r§fShoot out a damaging projectile that slows the target.","§r§fDeals 3 hearts of §r§cdamage§r§f.","§r§fEffect duration: 10 seconds.","§r§fRange: 10 meters.","§r§fMana cost: 10 §r§9mana§r§f.");		
+		super(Material.PRISMARINE_SHARD, "Â§rÂ§eÂ§koÂ§rÂ§eÂ§lRelic: Â§rÂ§fCrystal ShardÂ§rÂ§eÂ§koÂ§r", 10, true, "Â§rÂ§fElement: Â§rÂ§9WaterÂ§rÂ§f.","Â§rÂ§fA prismarine shard enchanted by the forces of Â§rÂ§9WaterÂ§rÂ§f.","Â§rÂ§fShoot out a damaging projectile that slows the target.","Â§rÂ§fDeals 3 hearts of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fEffect duration: 10 seconds.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");		
 	}
 
 	@Override

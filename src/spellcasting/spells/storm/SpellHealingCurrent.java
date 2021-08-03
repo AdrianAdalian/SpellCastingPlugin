@@ -18,7 +18,7 @@ public class SpellHealingCurrent extends BaseSpell
 
 	public SpellHealingCurrent()
 	{
-		super(Material.MAGENTA_DYE, "§r§7§ko§r§7§lSpell: §r§fHealing Current§r§7§ko§r", 20, true, "§r§fDirect a soothing current throughout the caster's body.","§r§aHeal §r§f4 hearts over 10 seconds.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.MAGENTA_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fHealing CurrentÂ§rÂ§7Â§koÂ§r", 20, true, "Â§rÂ§fDirect a soothing current throughout the caster's body.","Â§rÂ§aHeal Â§rÂ§f4 hearts over 10 seconds.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

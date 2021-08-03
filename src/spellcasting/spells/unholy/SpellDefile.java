@@ -20,7 +20,7 @@ public class SpellDefile extends BaseSpell
 
 	public SpellDefile()
 	{
-		super(Material.BLACK_DYE, "§r§7§ko§r§7§lSpell: §r§fDefile§r§7§ko§r", 20, true, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fDefiles all within close proximity.","§r§fBlind and Slow all nearby targets.","§r§fDuration: 10 seconds.","§r§fRange: 10 meters.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.BLACK_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fDefileÂ§rÂ§7Â§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§4Â§oÂ§lUnholyÂ§rÂ§f.","Â§rÂ§fDefiles all within close proximity.","Â§rÂ§fBlind and Slow all nearby targets.","Â§rÂ§fDuration: 10 seconds.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

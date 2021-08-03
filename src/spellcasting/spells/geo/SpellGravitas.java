@@ -18,7 +18,7 @@ public class SpellGravitas extends BaseSpell
 
 	public SpellGravitas()
 	{
-		super(Material.BOOK, "§r§f§ko§r§fTome: §r§fGravitas§r§f§ko§r", 15, false, "§r§fElement: §r§6Geo§r§f.","§r§fTemporarily resist the forces of gravity.","§r§fDuration: 10 seconds.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.BOOK, "Â§rÂ§fÂ§koÂ§rÂ§fTome: Â§rÂ§fGravitasÂ§rÂ§fÂ§koÂ§r", 15, false, "Â§rÂ§fElement: Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fTemporarily resist the forces of gravity.","Â§rÂ§fDuration: 10 seconds.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

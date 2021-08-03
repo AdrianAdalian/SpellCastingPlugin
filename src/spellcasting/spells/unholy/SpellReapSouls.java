@@ -16,7 +16,7 @@ public class SpellReapSouls extends BaseSpell
 
 	public SpellReapSouls()
 	{
-		super(Material.BLACK_DYE, "§r§7§ko§r§7§lSpell: §r§fReap Souls§r§7§ko§r", 10, true, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fReap the souls of any nearby entity.","§r§fAll within radius take 1 heart of §r§cdamage§r§f.","§r§4Drain§r§f 1/2 heart for each target.","§r§fRange: 10 meters.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.BLACK_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fReap SoulsÂ§rÂ§7Â§koÂ§r", 10, true, "Â§rÂ§fElement: Â§rÂ§4Â§oÂ§lUnholyÂ§rÂ§f.","Â§rÂ§fReap the souls of any nearby entity.","Â§rÂ§fAll within radius take 1 heart of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§4DrainÂ§rÂ§f 1/2 heart for each target.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

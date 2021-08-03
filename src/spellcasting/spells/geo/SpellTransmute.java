@@ -14,7 +14,7 @@ public class SpellTransmute extends BaseSpell
 
 	public SpellTransmute()
 	{
-		super(Material.PHANTOM_MEMBRANE, "§r§7§ko§r§7§lSpell: §r§fTransmute§r§7§ko§r", 15, true, "§r§fElement: §r§6Geo§r§f.","§r§fInfuse any ore with the forces of §r§6Geo§r§f.","§r§fTransmute that ore into its next level of rarity.","§r§fRange: 10 meters.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.PHANTOM_MEMBRANE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fTransmuteÂ§rÂ§7Â§koÂ§r", 15, true, "Â§rÂ§fElement: Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fInfuse any ore with the forces of Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fTransmute that ore into its next level of rarity.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

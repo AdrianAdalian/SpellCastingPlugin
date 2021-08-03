@@ -18,7 +18,7 @@ public class SpellFishScales extends BaseSpell
 
 	public SpellFishScales()
 	{
-		super(Material.PRISMARINE_CRYSTALS, "§r§7§ko§r§7§lSpell: §r§fFish Scales§r§7§ko§r", 10, true, "§r§fElement: §r§9Water§r§f.","§r§fHardens the caster's flesh into fish scales.","§r§fGrants 20% damage reduction and faster swim speed.","§r§fDuration: 20 seconds.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.PRISMARINE_CRYSTALS, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fFish ScalesÂ§rÂ§7Â§koÂ§r", 10, true, "Â§rÂ§fElement: Â§rÂ§9WaterÂ§rÂ§f.","Â§rÂ§fHardens the caster's flesh into fish scales.","Â§rÂ§fGrants 20% damage reduction and faster swim speed.","Â§rÂ§fDuration: 20 seconds.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

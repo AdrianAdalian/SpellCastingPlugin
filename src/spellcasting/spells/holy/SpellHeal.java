@@ -14,7 +14,7 @@ public class SpellHeal extends BaseSpell
 
 	public SpellHeal()
 	{
-		super(Material.GHAST_TEAR, "§r§e§ko§r§e§lRelic: §r§fHealing Tear§r§e§ko§r", 20, true, "§r§fElement: §r§f§o§lHoly§r§f.","§r§f§oIt's a drop of healing liquid.","§r§aHeals §r§f5 hearts to self.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.GHAST_TEAR, "Â§rÂ§eÂ§koÂ§rÂ§eÂ§lRelic: Â§rÂ§fHealing TearÂ§rÂ§eÂ§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§fÂ§oÂ§lHolyÂ§rÂ§f.","Â§rÂ§fÂ§oIt's a drop of healing liquid.","Â§rÂ§aHeals Â§rÂ§f5 hearts to self.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -22,7 +22,7 @@ public class SpellBlindingDust extends BaseSpell
 
 	public SpellBlindingDust()
 	{
-		super(Material.GUNPOWDER, "§r§7§ko§r§7§lSpell: §r§fBlinding Dust§r§7§ko§r", 10, false, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fThrow a compact blast of rigid dust particles.","§r§fTemporarily blind any target within a short range.","§r§fTarget also takes 1 heart of §r§cdamage§r§f.","§r§fDuration: 20 seconds.","§r§fRange: 5 meters.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.GUNPOWDER, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fBlinding DustÂ§rÂ§7Â§koÂ§r", 10, false, "Â§rÂ§fElement: Â§rÂ§4Â§oÂ§lUnholyÂ§rÂ§f.","Â§rÂ§fThrow a compact blast of rigid dust particles.","Â§rÂ§fTemporarily blind any target within a short range.","Â§rÂ§fTarget also takes 1 heart of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fDuration: 20 seconds.","Â§rÂ§fRange: 5 meters.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 		// TODO Auto-generated constructor stub
 	}
 

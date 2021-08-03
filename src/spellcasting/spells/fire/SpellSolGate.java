@@ -26,7 +26,7 @@ public class SpellSolGate extends BaseSpell
 
 	public SpellSolGate()
 	{
-		super(Material.BOOK, "§r§f§ko§r§fTome: §r§fSolGate§r§f§ko§r", 30, false, "§r§fElement: §r§cFire§r§f.", "§r§fSummons a void gate from the orbiting sun.","§r§fThe gate summons three balls of fire onto a target.","§r§fRange: 10 meters.","§r§fMana cost: 30 §r§9mana§r§f.");
+		super(Material.BOOK, "Â§rÂ§fÂ§koÂ§rÂ§fTome: Â§rÂ§fSolGateÂ§rÂ§fÂ§koÂ§r", 30, false, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.", "Â§rÂ§fSummons a void gate from the orbiting sun.","Â§rÂ§fThe gate summons three balls of fire onto a target.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fMana cost: 30 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

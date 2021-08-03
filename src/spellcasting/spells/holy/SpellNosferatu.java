@@ -23,7 +23,7 @@ public class SpellNosferatu extends BaseSpell
 
 	public SpellNosferatu()
 	{
-		super(Material.WHITE_DYE, "§r§7§ko§r§7§lSpell: §r§fNosferatu§r§7§ko§r", 5, true, "§r§fElement: §r§f§o§lHoly§r§f.","§r§fEmit a burst of light upon a target.","§r§fDeals 1 heart of §r§cDamage§r§f.","§r§aHeal§r§f 2 hearts of health.","§r§fRange: 20 meters.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.WHITE_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fNosferatuÂ§rÂ§7Â§koÂ§r", 5, true, "Â§rÂ§fElement: Â§rÂ§fÂ§oÂ§lHolyÂ§rÂ§f.","Â§rÂ§fEmit a burst of light upon a target.","Â§rÂ§fDeals 1 heart of Â§rÂ§cDamageÂ§rÂ§f.","Â§rÂ§aHealÂ§rÂ§f 2 hearts of health.","Â§rÂ§fRange: 20 meters.","Â§rÂ§fMana cost: 5 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

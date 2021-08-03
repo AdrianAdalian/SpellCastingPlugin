@@ -15,7 +15,7 @@ public class SpellPoisonGas extends BaseSpell
 
 	public SpellPoisonGas()
 	{
-		super(Material.SLIME_BALL, "§r§7§ko§r§7§lSpell: §r§fPoison Gas§r§7§ko§r", 15, true, "§r§fElement: §r§6Geo§r§f.","§r§fEmits a burst of highly toxic fumes within a radius.","§r§fDeals 4 hearts of §r§cdamage§r§f over 5 seconds.","§r§fRange: 5 meters.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.SLIME_BALL, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fPoison GasÂ§rÂ§7Â§koÂ§r", 15, true, "Â§rÂ§fElement: Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fEmits a burst of highly toxic fumes within a radius.","Â§rÂ§fDeals 4 hearts of Â§rÂ§cdamageÂ§rÂ§f over 5 seconds.","Â§rÂ§fRange: 5 meters.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -17,7 +17,7 @@ public class SpellNaturesGift extends BaseSpell
 
 	public SpellNaturesGift()
 	{
-		super(Material.LILY_OF_THE_VALLEY, "§r§e§ko§r§e§lRelic: §r§fNature's Gift§r§e§ko§r", 20, true, "§r§fElement: §r§6Geo§r§f.","§r§f§oA lily, blessed by the forces of §r§6Geo§r§f§o.","§r§fBoosts the growth ratio of all life around the caster.","§r§fAlso §aheals §r§fcaster for 2 hearts.","§r§fRange: Radial 10 square meters.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.LILY_OF_THE_VALLEY, "Â§rÂ§eÂ§koÂ§rÂ§eÂ§lRelic: Â§rÂ§fNature's GiftÂ§rÂ§eÂ§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fÂ§oA lily, blessed by the forces of Â§rÂ§6GeoÂ§rÂ§fÂ§o.","Â§rÂ§fBoosts the growth ratio of all life around the caster.","Â§rÂ§fAlso Â§aheals Â§rÂ§fcaster for 2 hearts.","Â§rÂ§fRange: Radial 10 square meters.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -26,7 +26,7 @@ public class SpellDebilitate extends BaseSpell
 
 	public SpellDebilitate()
 	{
-		super(Material.GRAY_DYE, "§r§7§ko§r§7§lSpell: §r§fDebilitate§r§7§ko§r", 25, false, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fUtterly debilitates target player for a brief period of time.","§r§fEffects: Slowness, Fatigue, Weakness, and Starvation.","§r§fRange: 10 meters.","§r§fDuration: 10 seconds.","§r§fMana cost: 25 §r§9mana§r§f.");
+		super(Material.GRAY_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fDebilitateÂ§rÂ§7Â§koÂ§r", 25, false, "Â§rÂ§fElement: Â§rÂ§4Â§oÂ§lUnholyÂ§rÂ§f.","Â§rÂ§fUtterly debilitates target player for a brief period of time.","Â§rÂ§fEffects: Slowness, Fatigue, Weakness, and Starvation.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fDuration: 10 seconds.","Â§rÂ§fMana cost: 25 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 	@Override
 	public boolean cast(PlayerInteractEvent event)

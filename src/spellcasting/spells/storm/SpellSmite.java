@@ -11,7 +11,7 @@ public class SpellSmite extends BaseSpell
 
 	public SpellSmite()
 	{
-		super(Material.PURPLE_DYE, "§r§7§ko§r§7§lSpell: §r§fSmite§r§7§ko§r", 10, false, "§r§fElement: §r§dStorm§r§f.","§r§fSummons a small bolt of lightning.","§r§fRange: 10 meters.","§r§fDeals 2.5 hearts of §r§cdamage§r§f.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.PURPLE_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fSmiteÂ§rÂ§7Â§koÂ§r", 10, false, "Â§rÂ§fElement: Â§rÂ§dStormÂ§rÂ§f.","Â§rÂ§fSummons a small bolt of lightning.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fDeals 2.5 hearts of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

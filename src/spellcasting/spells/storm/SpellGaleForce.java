@@ -20,7 +20,7 @@ public class SpellGaleForce extends BaseSpell
 
 	public SpellGaleForce()
 	{
-		super(Material.STRING, "§r§7§ko§r§7§lSpell: §r§fGaleForce§r§7§ko§r", 10, true, "§r§fElement: §r§dStorm§r§f.","§r§fPushes the target a great distance away.","§r§fRange: 7 meters.","§r§fDeals 2 hearts of §r§cdamage§r§f.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.STRING, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fGaleForceÂ§rÂ§7Â§koÂ§r", 10, true, "Â§rÂ§fElement: Â§rÂ§dStormÂ§rÂ§f.","Â§rÂ§fPushes the target a great distance away.","Â§rÂ§fRange: 7 meters.","Â§rÂ§fDeals 2 hearts of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

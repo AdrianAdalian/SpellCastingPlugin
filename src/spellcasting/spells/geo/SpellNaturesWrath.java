@@ -18,7 +18,7 @@ public class SpellNaturesWrath extends BaseSpell
 
 	public SpellNaturesWrath()
 	{
-		super(Material.CRIMSON_FUNGUS, "§r§e§ko§r§e§lRelic: §r§fNature's Wrath§r§e§ko§r", 25, true, "§r§fElement: §r§6Geo§r§f.","§r§f§oA mushroom, defiled by the forces of §r§6Geo§r§f§o.","§r§fDegrades the growth ratio of all life around the caster.","§r§fAlso deals 2 hearts of §r§cdamage§r§f within the cast radius.","§r§fRange: Radial 10 square meters.","§r§fMana cost: 25 §r§9mana§r§f.");
+		super(Material.CRIMSON_FUNGUS, "Â§rÂ§eÂ§koÂ§rÂ§eÂ§lRelic: Â§rÂ§fNature's WrathÂ§rÂ§eÂ§koÂ§r", 25, true, "Â§rÂ§fElement: Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fÂ§oA mushroom, defiled by the forces of Â§rÂ§6GeoÂ§rÂ§fÂ§o.","Â§rÂ§fDegrades the growth ratio of all life around the caster.","Â§rÂ§fAlso deals 2 hearts of Â§rÂ§cdamageÂ§rÂ§f within the cast radius.","Â§rÂ§fRange: Radial 10 square meters.","Â§rÂ§fMana cost: 25 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

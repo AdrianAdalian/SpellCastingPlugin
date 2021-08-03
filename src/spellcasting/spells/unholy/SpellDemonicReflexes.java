@@ -18,7 +18,7 @@ public class SpellDemonicReflexes extends BaseSpell
 
 	public SpellDemonicReflexes()
 	{
-		super(Material.GRAY_DYE, "§r§7§ko§r§7§lSpell: §r§fDemonic Reflexes§r§7§ko§r", 15, false, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fBoost caster's ability to vertically scale objects.","§r§fAlso slightly boosts movement speed.","§r§fDuration: 20 seconds.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.GRAY_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fDemonic ReflexesÂ§rÂ§7Â§koÂ§r", 15, false, "Â§rÂ§fElement: Â§rÂ§4Â§oÂ§lUnholyÂ§rÂ§f.","Â§rÂ§fBoost caster's ability to vertically scale objects.","Â§rÂ§fAlso slightly boosts movement speed.","Â§rÂ§fDuration: 20 seconds.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -14,7 +14,7 @@ public class SpellHeatWave extends BaseSpell
 
 	public SpellHeatWave()
 	{
-		super(Material.BLAZE_POWDER, "§r§7§ko§r§7§lSpell: §r§fHeat Wave§r§7§ko§r", 15, false, "§r§fElement: §r§cFire§r§f.","§r§fSet all targets within a small radius ablaze.","§r§fDeals 7 hearts of §r§cdamage§r§f over 10 seconds to each target.","§r§fRange: 10 meters.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.BLAZE_POWDER, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fHeat WaveÂ§rÂ§7Â§koÂ§r", 15, false, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.","Â§rÂ§fSet all targets within a small radius ablaze.","Â§rÂ§fDeals 7 hearts of Â§rÂ§cdamageÂ§rÂ§f over 10 seconds to each target.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

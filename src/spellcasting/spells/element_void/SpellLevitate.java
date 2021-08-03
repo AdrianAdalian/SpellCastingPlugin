@@ -18,7 +18,7 @@ public class SpellLevitate extends BaseSpell
 
 	public SpellLevitate()
 	{
-		super(Material.CYAN_DYE, "§r§7§ko§r§7§lSpell: §r§fLevitate§r§7§ko§r", 10, false, "§r§fElement: §r§3§lVOID§r§f.","§r§fAlter the effects of gravity around the caster,","§r§fallowing them to briefly levitate and fall safely back down.","§r§fDuration of Levitation: 15 seconds.","§r§fDuration of Slow Falling: 3 seconds.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.CYAN_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fLevitateÂ§rÂ§7Â§koÂ§r", 10, false, "Â§rÂ§fElement: Â§rÂ§3Â§lVOIDÂ§rÂ§f.","Â§rÂ§fAlter the effects of gravity around the caster,","Â§rÂ§fallowing them to briefly levitate and fall safely back down.","Â§rÂ§fDuration of Levitation: 15 seconds.","Â§rÂ§fDuration of Slow Falling: 3 seconds.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

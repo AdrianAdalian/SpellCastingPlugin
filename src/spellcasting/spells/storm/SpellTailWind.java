@@ -18,7 +18,7 @@ public class SpellTailWind extends BaseSpell
 
 	public SpellTailWind()
 	{
-		super(Material.MAGENTA_DYE, "§r§7§ko§r§7§lSpell: §r§fTailwind§r§7§ko§r", 10, false, "§r§fElement: §r§dStorm§r§f.","§r§fSlightly increases the caster's movement speed.","§r§fDuration: 15 seconds.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.MAGENTA_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fTailwindÂ§rÂ§7Â§koÂ§r", 10, false, "Â§rÂ§fElement: Â§rÂ§dStormÂ§rÂ§f.","Â§rÂ§fSlightly increases the caster's movement speed.","Â§rÂ§fDuration: 15 seconds.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -14,7 +14,7 @@ public class SpellGalvanicNeedle extends BaseSpell
 
 	public SpellGalvanicNeedle()
 	{
-		super(Material.AMETHYST_SHARD, "§r§e§ko§r§e§lRelic: §r§fGalvanic Needle§r§e§ko§r", 10, true, "§r§fElement: §r§dStorm§r§f.","§r§fFire an electrified crystal shard that acts like a lightning rod.","§r§fDeals 1/2 heart of §r§cdamage §r§ffrom crystal strike,","§r§fThen summons a bolt of lightning at target.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.AMETHYST_SHARD, "Â§rÂ§eÂ§koÂ§rÂ§eÂ§lRelic: Â§rÂ§fGalvanic NeedleÂ§rÂ§eÂ§koÂ§r", 10, true, "Â§rÂ§fElement: Â§rÂ§dStormÂ§rÂ§f.","Â§rÂ§fFire an electrified crystal shard that acts like a lightning rod.","Â§rÂ§fDeals 1/2 heart of Â§rÂ§cdamage Â§rÂ§ffrom crystal strike,","Â§rÂ§fThen summons a bolt of lightning at target.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 	@Override
 	public boolean cast(PlayerInteractEvent event)

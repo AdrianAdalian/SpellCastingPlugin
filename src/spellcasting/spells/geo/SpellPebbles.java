@@ -14,7 +14,7 @@ public class SpellPebbles extends BaseSpell
 	
 	public SpellPebbles()
 	{
-		super(Material.COCOA_BEANS, "§r§7§ko§r§7§lSpell: §r§fPebbles§r§7§ko§r", 5, false, "§r§fElement: §r§6Geo§r§f.","§r§fHurl a group of small pebbles.","§r§fDeals 1 heart of §r§cdamage§r§f.","§r§fRange: 5 meters.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.COCOA_BEANS, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fPebblesÂ§rÂ§7Â§koÂ§r", 5, false, "Â§rÂ§fElement: Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fHurl a group of small pebbles.","Â§rÂ§fDeals 1 heart of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fRange: 5 meters.","Â§rÂ§fMana cost: 5 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

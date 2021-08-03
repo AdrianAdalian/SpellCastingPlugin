@@ -14,7 +14,7 @@ public class SpellPoisonDart extends BaseSpell
 
 	public SpellPoisonDart()
 	{
-		super(Material.ARROW, "§r§7§ko§r§7§lSpell: §r§fPoison Dart§r§7§ko§r", 10, false, "§r§fElement: §r§6Geo§r§f.","§r§fLaunch a blob of toxic liquid that poisons what it hits.","§r§fDeals 1 heart of immediate §r§cdamage§r§f.","§r§fThen, 4 hearts of §r§cdamage§r§f over 10 seconds.","§r§fRange: 10 meters.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.ARROW, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fPoison DartÂ§rÂ§7Â§koÂ§r", 10, false, "Â§rÂ§fElement: Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fLaunch a blob of toxic liquid that poisons what it hits.","Â§rÂ§fDeals 1 heart of immediate Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fThen, 4 hearts of Â§rÂ§cdamageÂ§rÂ§f over 10 seconds.","Â§rÂ§fRange: 10 meters.","Â§rÂ§fMana cost: 10 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -18,7 +18,7 @@ public class SpellGeoMorph extends BaseSpell
 
 	public SpellGeoMorph()
 	{
-		super(Material.BRICK, "§r§7§ko§r§7§lSpell: §r§fGeoMorph§r§7§ko§r", 5, true, "§r§fElement: §r§6Geo§r§f.","§r§fSlightly hardens the caster's skin.", "§r§fGrant 20% damage reduction.","§r§fSlightly decreases caster movment speed.","§r§fDuration: 15 seconds.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.BRICK, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fGeoMorphÂ§rÂ§7Â§koÂ§r", 5, true, "Â§rÂ§fElement: Â§rÂ§6GeoÂ§rÂ§f.","Â§rÂ§fSlightly hardens the caster's skin.", "Â§rÂ§fGrant 20% damage reduction.","Â§rÂ§fSlightly decreases caster movment speed.","Â§rÂ§fDuration: 15 seconds.","Â§rÂ§fMana cost: 5 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -23,7 +23,7 @@ public class SpellRaiseDead extends BaseSpell
 	
 	public SpellRaiseDead()
 	{
-		super(Material.BONE, "§r§7§ko§r§7§lSpell: §r§fRaise Dead§r§7§ko§r", 20, false, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fSacrifice 1 heart of caster's life force.","§r§fReanimates any zombie villager to their living counter part.","§r§fRange: 5 meters.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.BONE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fRaise DeadÂ§rÂ§7Â§koÂ§r", 20, false, "Â§rÂ§fElement: Â§rÂ§4Â§oÂ§lUnholyÂ§rÂ§f.","Â§rÂ§fSacrifice 1 heart of caster's life force.","Â§rÂ§fReanimates any zombie villager to their living counter part.","Â§rÂ§fRange: 5 meters.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

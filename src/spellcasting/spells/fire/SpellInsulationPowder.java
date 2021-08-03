@@ -18,7 +18,7 @@ public class SpellInsulationPowder extends BaseSpell
 
 	public SpellInsulationPowder()
 	{
-		super(Material.REDSTONE, "§r§7§ko§r§7§lSpell: §r§fInsulation Powder§r§7§ko§r", 20, true, "§r§fElement: §r§cFire§r§f.","§r§fA chemical compound that grants","§r§fthe wearer temporary fire immunity.","§r§fDuration: 1 minute.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.REDSTONE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fInsulation PowderÂ§rÂ§7Â§koÂ§r", 20, true, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.","Â§rÂ§fA chemical compound that grants","Â§rÂ§fthe wearer temporary fire immunity.","Â§rÂ§fDuration: 1 minute.","Â§rÂ§fMana cost: 20 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

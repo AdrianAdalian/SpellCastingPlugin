@@ -21,7 +21,7 @@ public class SpellCrystalize extends BaseSpell
 
 	public SpellCrystalize()
 	{
-		super(Material.BOOK, "§r§f§ko§r§fTome: §r§fCrystalize§r§f§ko§r", 25, false, "§r§fElement: §r§9Water§r§f.","§r§fSpikes burst from the casters body crystalizing them","§r§fwhile briefly rendering them immobilized and impervious.","§r§fAny within close proximity are slowed, weakened and damaged.","§r§fThe effects of the blast also cause targets to glow.","§r§fAfter the caster thaws,","§r§fgrant increased movement speed for 5 seconds.","§r§fDeals 3 hearts of §r§cdamage§r§f.","§r§fDuration for caster: 10 seconds.","§r§fDuration for targets: 20 seconds.","§r§fRange: 5 meters.","§r§fMana cost: 25 §r§9mana§r§f.");
+		super(Material.BOOK, "Â§rÂ§fÂ§koÂ§rÂ§fTome: Â§rÂ§fCrystalizeÂ§rÂ§fÂ§koÂ§r", 25, false, "Â§rÂ§fElement: Â§rÂ§9WaterÂ§rÂ§f.","Â§rÂ§fSpikes burst from the casters body crystalizing them","Â§rÂ§fwhile briefly rendering them immobilized and impervious.","Â§rÂ§fAny within close proximity are slowed, weakened and damaged.","Â§rÂ§fThe effects of the blast also cause targets to glow.","Â§rÂ§fAfter the caster thaws,","Â§rÂ§fgrant increased movement speed for 5 seconds.","Â§rÂ§fDeals 3 hearts of Â§rÂ§cdamageÂ§rÂ§f.","Â§rÂ§fDuration for caster: 10 seconds.","Â§rÂ§fDuration for targets: 20 seconds.","Â§rÂ§fRange: 5 meters.","Â§rÂ§fMana cost: 25 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -19,8 +19,8 @@ public class SpellRecipe_BookOfFire
 	public static void Init() 
 	{
 		final_item = new ItemStack(Material.BOOK);
-		ItemUtils.applyName(final_item, "§r§f§ko§r§f§lSpellBook: §r§fBook of §r§cFire§r§f§ko§r");
-		ItemUtils.applyLore(final_item, "§r§fElement: §r§cFire§r§f.","§r§fA spell book with magic properties","§r§fcontaining the element of §r§cFire§r§f.","§r§fRight click to open the spellbook while in the hotbar.","§r§fLeft click to engage/disengage spells.");
+		ItemUtils.applyName(final_item, "Â§rÂ§fÂ§koÂ§rÂ§fÂ§lSpellBook: Â§rÂ§fBook of Â§rÂ§cFireÂ§rÂ§fÂ§koÂ§r");
+		ItemUtils.applyLore(final_item, "Â§rÂ§fElement: Â§rÂ§cFireÂ§rÂ§f.","Â§rÂ§fA spell book with magic properties","Â§rÂ§fcontaining the element of Â§rÂ§cFireÂ§rÂ§f.","Â§rÂ§fRight click to open the spellbook while in the hotbar.","Â§rÂ§fLeft click to engage/disengage spells.");
 		ItemUtils.saveToNamespacedKey(final_item, "SpellBookFireID", "true");
 		
 		ItemMeta meta = final_item.getItemMeta();

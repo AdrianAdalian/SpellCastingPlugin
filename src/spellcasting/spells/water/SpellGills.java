@@ -18,7 +18,7 @@ public class SpellGills extends BaseSpell
 
 	public SpellGills()
 	{
-		super(Material.LIGHT_BLUE_DYE, "§r§7§ko§r§7§lSpell: §r§fGills§r§7§ko§r", 15, false, "§r§fElement: §r§9Water§r§f.","§r§fGrants the caster temporary water breathing.","§r§fDuration: 20 seconds.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.LIGHT_BLUE_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fGillsÂ§rÂ§7Â§koÂ§r", 15, false, "Â§rÂ§fElement: Â§rÂ§9WaterÂ§rÂ§f.","Â§rÂ§fGrants the caster temporary water breathing.","Â§rÂ§fDuration: 20 seconds.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

@@ -18,7 +18,7 @@ public class SpellManaBurn extends BaseSpell
 
 	public SpellManaBurn()
 	{
-		super(Material.MAGMA_CREAM, "§r§7§ko§r§7§lSpell: §r§fMana Burn§r§7§ko§r", 25, true, "§r§fElement: §r§9Water§r§f.","§r§fBurn a large portion of the caster's mana","§r§fwhile granting increased damage output,","§r§fmovement and interact speeds for a short time.","§r§fThenafter, suffer a depression similar to those effects.","§r§fDuration of buffs: 10 seconds.","§r§fDuration of debuffs: 10 seconds.","§r§fMana cost: 25 §r§9mana§r§f.");
+		super(Material.MAGMA_CREAM, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fMana BurnÂ§rÂ§7Â§koÂ§r", 25, true, "Â§rÂ§fElement: Â§rÂ§9WaterÂ§rÂ§f.","Â§rÂ§fBurn a large portion of the caster's mana","Â§rÂ§fwhile granting increased damage output,","Â§rÂ§fmovement and interact speeds for a short time.","Â§rÂ§fThenafter, suffer a depression similar to those effects.","Â§rÂ§fDuration of buffs: 10 seconds.","Â§rÂ§fDuration of debuffs: 10 seconds.","Â§rÂ§fMana cost: 25 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override

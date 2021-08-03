@@ -18,7 +18,7 @@ public class SpellLightShift extends BaseSpell
 
 	public SpellLightShift()
 	{
-		super(Material.GRAY_DYE, "§r§7§ko§r§7§lSpell: §r§fLight Shift§r§7§ko§r", 15, false, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fBoosts caster's evasiveness against surrounding entities.","§r§fDuration: 15 seconds.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.GRAY_DYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fLight ShiftÂ§rÂ§7Â§koÂ§r", 15, false, "Â§rÂ§fElement: Â§rÂ§4Â§oÂ§lUnholyÂ§rÂ§f.","Â§rÂ§fBoosts caster's evasiveness against surrounding entities.","Â§rÂ§fDuration: 15 seconds.","Â§rÂ§fMana cost: 15 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 
 	@Override
