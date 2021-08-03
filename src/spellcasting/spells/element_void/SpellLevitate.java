@@ -43,14 +43,6 @@ public class SpellLevitate extends BaseSpell
 				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_BEACON_DEACTIVATE, SoundCategory.MASTER, 1, 1);
 			}
 		}.runTaskLater(Zenith.getInstance(), 305);	
-		new BukkitRunnable()
-		{
-			@Override
-			public void run()
-			{
-				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_BEACON_ACTIVATE, SoundCategory.MASTER, 1, 1);
-			}
-		}.runTaskLater(Zenith.getInstance(), 410);
 		return true;
 	}
 }

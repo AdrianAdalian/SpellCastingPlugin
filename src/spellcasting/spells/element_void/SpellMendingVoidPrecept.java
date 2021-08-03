@@ -13,7 +13,7 @@ public class SpellMendingVoidPrecept extends BaseSpell
 
 	public SpellMendingVoidPrecept()
 	{
-		super(Material.PAPER, "§r§7§ko§r§7§lSpell: §r§fLevitate§r§7§ko§r", 15, true, "");
+		super(Material.PAPER, "§r§7§ko§r§7§lSpell: §r§fLevitate§r§7§ko§r", 15, true, "PH");
 	}
 
 	@Override
@@ -36,6 +36,8 @@ public class SpellMendingVoidPrecept extends BaseSpell
 				{
 					event.getPlayer().getWorld().getBlockAt(i, y, j).setType(Material.ANVIL);
 					Bukkit.createInventory(event.getPlayer(), InventoryType.ANVIL);
+					//does not actually place an anvil within the area.
+					//return true;
 				}
 			}
 		}

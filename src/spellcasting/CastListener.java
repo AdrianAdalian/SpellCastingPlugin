@@ -28,6 +28,7 @@ import spellcasting.spells.element_void.SpellDaoCharm;
 import spellcasting.spells.element_void.SpellEtherContinuity;
 import spellcasting.spells.element_void.SpellLevitate;
 import spellcasting.spells.element_void.SpellMatterReversal;
+import spellcasting.spells.element_void.SpellMendingVoidPrecept;
 import spellcasting.spells.element_void.SpellNullPointConfiguration;
 import spellcasting.spells.element_void.SpellRiftPortalization;
 import spellcasting.spells.element_void.SpellTelekinesis;
@@ -240,6 +241,7 @@ public class CastListener implements Listener
 	  put("SpellMatterReversal", new SpellMatterReversal()); //8.A (94)
 	  put("SpellVoidBolt", new SpellVoidBolt()); //9.A(95)
 	  put("SpellRiftPortalization", new SpellRiftPortalization()); //10.A (96)
+	  put("SpellMendingVoidPrecept", new SpellMendingVoidPrecept()); //11.A (97)
 	  
 	}};
 	
