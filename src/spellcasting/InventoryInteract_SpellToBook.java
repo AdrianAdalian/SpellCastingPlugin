@@ -73,6 +73,12 @@ public class InventoryInteract_SpellToBook implements Listener
 					event.getWhoClicked().setItemOnCursor(new ItemStack(Material.AIR));
 					break;
 				}
+				case "Book of Void":
+				{
+					event.getView().setItem(event.getRawSlot(),SpellRecipe_BookOfWater.getFinal_item());
+					event.getWhoClicked().setItemOnCursor(new ItemStack(Material.AIR));
+					break;
+				}
 			}
 		}
 	}

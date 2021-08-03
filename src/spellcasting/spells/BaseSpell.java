@@ -104,6 +104,12 @@ public abstract class BaseSpell implements GuiComponent//abstract: The parts of 
 		    		ItemUtils.saveToNamespacedKey(clone,"BookName","Book of Water");
 		    		event.getView().setItem(slot, clone);
 		    	}
+		    	if (event.getView().getTitle().equals("Book of Void")) 
+		    	{
+		    		int slot = InventoryUtilities.searchForSpellBook(event.getView(), "SpellBookVoidID");
+		    		ItemUtils.saveToNamespacedKey(clone,"BookName","Book of Void");
+		    		event.getView().setItem(slot, clone);
+		    	}
 		    	event.getWhoClicked().closeInventory();
 		    }
 		};

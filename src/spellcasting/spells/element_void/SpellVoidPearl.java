@@ -14,7 +14,7 @@ public class SpellVoidPearl extends BaseSpell
 
 	public SpellVoidPearl()
 	{
-		super(Material.ENDER_PEARL, "§r§7§ko§r§7§lSpell: §r§fVoid Pearl§r§7§ko§r", 15, true, "§r§fElement: §r§3§lVOID§r§f.","§r§fA pearl enchanted by the forces of the §r§3§lVOID§r§f.","§r§fSummons a portable storage unit.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.ENDER_PEARL, "§r§7§ko§r§7§lSpell: §r§fVoid Pearl§r§7§ko§r", 15, true, "§r§fElement: §r§3§lVOID§r§f.","§r§fA pearl enchanted by the forces of the §r§3§lVOID§r§f.","§r§fSummon a portable storage unit at will.","§r§fMana cost: 15 §r§9mana§r§f.");
 	}
 
 	@Override

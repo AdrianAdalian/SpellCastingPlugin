@@ -27,6 +27,7 @@ import spellcasting.spells.recipe.SpellRecipe_BookOfGeo;
 import spellcasting.spells.recipe.SpellRecipe_BookOfHoly;
 import spellcasting.spells.recipe.SpellRecipe_BookOfStorm;
 import spellcasting.spells.recipe.SpellRecipe_BookOfUnholy;
+import spellcasting.spells.recipe.SpellRecipe_BookOfVoid;
 import spellcasting.spells.recipe.SpellRecipe_BookOfWater;
 
 @Branch(BranchType.NIGHTLY)
@@ -78,6 +79,9 @@ public class Spells extends ZenithModule
 		
 		SpellRecipe_BookOfWater.Init();
 		SpellRecipe_BookOfWater.Register();
+		
+		SpellRecipe_BookOfVoid.Init();
+		SpellRecipe_BookOfVoid.Register();
 		
 		ItemRecipe_ManaPotion.Init();
 		ItemRecipe_ManaPotion.Register();

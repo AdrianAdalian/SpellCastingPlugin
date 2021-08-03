@@ -22,15 +22,16 @@ import spellcasting.registered.gui.SpellGUI_Geo;
 import spellcasting.registered.gui.SpellGUI_Holy;
 import spellcasting.registered.gui.SpellGUI_Storm;
 import spellcasting.registered.gui.SpellGUI_Unholy;
+import spellcasting.registered.gui.SpellGUI_Void;
 import spellcasting.registered.gui.SpellGUI_Water;
 import spellcasting.spells.BaseSpell;
+import spellcasting.spells.element_void.SpellAccelerate;
 import spellcasting.spells.element_void.SpellAntimatter;
 import spellcasting.spells.element_void.SpellCataclysm;
 import spellcasting.spells.element_void.SpellDaoCharm;
 import spellcasting.spells.element_void.SpellEtherContinuity;
 import spellcasting.spells.element_void.SpellLevitate;
 import spellcasting.spells.element_void.SpellMatterReversal;
-import spellcasting.spells.element_void.SpellMendingVoidPrecept;
 import spellcasting.spells.element_void.SpellNullPointConfiguration;
 import spellcasting.spells.element_void.SpellRiftPortalization;
 import spellcasting.spells.element_void.SpellTelekinesis;
@@ -243,7 +244,7 @@ public class CastListener implements Listener
 	  put("SpellMatterReversal", new SpellMatterReversal()); //8.A (94)
 	  put("SpellVoidBolt", new SpellVoidBolt()); //9.A(95)
 	  put("SpellRiftPortalization", new SpellRiftPortalization()); //10.A (96)
-	  put("SpellMendingVoidPrecept", new SpellMendingVoidPrecept()); //11.A (97)
+	  put("SpellAccelerate", new SpellAccelerate()); //11.A (97)
 	  put("SpellAntimatter", new SpellAntimatter()); //12.A (98)
 	  put("SpellCataclysm", new SpellCataclysm()); //13.A (99)
 	  
@@ -345,6 +346,17 @@ public class CastListener implements Listener
 			}	
 			event.setCancelled(true);
 			SpellGUI_Water gui = new SpellGUI_Water();
+			gui.init();
+			gui.display(event.getPlayer());
+		}
+		if (ItemUtils.hasNamespacedKey(held, "SpellBookVoidID"))
+		{
+			if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
+			{
+				return;
+			}	
+			event.setCancelled(true);
+			SpellGUI_Void gui = new SpellGUI_Void();
 			gui.init();
 			gui.display(event.getPlayer());
 		}
