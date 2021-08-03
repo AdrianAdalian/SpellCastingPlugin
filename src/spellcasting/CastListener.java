@@ -24,6 +24,7 @@ import spellcasting.registered.gui.SpellGUI_Storm;
 import spellcasting.registered.gui.SpellGUI_Unholy;
 import spellcasting.registered.gui.SpellGUI_Water;
 import spellcasting.spells.BaseSpell;
+import spellcasting.spells.element_void.SpellAntimatter;
 import spellcasting.spells.element_void.SpellDaoCharm;
 import spellcasting.spells.element_void.SpellEtherContinuity;
 import spellcasting.spells.element_void.SpellLevitate;
@@ -242,6 +243,7 @@ public class CastListener implements Listener
 	  put("SpellVoidBolt", new SpellVoidBolt()); //9.A(95)
 	  put("SpellRiftPortalization", new SpellRiftPortalization()); //10.A (96)
 	  put("SpellMendingVoidPrecept", new SpellMendingVoidPrecept()); //11.A (97)
+	  put("SpellAntimatter", new SpellAntimatter()); //12.A (98)
 	  
 	}};
 	
