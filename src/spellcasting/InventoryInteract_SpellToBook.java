@@ -13,6 +13,7 @@ import spellcasting.spells.recipe.SpellRecipe_BookOfGeo;
 import spellcasting.spells.recipe.SpellRecipe_BookOfHoly;
 import spellcasting.spells.recipe.SpellRecipe_BookOfStorm;
 import spellcasting.spells.recipe.SpellRecipe_BookOfUnholy;
+import spellcasting.spells.recipe.SpellRecipe_BookOfVoid;
 import spellcasting.spells.recipe.SpellRecipe_BookOfWater;
 
 public class InventoryInteract_SpellToBook implements Listener
@@ -75,7 +76,7 @@ public class InventoryInteract_SpellToBook implements Listener
 				}
 				case "Book of Void":
 				{
-					event.getView().setItem(event.getRawSlot(),SpellRecipe_BookOfWater.getFinal_item());
+					event.getView().setItem(event.getRawSlot(),SpellRecipe_BookOfVoid.getFinal_item());
 					event.getWhoClicked().setItemOnCursor(new ItemStack(Material.AIR));
 					break;
 				}
