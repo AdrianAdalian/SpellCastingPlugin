@@ -63,6 +63,8 @@ public class SpellRiftPortalization extends BaseSpell
 							double netherX = loc2.getX() * 8;
 							double netherZ = loc2.getZ() * 8;
 							
+							// Just going to demo something
+							
 							Bukkit.getWorld("world_nether").loadChunk(current.getChunk());
 							
 							event.getPlayer().teleport(new Location(nether, netherX, loc2.getY(), netherZ).add(0.5, 1, 0.5));
