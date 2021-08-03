@@ -35,8 +35,8 @@ public class SpellRiftPortalization extends BaseSpell
 		
 		World overworld = Bukkit.getWorlds().get(0);
 		
-		int xradius = 50;
-		int zradius = 50;
+		int xradius = 25;
+		int zradius = 25;
 
 		
 		if(event.getPlayer().getWorld().getEnvironment().equals(Environment.NORMAL))
@@ -47,7 +47,7 @@ public class SpellRiftPortalization extends BaseSpell
 			{
 				for (int iz = zradius * -1; iz < zradius; iz++)
 				{
-					for (int iy = 127; iy > 0; iy--)
+					for (int iy = 125; iy > 0; iy--)
 					{
 						
 						Block current = nether.getBlockAt(new Location(nether, baseX + ix, iy, baseZ + iz));
