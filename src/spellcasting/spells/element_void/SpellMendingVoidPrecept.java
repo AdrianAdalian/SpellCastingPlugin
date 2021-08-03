@@ -13,7 +13,7 @@ public class SpellMendingVoidPrecept extends BaseSpell
 
 	public SpellMendingVoidPrecept()
 	{
-		super(Material.PAPER, "§r§7§ko§r§7§lSpell: §r§fLevitate§r§7§ko§r", 15, true, "PH");
+		super(Material.PAPER, "§r§7§ko§r§7§lSpell: §r§fMending Void Precept§r§7§ko§r", 15, true, "PH: Spell Not Finished");
 	}
 
 	@Override
