@@ -19,7 +19,7 @@ public class SpellRiftPortalization extends BaseSpell
 
 	public SpellRiftPortalization()
 	{
-		super(Material.ENDER_EYE, "§r§7§ko§r§7§lSpell: §r§fRift Portalization§r§7§ko§r", 25, true, "§r§fElement: §r§3§lVOID§r§f.","§r§fA highly unstable spell containing enough energy","§r§fto grant the caster safe travel between dimensions.","§r§fMana cost: 25 §r§9mana§r§f.");
+		super(Material.ENDER_EYE, "Â§rÂ§7Â§koÂ§rÂ§7Â§lSpell: Â§rÂ§fRift PortalizationÂ§rÂ§7Â§koÂ§r", 25, true, "Â§rÂ§fElement: Â§rÂ§3Â§lVOIDÂ§rÂ§f.","Â§rÂ§fA highly unstable spell containing enough energy","Â§rÂ§fto grant the caster safe travel between dimensions.","Â§rÂ§fMana cost: 25 Â§rÂ§9manaÂ§rÂ§f.");
 	}
 	
 	@Override
@@ -88,10 +88,11 @@ public class SpellRiftPortalization extends BaseSpell
 			int overworldZ = (int) (loc2.getZ() / 8);
 			Block target = Bukkit.getWorld("world").getHighestBlockAt(overworldX, overworldZ);
 			
-			event.getPlayer().teleport(new Location(overworld, overworldX, target.getLocation().add(0.5, 1, 0.5).getY(), overworldZ));
+			event.getPlayer().teleport(new Location(overworld, overworldX, target.getLocation().getY(), overworldZ).add(0.5, 1, 0.5));
 			return true;
 				//Teleports the caster from the nether to the overworld.
 		}
+
 		return false;
 	}
 }
