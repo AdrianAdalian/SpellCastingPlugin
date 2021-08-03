@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-13">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/spigot-api-1.17-R0.1-SNAPSHOT-shaded.jar"/>
+	<classpathentry kind="lib" path="lib/ZenithAuth.jar"/>
+	<classpathentry kind="lib" path="lib/ZenithCore.jar"/>
+	<classpathentry kind="lib" path="lib/ZenithGui.jar"/>
+	<classpathentry kind="lib" path="lib/ZenithProjectiles.jar"/>
+	<classpathentry kind="lib" path="lib/Zenith-80121-2.2.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
