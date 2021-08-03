@@ -1,6 +1,8 @@
 package spellcasting.spells.element_void;
 
 import org.bukkit.Material;
+import org.bukkit.Sound;
+import org.bukkit.SoundCategory;
 import org.bukkit.block.Block;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
@@ -31,7 +33,7 @@ public class SpellAntimatter extends BaseSpell
 		{
 			return false;
 		}
-		
+		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_SHULKER_SHOOT, SoundCategory.MASTER, 1, 1);
 		target.getWorld().createExplosion(target.getLocation(), 5);
 		
 		return true;
