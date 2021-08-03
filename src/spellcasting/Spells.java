@@ -10,6 +10,7 @@ import com.yukiemeralis.blogspot.zenith.module.java.enums.BranchType;
 import com.yukiemeralis.blogspot.zenith.utils.FileUtils;
 
 import spellcasting.relics.recipe.RelicRecipe_CrystalShard;
+import spellcasting.relics.recipe.RelicRecipe_DaoCharm;
 import spellcasting.relics.recipe.RelicRecipe_DragonsAshes;
 import spellcasting.relics.recipe.RelicRecipe_DynamiteCharge;
 import spellcasting.relics.recipe.RelicRecipe_GalvanicNeedle;
@@ -20,6 +21,7 @@ import spellcasting.relics.recipe.RelicRecipe_NaturesWrath;
 import spellcasting.relics.recipe.RelicRecipe_NautilusCharm;
 import spellcasting.relics.recipe.RelicRecipe_RiftTalisman;
 import spellcasting.relics.recipe.RelicRecipe_SkullOfKnight;
+import spellcasting.relics.recipe.RelicRecipe_WeatherCharm;
 import spellcasting.relics.recipe.RelicRecipe_WitheringRose;
 import spellcasting.spells.recipe.ItemRecipe_ManaPotion;
 import spellcasting.spells.recipe.SpellRecipe_BookOfFire;
@@ -30,7 +32,7 @@ import spellcasting.spells.recipe.SpellRecipe_BookOfUnholy;
 import spellcasting.spells.recipe.SpellRecipe_BookOfVoid;
 import spellcasting.spells.recipe.SpellRecipe_BookOfWater;
 
-@Branch(BranchType.NIGHTLY)
+@Branch(BranchType.BETA)
 //Adds safety measures respective to release type.
 @ModInfo
 (
@@ -39,7 +41,7 @@ import spellcasting.spells.recipe.SpellRecipe_BookOfWater;
 		maintainer = "AdrianAdalian", 
 		modIcon = Material.NETHER_STAR, 
 		modName = "SpellCasting", 
-		version = "0.9.5_a"
+		version = "1.0.0_b"
 		,
 		supportedApiVersions = {"v1_17_R1"}
 
@@ -121,6 +123,12 @@ public class Spells extends ZenithModule
 		
 		RelicRecipe_NautilusCharm.Init();
 		RelicRecipe_NautilusCharm.Register();
+		
+		RelicRecipe_DaoCharm.Init();
+		RelicRecipe_DaoCharm.Register();
+		
+		RelicRecipe_WeatherCharm.Init();
+		RelicRecipe_WeatherCharm.Register();
 		
 	}
 }
