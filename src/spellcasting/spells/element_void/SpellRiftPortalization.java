@@ -30,8 +30,8 @@ public class SpellRiftPortalization extends BaseSpell
 			return false;
 		}
 		
-		World nether = Bukkit.getWorld(Bukkit.getWorlds().get(0).getName() + "_nether");
-		//World nether = Bukkit.getWorld("world_nether");
+		//World nether = Bukkit.getWorld(Bukkit.getWorlds().get(0).getName() + "_nether");
+		World nether = Bukkit.getWorld("world_nether");
 		
 		World overworld = Bukkit.getWorlds().get(0);
 		
@@ -69,12 +69,11 @@ public class SpellRiftPortalization extends BaseSpell
 							
 							Bukkit.getWorld("world_nether").loadChunk(current.getChunk());
 							
-							
-							event.getPlayer().teleport(new Location(nether, netherX, loc2.getY(), netherZ).add(0.5, 1, 0.5));
-							
 							current.setType(Material.OBSIDIAN); 
 							current.getRelative(BlockFace.UP).setType(Material.AIR);
 							current.getRelative(BlockFace.UP).getRelative(BlockFace.UP).setType(Material.AIR);
+							
+							event.getPlayer().teleport(new Location(nether, netherX, loc2.getY(), netherZ).add(0.5, 1, 0.5));
 							
 							return true;
 						  //Teleports the caster from the overworld to the nether.
