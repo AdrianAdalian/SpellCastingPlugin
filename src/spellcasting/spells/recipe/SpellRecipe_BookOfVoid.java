@@ -19,7 +19,7 @@ public class SpellRecipe_BookOfVoid
 	public static void Init() 
 	{
 		final_item = new ItemStack(Material.BOOK);
-		ItemUtils.applyName(final_item, "§r§f§ko§r§f§lSpellBook: §r§fBook of §r§3§lVOID§r");
+		ItemUtils.applyName(final_item, "§r§f§ko§r§f§lSpellBook: §r§fBook of §r§3§lVOID§r§f§ko§r");
 		ItemUtils.applyLore(final_item, "§r§fElement: §r§3§lVOID§r§f.","§r§fA spell book containing unstable ethereal properties.","§r§fRight click to open the spellbook while in the hotbar.","§r§fLeft click to engage/disengage spells.");
 		ItemUtils.saveToNamespacedKey(final_item, "SpellBookVoidID", "true");
 		
