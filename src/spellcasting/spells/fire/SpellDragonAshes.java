@@ -7,6 +7,8 @@ import org.bukkit.entity.DragonFireball;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
+
 import spellcasting.spells.BaseSpell;
 
 public class SpellDragonAshes extends BaseSpell
@@ -24,6 +26,7 @@ public class SpellDragonAshes extends BaseSpell
 		
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
 		

@@ -9,6 +9,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import com.yukiemeralis.blogspot.zenith.Zenith;
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
 import spellcasting.spells.BaseSpell;
 
@@ -26,12 +27,14 @@ public class SpellFlameAura extends BaseSpell
 	
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
 		
 		if (event.getPlayer().getNearbyEntities(5, 5, 5).size() == 0)
 		{
-		  return false;
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
 		}
 		long time = System.currentTimeMillis();
 		new BukkitRunnable() 

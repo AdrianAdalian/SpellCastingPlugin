@@ -18,6 +18,7 @@ import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import com.yukiemeralis.blogspot.zenith.Zenith;
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
 import spellcasting.spells.BaseSpell;
 
@@ -34,6 +35,7 @@ public class SpellSuffocate extends BaseSpell
 	{
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
 		
@@ -41,6 +43,7 @@ public class SpellSuffocate extends BaseSpell
 		
 		if (!(target instanceof Player)) 
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
 			return false;
 		}
 			event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.AMBIENT_UNDERWATER_EXIT, SoundCategory.MASTER, 1, 1);

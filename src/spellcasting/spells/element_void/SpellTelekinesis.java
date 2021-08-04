@@ -16,6 +16,8 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
+
 import spellcasting.spells.BaseSpell;
 
 public class SpellTelekinesis extends BaseSpell
@@ -31,6 +33,7 @@ public class SpellTelekinesis extends BaseSpell
 	{
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
 		{
+			PrintUtils.sendMessage("Invalid Cast Method.");
 			return false;
 		}
 		
@@ -38,6 +41,7 @@ public class SpellTelekinesis extends BaseSpell
 		
 		if(target == null) 
 		{
+			PrintUtils.sendMessage("Invalid Target.");
 			return false;
 		}
 		

@@ -16,6 +16,8 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
+
 import spellcasting.spells.BaseSpell;
 
 public class SpellDecompose extends BaseSpell
@@ -31,12 +33,14 @@ public class SpellDecompose extends BaseSpell
 	{
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
 		
 		Entity target = getNearestEntityInSight(event.getPlayer(), 5);
 		if ((target == null)) 
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
 			return false;
 		}
 		if ((target instanceof LivingEntity)) 

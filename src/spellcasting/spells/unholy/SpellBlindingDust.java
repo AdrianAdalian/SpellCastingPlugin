@@ -15,6 +15,8 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
+
 import spellcasting.spells.BaseSpell;
 
 public class SpellBlindingDust extends BaseSpell
@@ -32,6 +34,7 @@ public class SpellBlindingDust extends BaseSpell
 	
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false; 
 		}
 		

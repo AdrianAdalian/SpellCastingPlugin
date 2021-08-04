@@ -18,6 +18,7 @@ import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import com.yukiemeralis.blogspot.zenith.Zenith;
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
 import spellcasting.spells.BaseSpell;
 
@@ -35,6 +36,7 @@ public class SpellAccolades extends BaseSpell
 		
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false; 
 		}
 		
@@ -42,6 +44,7 @@ public class SpellAccolades extends BaseSpell
 		
 		if (!(target instanceof Player)) 
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
 			return false;
 		}
 			

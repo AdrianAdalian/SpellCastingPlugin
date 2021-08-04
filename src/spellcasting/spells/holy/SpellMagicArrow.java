@@ -8,6 +8,8 @@ import org.bukkit.entity.Arrow;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
+
 import spellcasting.spells.BaseSpell;
 
 public class SpellMagicArrow extends BaseSpell
@@ -24,6 +26,7 @@ public class SpellMagicArrow extends BaseSpell
 		
 		if (!event.getAction().equals(Action.LEFT_CLICK_AIR))
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
 		

@@ -36,10 +36,12 @@ public class SpellAccelerate extends BaseSpell
 
 		if(event.getAction().equals(Action.LEFT_CLICK_AIR)) 
 		{
+			PrintUtils.sendMessage("Invalid Cast Method.");
 			return false;
 		}
 		if (event.getAction().equals(Action.LEFT_CLICK_BLOCK)) 
 		{
+			PrintUtils.sendMessage("Invalid Cast Method.");
 			return false;
 		}
 		
@@ -75,6 +77,7 @@ public class SpellAccelerate extends BaseSpell
 		
 		if (target2==null) 
 		{
+			PrintUtils.sendMessage("Invalid Target.");
 			return false;
 		}
 		

@@ -16,6 +16,8 @@ import org.bukkit.entity.ZombieVillager;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
+
 import spellcasting.spells.BaseSpell;
 
 public class SpellRaiseDead extends BaseSpell
@@ -34,11 +36,13 @@ public class SpellRaiseDead extends BaseSpell
 	
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
 	
 		if(target == null) 
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
 			return false;
 		}
 		

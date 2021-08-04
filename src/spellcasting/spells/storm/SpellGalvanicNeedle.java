@@ -6,6 +6,8 @@ import org.bukkit.SoundCategory;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
+
 import spellcasting.spells.BaseSpell;
 import spellcastingprojectiles.SpellProjectile_GalvanicNeedle;
 
@@ -22,6 +24,7 @@ public class SpellGalvanicNeedle extends BaseSpell
 		
 		if (!event.getAction().equals(Action.LEFT_CLICK_AIR))
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
 		

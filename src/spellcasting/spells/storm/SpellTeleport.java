@@ -10,6 +10,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import com.yukiemeralis.blogspot.zenith.Zenith;
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
 import spellcasting.spells.BaseSpell;
 
@@ -28,6 +29,7 @@ public class SpellTeleport extends BaseSpell
 			
 			if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
 			{
+				PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 				return false;
 			}
 			
@@ -49,6 +51,7 @@ public class SpellTeleport extends BaseSpell
 				  {
 						event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, SoundCategory.MASTER, 1, 1);
 				  }
+				 
 			}.runTaskLater(Zenith.getInstance(), 10);
 			Location newlocation = target.getLocation().add(new Location(event.getPlayer().getWorld(), 0.5, 1, 0.5)) ;
 			newlocation.setYaw(YAW);

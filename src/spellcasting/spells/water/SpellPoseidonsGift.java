@@ -6,6 +6,8 @@ import org.bukkit.SoundCategory;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
+
 import spellcasting.nightside.mana.PlayerDataMap;
 import spellcasting.nightside.mana.SpellManaInterface;
 import spellcasting.spells.BaseSpell;
@@ -23,8 +25,10 @@ public class SpellPoseidonsGift extends BaseSpell
 	{
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
 		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
+		
 		if (event.getPlayer().isSwimming())
 		{
 			event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.MASTER, 1, 1);			

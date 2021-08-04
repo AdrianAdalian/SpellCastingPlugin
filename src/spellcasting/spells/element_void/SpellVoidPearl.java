@@ -7,6 +7,8 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.Inventory;
 
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
+
 import spellcasting.spells.BaseSpell;
 
 public class SpellVoidPearl extends BaseSpell
@@ -23,6 +25,7 @@ public class SpellVoidPearl extends BaseSpell
 		
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
 		{
+			PrintUtils.sendMessage("Invalid Cast Method.");
 			return false;
 		}
 		
