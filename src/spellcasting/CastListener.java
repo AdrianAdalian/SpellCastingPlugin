@@ -235,18 +235,19 @@ public class CastListener implements Listener
 	  put("SpellDaoCharm", new SpellDaoCharm()); //1.A (85)
 	  put("SpellWeatherCharm", new SpellWeatherCharm()); //2.A (86)
 	  put("SpellLevitate", new SpellLevitate()); //3.A (87)
-	  put("SpellVoidShift", new SpellVoidShift()); //4.A (89)
-	  put("SpellTelekinesis", new SpellTelekinesis()); //5.A (90)
-	  put("SpellVoidPearl", new SpellVoidPearl()); //5.A (91)
-	  put("SpellNullPointConfiguration", new SpellNullPointConfiguration()); //6.A (92)
-	  put("SpellEtherContinuity", new SpellEtherContinuity()); //7.A (93)
+	  put("SpellVoidShift", new SpellVoidShift()); //4.A (88)
+	  put("SpellTelekinesis", new SpellTelekinesis()); //5.A (89)
+	  put("SpellVoidPearl", new SpellVoidPearl()); //6.A (90)
+	  put("SpellNullPointConfiguration", new SpellNullPointConfiguration()); //7.A (91)
+	  put("SpellEtherContinuity", new SpellEtherContinuity()); //8.A (92)
 	  
-	  put("SpellMatterReversal", new SpellMatterReversal()); //8.A (94)
-	  put("SpellVoidBolt", new SpellVoidBolt()); //9.A(95)
-	  put("SpellRiftPortalization", new SpellRiftPortalization()); //10.A (96)
-	  put("SpellAccelerate", new SpellAccelerate()); //11.A (97)
-	  put("SpellAntimatter", new SpellAntimatter()); //12.A (98)
-	  put("SpellCataclysm", new SpellCataclysm()); //13.A (99)
+	  put("SpellMatterReversal", new SpellMatterReversal()); //9.A (93)
+	  put("SpellVoidBolt", new SpellVoidBolt()); //10.A(94)
+	  put("SpellRiftPortalization", new SpellRiftPortalization()); //11.A (95)
+	  put("SpellAccelerate", new SpellAccelerate()); //12.A (96)
+	  put("SpellAntimatter", new SpellAntimatter()); //13.A (97)
+	  put("SpellCataclysm", new SpellCataclysm()); //14.A (98)
+	  
 	  
 	  
 	}};

@@ -37,7 +37,7 @@ import spellcasting.spells.recipe.SpellRecipe_BookOfWater;
 @ModInfo
 (
 
-		description = "A spell casting system. Current loaded spells: 90", 
+		description = "A spell casting system. Current loaded spells: 98", 
 		maintainer = "AdrianAdalian", 
 		modIcon = Material.NETHER_STAR, 
 		modName = "SpellCasting", 
