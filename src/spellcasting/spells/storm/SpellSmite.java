@@ -20,7 +20,7 @@ public class SpellSmite extends BaseSpell
 	@Override
 	public boolean cast(PlayerInteractEvent event)
 	{
-		if(event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
+		if(!event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
 		{
 			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
@@ -29,6 +29,12 @@ public class SpellSmite extends BaseSpell
 		int TARGETRANGE = 10 ;
 		
 		Block target = event.getPlayer().getTargetBlock(null, TARGETRANGE) ;
+		
+		if (target==null) 
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target");
+			return false;
+		}
 		
 		if (target.getType().equals(Material.AIR))
 		{

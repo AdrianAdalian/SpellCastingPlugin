@@ -41,7 +41,7 @@ import spellcasting.spells.recipe.SpellRecipe_BookOfWater;
 		maintainer = "AdrianAdalian", 
 		modIcon = Material.NETHER_STAR, 
 		modName = "SpellCasting", 
-		version = "1.0.0_b"
+		version = "1.0.3_b"
 		,
 		supportedApiVersions = {"v1_17_R1"}
 

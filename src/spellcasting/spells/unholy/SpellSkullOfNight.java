@@ -76,6 +76,7 @@ public class SpellSkullOfNight extends BaseSpell
 			}
 			return true;
 		}
+		PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
 		return false;
 	}
 	
