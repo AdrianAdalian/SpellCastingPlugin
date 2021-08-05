@@ -59,6 +59,7 @@ public class SpellRiftPortalization extends BaseSpell
 						}
 						if (current.getRelative(BlockFace.UP).getType().isAir() && current.getRelative(BlockFace.UP).getRelative(BlockFace.UP).getType().isAir()) 
 						{
+							Bukkit.getWorld("world_nether").loadChunk(current.getChunk());
 							
 							PrintUtils.log("Location Found");
 							
@@ -66,9 +67,9 @@ public class SpellRiftPortalization extends BaseSpell
 							double netherX = loc2.getX() * 8;
 							double netherZ = loc2.getZ() * 8;
 							
-							PrintUtils.log("We've calculated a locale.");
-							
-							Bukkit.getWorld("world_nether").loadChunk(current.getChunk());
+							PrintUtils.log("Current Chunk Is:" + current.getChunk());
+							PrintUtils.log("Current is X" + current.getLocation().getX() + ", Y"  + current.getLocation().getY() + ", Z" + current.getLocation().getZ());
+						
 							
 							current.setType(Material.OBSIDIAN); 
 							current.getRelative(BlockFace.UP).setType(Material.AIR);
