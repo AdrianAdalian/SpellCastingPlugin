@@ -275,6 +275,7 @@ public class CastListener implements Listener
 				{
 					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - spell_registry.get(spell).getManaCost());
 					SpellManaInterface.updateScoreBoard(event.getPlayer());
+					return;		
 				}
 				return;
 			}
