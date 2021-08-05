@@ -19,7 +19,7 @@ public class SpellRagingCurrent extends BaseSpell
 
 	public SpellRagingCurrent()
 	{
-		super(Material.LIGHT_BLUE_DYE, "§r§7§ko§r§7§lSpell: §r§fRaging Current§r§7§ko§r", 15, true, "§r§fElement: §r§9Water§r§f.","§r§fSummon a raging current that","§r§fdrastically increases caster swim speed.","§r§fDuration: 30 seconds.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.LIGHT_BLUE_DYE, "§r§7§ko§r§7§lSpell: §r§fRaging Current§r§7§ko§r", 15, true, "§r§fElement: §r§9Water§r§f.","§r§fSummon a raging current that","§r§fdrastically increases caster swim speed.","§r§fDuration: 30 seconds.","§r§fMana cost: 15 §r§9mana§r§f.");
 	}
 
 	@Override
@@ -41,7 +41,7 @@ public class SpellRagingCurrent extends BaseSpell
 			{
 			   event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_CONDUIT_DEACTIVATE, SoundCategory.MASTER, 1, 1);
 			}
-		}.runTaskLater(Zenith.getInstance(), 405);
+		}.runTaskLater(Zenith.getInstance(), 605);
 		return true;
 	}	
 }

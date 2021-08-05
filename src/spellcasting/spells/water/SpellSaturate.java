@@ -17,7 +17,7 @@ public class SpellSaturate extends BaseSpell
 
 	public SpellSaturate()
 	{
-		super(Material.LAPIS_LAZULI, "§r§7§ko§r§7§lSpell: §r§fSaturate§r§7§ko§r", 5, true, "§r§fElement: §r§9Water§r§f.","§r§fSaturate a nearby block, turning it into water.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.LAPIS_LAZULI, "§r§7§ko§r§7§lSpell: §r§fSaturate§r§7§ko§r", 5, true, "§r§fElement: §r§9Water§r§f.","§r§fSaturate a nearby block, turning it into water.","§r§fRange: 5 meters.","§r§fMana cost: 5 §r§9mana§r§f.");
 	}
 
 	@Override
