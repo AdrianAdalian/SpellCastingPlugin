@@ -17,7 +17,7 @@ public class SpellKindleFlame extends BaseSpell
 
 	public SpellKindleFlame()
 	{
-		super(Material.BLAZE_POWDER, "§r§7§ko§r§7§lSpell: §r§fKindle Flame§r§7§ko§r", 5, false, "§r§fElement: §r§cFire§r§f.","§r§fIgnites the nearby target block on fire.","§r§fRange: 5 meters.","§r§fMana cost: 10 §r§9mana§r§f.");
+		super(Material.BLAZE_POWDER, "§r§7§ko§r§7§lSpell: §r§fKindle Flame§r§7§ko§r", 5, false, "§r§fElement: §r§cFire§r§f.","§r§fIgnites the nearby target block on fire.","§r§fRange: 5 meters.","§r§fMana cost: 5 §r§9mana§r§f.");
 	}
 
 	@Override
@@ -33,6 +33,12 @@ public class SpellKindleFlame extends BaseSpell
 		int TARGETRANGE = 5;
 		
 		Block target = event.getPlayer().getTargetBlock(null, TARGETRANGE) ;
+		
+		if (target==null) 
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
 		
 		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_FLINTANDSTEEL_USE, SoundCategory.MASTER, 1, 1);
 		
