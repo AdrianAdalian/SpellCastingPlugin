@@ -3,27 +3,15 @@ package spellcasting;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener ;
-import org.bukkit.event.block.Action;
-import org.bukkit.event.player.PlayerInteractEvent ;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
-import org.bukkit.inventory.EquipmentSlot;
-import org.bukkit.inventory.ItemStack;
 
+import com.yukiemeralis.blogspot.zenith.module.java.annotations.HideFromCollector;
 import com.yukiemeralis.blogspot.zenith.utils.ItemUtils;
-import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
 import spellcasting.nightside.mana.PlayerDataMap;
 import spellcasting.nightside.mana.SpellManaInterface;
-import spellcasting.registered.gui.SpellGUI_Fire;
-import spellcasting.registered.gui.SpellGUI_Geo;
-import spellcasting.registered.gui.SpellGUI_Holy;
-import spellcasting.registered.gui.SpellGUI_Storm;
-import spellcasting.registered.gui.SpellGUI_Unholy;
-import spellcasting.registered.gui.SpellGUI_Void;
-import spellcasting.registered.gui.SpellGUI_Water;
 import spellcasting.spells.BaseSpell;
 import spellcasting.spells.element_void.SpellAccelerate;
 import spellcasting.spells.element_void.SpellAntimatter;
@@ -124,11 +112,12 @@ import spellcasting.spells.water.SpellTidalForce;
 import spellcasting.spells.water.SpellTidalWave;
 import spellcasting.spells.water.SpellWaterLash;
 
+@HideFromCollector
 public class CastListener implements Listener
 {
 	
 	@SuppressWarnings("serial")
-	static Map<String, BaseSpell> spell_registry = new HashMap<>()
+	public static Map<String, BaseSpell> spell_registry = new HashMap<>()
 	{{
 	  
 	  put("SpellFireBall", new SpellFireBall()); //1
@@ -247,124 +236,9 @@ public class CastListener implements Listener
 	  put("SpellAccelerate", new SpellAccelerate()); //12.A (96)
 	  put("SpellAntimatter", new SpellAntimatter()); //13.A (97)
 	  put("SpellCataclysm", new SpellCataclysm()); //14.A (98)
-	  
-	  
-	  
+	
 	}};
 	
-	@EventHandler
-	
-	public void onCast(PlayerInteractEvent event) 
-	{
-		
-		ItemStack held;
-		held = event.getPlayer().getInventory().getItem(EquipmentSlot.HAND) ;
-		if(held==null || held.getType().equals(Material.AIR))
-		{
-			return ;
-		}
-		if(ItemUtils.hasNamespacedKey(held, "spellname")) 
-		{
-			event.setCancelled(true);
-			
-			PrintUtils.log(event.getAction().toString());
-			
-			String spell = ItemUtils.readFromNamespacedKey(held, "spellname");
-			
-			if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()>=spell_registry.get(spell).getManaCost()) 
-			{
-				if(spell_registry.get(spell).cast(event)) 
-				{
-					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - spell_registry.get(spell).getManaCost());
-					SpellManaInterface.updateScoreBoard(event.getPlayer());
-					return;		
-				}
-				return;
-			}
-			
-			PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
-			
-			return;
-		}
-		
-		if (ItemUtils.hasNamespacedKey(held, "SpellBookStormID"))
-		{
-			if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
-			{
-				return;
-			}	
-			event.setCancelled(true);
-			SpellGUI_Storm gui = new SpellGUI_Storm();
-			gui.init();
-			gui.display(event.getPlayer());
-		}
-		if (ItemUtils.hasNamespacedKey(held, "SpellBookFireID"))
-		{
-			if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
-			{
-				return;
-			}	
-			event.setCancelled(true);
-			SpellGUI_Fire gui = new SpellGUI_Fire();
-			gui.init();
-			gui.display(event.getPlayer());
-		}
-		if (ItemUtils.hasNamespacedKey(held, "SpellBookUnholyID"))
-		{
-			if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
-			{
-				return;
-			}	
-			event.setCancelled(true);
-			SpellGUI_Unholy gui = new SpellGUI_Unholy();
-			gui.init();
-			gui.display(event.getPlayer());
-		}
-		if (ItemUtils.hasNamespacedKey(held, "SpellBookGeoID"))
-		{
-			if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
-			{
-				return;
-			}	
-			event.setCancelled(true);
-			SpellGUI_Geo gui = new SpellGUI_Geo();
-			gui.init();
-			gui.display(event.getPlayer());
-		}
-		if (ItemUtils.hasNamespacedKey(held, "SpellBookHolyID"))
-		{
-			if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
-			{
-				return;
-			}	
-			event.setCancelled(true);
-			SpellGUI_Holy gui = new SpellGUI_Holy();
-			gui.init();
-			gui.display(event.getPlayer());
-		}
-		if (ItemUtils.hasNamespacedKey(held, "SpellBookWaterID"))
-		{
-			if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
-			{
-				return;
-			}	
-			event.setCancelled(true);
-			SpellGUI_Water gui = new SpellGUI_Water();
-			gui.init();
-			gui.display(event.getPlayer());
-		}
-		if (ItemUtils.hasNamespacedKey(held, "SpellBookVoidID"))
-		{
-			if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
-			{
-				return;
-			}	
-			event.setCancelled(true);
-			SpellGUI_Void gui = new SpellGUI_Void();
-			gui.init();
-			gui.display(event.getPlayer());
-		}
-	}
 	@EventHandler
 	public void onItemConsume(PlayerItemConsumeEvent event)
 	{

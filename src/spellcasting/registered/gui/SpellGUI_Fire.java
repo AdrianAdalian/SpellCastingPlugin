@@ -6,6 +6,7 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 
 import com.yukiemeralis.blogspot.modules.zenithgui.base.DynamicGui;
 
+import spellcasting.CastListener;
 import spellcasting.spells.fire.SpellFireBall;
 import spellcasting.spells.fire.SpellFlameAura;
 import spellcasting.spells.fire.SpellFlamethrower;
@@ -13,7 +14,6 @@ import spellcasting.spells.fire.SpellHeatWave;
 import spellcasting.spells.fire.SpellIgnite;
 import spellcasting.spells.fire.SpellIgnitionDrive;
 import spellcasting.spells.fire.SpellInsulationPowder;
-import spellcasting.spells.fire.SpellKindleFlame;
 import spellcasting.spells.fire.SpellMeteor;
 import spellcasting.spells.fire.SpellOverclockProtocol;
 import spellcasting.spells.fire.SpellSmokeScreen;
@@ -32,7 +32,7 @@ public class SpellGUI_Fire extends DynamicGui
 		
 		paint();
 		
-		addComponent(19, new SpellKindleFlame());
+		addComponent(19, CastListener.spell_registry.get("SpellKindleFlame"));
 		addComponent(20, new SpellIgnite());
 		addComponent(21, new SpellHeatWave());
 		addComponent(22, new SpellIgnitionDrive());

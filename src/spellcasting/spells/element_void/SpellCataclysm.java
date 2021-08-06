@@ -30,7 +30,7 @@ public class SpellCataclysm extends BaseSpell
 
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
 		{
-			PrintUtils.sendMessage("Invalid Cast Method.");
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
 		
@@ -43,7 +43,7 @@ public class SpellCataclysm extends BaseSpell
 		
 		if (target.getType().equals(Material.AIR))
 		{
-			PrintUtils.sendMessage("Invalid Target.");
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
 			return false;
 		}
 		

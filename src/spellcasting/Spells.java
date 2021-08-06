@@ -3,11 +3,13 @@ package spellcasting;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 
+import com.yukiemeralis.blogspot.zenith.Zenith;
 import com.yukiemeralis.blogspot.zenith.module.ZenithModule;
 import com.yukiemeralis.blogspot.zenith.module.ZenithModule.ModInfo;
 import com.yukiemeralis.blogspot.zenith.module.java.annotations.Branch;
 import com.yukiemeralis.blogspot.zenith.module.java.enums.BranchType;
 import com.yukiemeralis.blogspot.zenith.utils.FileUtils;
+import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
 import spellcasting.relics.recipe.RelicRecipe_CrystalShard;
 import spellcasting.relics.recipe.RelicRecipe_DaoCharm;
@@ -36,20 +38,22 @@ import spellcasting.spells.recipe.SpellRecipe_BookOfWater;
 //Adds safety measures respective to release type.
 @ModInfo
 (
-
 		description = "A spell casting system. Current loaded spells: 98", 
 		maintainer = "AdrianAdalian", 
 		modIcon = Material.NETHER_STAR, 
 		modName = "SpellCasting", 
-		version = "1.0.3_b"
-		,
+		version = "1.0.3_b",
 		supportedApiVersions = {"v1_17_R1"}
-
 )
 
 public class Spells extends ZenithModule 
 {
-
+	
+	public Spells()
+	{
+		
+	}
+	
 	@Override
 	public void onDisable() 
 	{
@@ -61,6 +65,10 @@ public class Spells extends ZenithModule
 	@Override
 	public void onEnable() 
 	{
+		
+		//Bukkit.getPluginManager().registerEvents(new CastListener(), Zenith.getInstance());
+		
+		PrintUtils.log("fuck");
 		
 		FileUtils.ensureFolder("./plugins/Spellcasting/data/");
 		

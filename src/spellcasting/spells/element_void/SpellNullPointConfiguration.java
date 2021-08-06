@@ -24,7 +24,7 @@ public class SpellNullPointConfiguration extends BaseSpell
 
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
 		{
-			PrintUtils.sendMessage("Invalid Cast Method.");
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
 		
