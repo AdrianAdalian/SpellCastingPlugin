@@ -267,6 +267,8 @@ public class CastListener implements Listener
 		{
 			event.setCancelled(true);
 			
+			PrintUtils.log(event.getAction().toString());
+			
 			String spell = ItemUtils.readFromNamespacedKey(held, "spellname");
 			
 			if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()>=spell_registry.get(spell).getManaCost()) 
