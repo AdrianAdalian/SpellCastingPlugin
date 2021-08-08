@@ -1,6 +1,7 @@
 package spellcasting;
 
 import org.bukkit.Material;
+import org.bukkit.block.BlockFace;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
@@ -33,7 +34,13 @@ public class CastingListener implements Listener
 		
 		if (event.getHand().equals(EquipmentSlot.OFF_HAND))
 		{
-		  return;
+			return;
+		}
+		
+		if (event.getClickedBlock().getRelative(BlockFace.UP).getType().equals(Material.FIRE)) 
+		{
+			event.setCancelled(true);
+			return;
 		}
 		
 		if(held==null || held.getType().equals(Material.AIR))
