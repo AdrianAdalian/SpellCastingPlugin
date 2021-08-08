@@ -3,13 +3,11 @@ package spellcasting;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 
-import com.yukiemeralis.blogspot.zenith.Zenith;
 import com.yukiemeralis.blogspot.zenith.module.ZenithModule;
 import com.yukiemeralis.blogspot.zenith.module.ZenithModule.ModInfo;
 import com.yukiemeralis.blogspot.zenith.module.java.annotations.Branch;
 import com.yukiemeralis.blogspot.zenith.module.java.enums.BranchType;
 import com.yukiemeralis.blogspot.zenith.utils.FileUtils;
-import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
 import spellcasting.relics.recipe.RelicRecipe_CrystalShard;
 import spellcasting.relics.recipe.RelicRecipe_DaoCharm;
@@ -66,9 +64,7 @@ public class Spells extends ZenithModule
 	public void onEnable() 
 	{
 		
-		//Bukkit.getPluginManager().registerEvents(new CastListener(), Zenith.getInstance());
 		
-		PrintUtils.log("fuck");
 		
 		FileUtils.ensureFolder("./plugins/Spellcasting/data/");
 		

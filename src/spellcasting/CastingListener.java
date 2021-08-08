@@ -30,6 +30,12 @@ public class CastingListener implements Listener
 		DataUtils.generateStackTrace("");
 		ItemStack held;
 		held = event.getPlayer().getInventory().getItem(EquipmentSlot.HAND) ;
+		
+		if (event.getHand().equals(EquipmentSlot.OFF_HAND))
+		{
+		  return;
+		}
+		
 		if(held==null || held.getType().equals(Material.AIR))
 		{
 			return ;
