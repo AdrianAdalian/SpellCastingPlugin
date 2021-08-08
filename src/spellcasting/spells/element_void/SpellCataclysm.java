@@ -12,7 +12,6 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import com.yukiemeralis.blogspot.zenith.Zenith;
-import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
 import spellcasting.spells.BaseSpell;
 
@@ -30,7 +29,6 @@ public class SpellCataclysm extends BaseSpell
 
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
 		{
-			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
 		
@@ -43,7 +41,6 @@ public class SpellCataclysm extends BaseSpell
 		
 		if (target.getType().equals(Material.AIR))
 		{
-			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
 			return false;
 		}
 		

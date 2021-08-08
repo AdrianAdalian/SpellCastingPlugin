@@ -7,8 +7,6 @@ import org.bukkit.block.Block;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
-import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
-
 import spellcasting.spells.BaseSpell;
 
 public class SpellAntimatter extends BaseSpell
@@ -24,7 +22,6 @@ public class SpellAntimatter extends BaseSpell
 	{
 		if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
 		{
-			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
 		
@@ -34,7 +31,6 @@ public class SpellAntimatter extends BaseSpell
 		
 		if (target.getType().equals(Material.AIR)) 
 		{
-			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
 			return false;
 		}
 		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_SHULKER_SHOOT, SoundCategory.MASTER, 1, 1);

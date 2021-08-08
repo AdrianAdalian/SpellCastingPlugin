@@ -9,6 +9,7 @@ import com.yukiemeralis.blogspot.zenith.module.java.annotations.Branch;
 import com.yukiemeralis.blogspot.zenith.module.java.enums.BranchType;
 import com.yukiemeralis.blogspot.zenith.utils.FileUtils;
 
+import spellcasting.divineweapon.weapon_recipe.WeaponRecipe_WandOfFire;
 import spellcasting.relics.recipe.RelicRecipe_CrystalShard;
 import spellcasting.relics.recipe.RelicRecipe_DaoCharm;
 import spellcasting.relics.recipe.RelicRecipe_DragonsAshes;
@@ -133,6 +134,10 @@ public class Spells extends ZenithModule
 		
 		RelicRecipe_WeatherCharm.Init();
 		RelicRecipe_WeatherCharm.Register();
+		
+		WeaponRecipe_WandOfFire.Init();
+		WeaponRecipe_WandOfFire.Register();
+		
 		
 	}
 }

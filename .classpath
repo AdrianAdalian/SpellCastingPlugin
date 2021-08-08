@@ -11,6 +11,6 @@
 	<classpathentry kind="lib" path="lib/ZenithCore.jar"/>
 	<classpathentry kind="lib" path="lib/ZenithGui.jar"/>
 	<classpathentry kind="lib" path="lib/ZenithProjectiles.jar"/>
-	<classpathentry kind="lib" path="lib/Zenith-80121-2.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/Zenith-80521-2.2.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
