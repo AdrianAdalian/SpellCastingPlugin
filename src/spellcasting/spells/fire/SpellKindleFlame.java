@@ -30,6 +30,11 @@ public class SpellKindleFlame extends BaseSpell
 			return false;
 		}
 		
+		if (event.getClickedBlock().getType().equals(Material.FIRE)) 
+		{
+			event.setCancelled(true);
+			return false;
+		}	
 		int TARGETRANGE = 5;
 		
 		Block target = event.getPlayer().getTargetBlock(null, TARGETRANGE) ;

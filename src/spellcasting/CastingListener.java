@@ -1,7 +1,6 @@
 package spellcasting;
 
 import org.bukkit.Material;
-import org.bukkit.block.BlockFace;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
@@ -9,7 +8,6 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 
-import com.yukiemeralis.blogspot.zenith.utils.DataUtils;
 import com.yukiemeralis.blogspot.zenith.utils.ItemUtils;
 import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
@@ -28,18 +26,11 @@ public class CastingListener implements Listener
 	@EventHandler
 	public void onCast(PlayerInteractEvent event) 
 	{
-		DataUtils.generateStackTrace("");
 		ItemStack held;
 		held = event.getPlayer().getInventory().getItem(EquipmentSlot.HAND) ;
 		
 		if (event.getHand().equals(EquipmentSlot.OFF_HAND))
 		{
-			return;
-		}
-		
-		if (event.getClickedBlock().getRelative(BlockFace.UP).getType().equals(Material.FIRE)) 
-		{
-			event.setCancelled(true);
 			return;
 		}
 		
