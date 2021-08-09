@@ -8,30 +8,30 @@ import org.bukkit.inventory.ShapelessRecipe;
 
 import com.yukiemeralis.blogspot.zenith.Zenith;
 
-import spellcasting.divineweapon.weapon_spell_item.DivineWeapon_WandOfFire;
+import spellcasting.divineweapon.weapon_spell_item.DivineWeapon_NetherScythe;
 import spellcasting.spells.BaseSpell;
 
-public class WeaponRecipe_WandOfFire
+public class WeaponRecipe_NetherScythe
 {
 	static ItemStack final_item;
 	
 	public static void Init() 
 	{
-		BaseSpell WandOfFire = new DivineWeapon_WandOfFire();
-		final_item = WandOfFire.toIcon();
+		BaseSpell NetherScythe = new DivineWeapon_NetherScythe();
+		final_item = NetherScythe.toIcon();
 	}
 	
 	public static void Register()
 	{
 		
-		NamespacedKey key = new NamespacedKey(Zenith.getInstance(), "divine_weapon_wand_of_fire");
+		NamespacedKey key = new NamespacedKey(Zenith.getInstance(), "divine_weapon_nether_scythe");
 		ShapelessRecipe recipe = new ShapelessRecipe(key, final_item);
 		
-		recipe.addIngredient(Material.STICK);
-		recipe.addIngredient(Material.BLAZE_POWDER);
+		recipe.addIngredient(Material.NETHERITE_HOE);
+		recipe.addIngredient(Material.WITHER_SKELETON_SKULL);
 		
 		Bukkit.addRecipe(recipe);
-		
+
 	}
 	public static ItemStack getFinal_item()
 	{

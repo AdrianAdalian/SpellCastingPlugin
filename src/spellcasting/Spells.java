@@ -9,6 +9,8 @@ import com.yukiemeralis.blogspot.zenith.module.java.annotations.Branch;
 import com.yukiemeralis.blogspot.zenith.module.java.enums.BranchType;
 import com.yukiemeralis.blogspot.zenith.utils.FileUtils;
 
+import spellcasting.divineweapon.weapon_recipe.WeaponRecipe_NetherScythe;
+import spellcasting.divineweapon.weapon_recipe.WeaponRecipe_Penance;
 import spellcasting.divineweapon.weapon_recipe.WeaponRecipe_WandOfFire;
 import spellcasting.relics.recipe.RelicRecipe_CrystalShard;
 import spellcasting.relics.recipe.RelicRecipe_DaoCharm;
@@ -37,11 +39,11 @@ import spellcasting.spells.recipe.SpellRecipe_BookOfWater;
 //Adds safety measures respective to release type.
 @ModInfo
 (
-		description = "A spell casting system. Current loaded spells: 98", 
+		description = "A spell casting system. Current loaded spells: 100", 
 		maintainer = "AdrianAdalian", 
 		modIcon = Material.NETHER_STAR, 
 		modName = "SpellCasting", 
-		version = "1.0.3_b",
+		version = "1.1.1_b",
 		supportedApiVersions = {"v1_17_R1"}
 )
 
@@ -138,6 +140,11 @@ public class Spells extends ZenithModule
 		WeaponRecipe_WandOfFire.Init();
 		WeaponRecipe_WandOfFire.Register();
 		
+		WeaponRecipe_NetherScythe.Init();
+		WeaponRecipe_NetherScythe.Register();
+		
+		WeaponRecipe_Penance.Init();
+		WeaponRecipe_Penance.Register();
 		
 	}
 }

@@ -10,6 +10,8 @@ import org.bukkit.event.player.PlayerItemConsumeEvent;
 import com.yukiemeralis.blogspot.zenith.module.java.annotations.HideFromCollector;
 import com.yukiemeralis.blogspot.zenith.utils.ItemUtils;
 
+import spellcasting.divineweapon.weapon_spell_item.DivineWeapon_NetherScythe;
+import spellcasting.divineweapon.weapon_spell_item.DivineWeapon_Penance;
 import spellcasting.divineweapon.weapon_spell_item.DivineWeapon_WandOfFire;
 import spellcasting.nightside.mana.PlayerDataMap;
 import spellcasting.nightside.mana.SpellManaInterface;
@@ -238,7 +240,9 @@ public class CastListener implements Listener
 	  put("SpellAntimatter", new SpellAntimatter()); //13.A (97)
 	  put("SpellCataclysm", new SpellCataclysm()); //14.A (98)
 	  
-	  put("DivineWeapon_WandOfFire", new DivineWeapon_WandOfFire());
+	  put("DivineWeapon_WandOfFire", new DivineWeapon_WandOfFire()); //1.B (99)
+	  put("DivineWeapon_NetherScythe", new DivineWeapon_NetherScythe()); //2.B (100)
+	  put("DivineWeapon_Penance", new DivineWeapon_Penance()); //3.B (101)
 	
 	}};
 	
