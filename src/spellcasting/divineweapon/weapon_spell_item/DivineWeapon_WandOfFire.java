@@ -20,7 +20,7 @@ public class DivineWeapon_WandOfFire extends BaseSpell
 
 	public DivineWeapon_WandOfFire()
 	{
-		super(Material.STICK, ChatUtils.of("Magic Weapon: Wand of Fire", "FFE748","FF1919","§l§o"), 0, false, "§r§fElement: §r§cFire§r§f.","§r§fA simple stick infused with the element of §r§cFire§r§f.","§r§7§lSpell: §r§fEmber.","§r§f[Left Click] Cast a tiny burst of flame towards a target.","§r§fMana cost: 5 §r§9mana§r§f.","§r§fAbility: Nullify Temperature.","§r§f[Right Click] Grant brief heat aborption.","§r§fDuration: 10 seconds.","§r§fMana cost: 5 §r§9mana§r§f.");
+		super(Material.STICK, ChatUtils.of("Magic Weapon: Wand of Fire", "FFE748","FF1919","§l§o"), 0, false, "§r§fElement: §r§cFire§r§f.","§r§fA simple stick infused with the element of §r§cFire§r§f.","§r§7§lSpell: §r§fEmber.","§r§f[Left Click] Cast a tiny burst of flame towards a target.","§r§fMana cost: 5 §r§9mana§r§f.","§r§6Ability§r§f: Nullify Temperature.","§r§f[Right Click] Grant brief heat aborption.","§r§fDuration: 10 seconds.","§r§fMana cost: 5 §r§9mana§r§f.");
 	}
 
 	@Override

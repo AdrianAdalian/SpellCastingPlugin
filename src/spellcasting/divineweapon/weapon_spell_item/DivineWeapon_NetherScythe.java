@@ -29,7 +29,7 @@ public class DivineWeapon_NetherScythe extends BaseSpell
 
 	public DivineWeapon_NetherScythe()
 	{
-		super(Material.NETHERITE_HOE, ChatUtils.of("Magic Weapon: Defiled Scythe", "FFE748","581845","§l§o"), 0, true, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fA gardening tool defiled by the §r§4§o§lUnholy§r§f.","§r§fNow resembling the shape of a scythe,","§r§fthis tool is radiating magic properties and","§r§fdepending on the usage, curious effects will occur.","§r§fAbility: Mana Harvest.","§r§f[Right Click] While targeting an enemy mob,","§r§4Drain§r§f 10 §r§9mana§r§f while dealing 1 heart of §r§cdamage§r§f.","§r§fRange: 10 meters.","§r§fAbility: Expiate.","§r§f[Right Click] If a target is unavailable, grant","§r§fincreased interact speed and damage output.","§r§fDuration: 15 seconds.","§r§fMana cost: 15 §r§9mana§r§f.");
+		super(Material.NETHERITE_HOE, ChatUtils.of("Magic Weapon: Defiled Scythe", "FFE748","581845","§l§o"), 0, true, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fA gardening tool defiled by the §r§4§o§lUnholy§r§f.","§r§6Ability§r§f: Mana Harvest.","§r§f[Right Click] While targeting an enemy mob,","§r§4Drain§r§f 10 §r§9mana§r§f while dealing 1 heart of §r§cdamage§r§f.","§r§fRange: 10 meters.","§r§6Ability§r§f: Expiate.","§r§f[Right Click] If a target is unavailable, grant","§r§fincreased interact speed and damage output.","§r§fDuration: 15 seconds.","§r§fMana cost: 15 §r§9mana§r§f.");
 	}
 
 	@Override
