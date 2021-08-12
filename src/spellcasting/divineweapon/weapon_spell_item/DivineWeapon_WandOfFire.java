@@ -57,6 +57,7 @@ public class DivineWeapon_WandOfFire extends BaseSpell
 			event.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 200, 0));
 			return true;
 		}
+		
 		return false;
 		
 	}
