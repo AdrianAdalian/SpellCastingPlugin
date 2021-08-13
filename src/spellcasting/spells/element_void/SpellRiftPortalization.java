@@ -48,7 +48,7 @@ public class SpellRiftPortalization extends BaseSpell
 			{
 				for (int iz = zradius * -1; iz < zradius; iz++)
 				{
-					for (int iy = 126; iy > 0; iy--)
+					for (int iy = 1; iy < 126; iy++)
 					{
 						
 						Block current = nether.getBlockAt(new Location(nether, baseX + ix, iy, baseZ + iz));
@@ -63,7 +63,7 @@ public class SpellRiftPortalization extends BaseSpell
 							
 							Bukkit.getWorld("world_nether").loadChunk(current.getChunk());
 							
-							current.setType(Material.OBSIDIAN); 
+							current.setType(Material.NETHERRACK); 
 							current.getRelative(BlockFace.UP).setType(Material.AIR);
 							current.getRelative(BlockFace.UP).getRelative(BlockFace.UP).setType(Material.AIR);
 							
