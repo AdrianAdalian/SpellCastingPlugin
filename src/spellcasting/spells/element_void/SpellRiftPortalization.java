@@ -48,7 +48,7 @@ public class SpellRiftPortalization extends BaseSpell
 			{
 				for (int iz = zradius * -1; iz < zradius; iz++)
 				{
-					for (int iy = 127; iy > 0; iy--)
+					for (int iy = 126; iy > 0; iy--)
 					{
 						
 						Block current = nether.getBlockAt(new Location(nether, baseX + ix, iy, baseZ + iz));
@@ -57,25 +57,17 @@ public class SpellRiftPortalization extends BaseSpell
 						{
 							continue;
 						}
+						
 						if (current.getRelative(BlockFace.UP).getType().isAir() && current.getRelative(BlockFace.UP).getRelative(BlockFace.UP).getType().isAir()) 
 						{
+							
 							Bukkit.getWorld("world_nether").loadChunk(current.getChunk());
-							
-							PrintUtils.log("Location Found");
-							
-							Location loc2 = event.getPlayer().getLocation();
-							double netherX = loc2.getX() * 8;
-							double netherZ = loc2.getZ() * 8;
-							
-							PrintUtils.log("Current Chunk Is:" + current.getChunk());
-							PrintUtils.log("Current is X" + current.getLocation().getX() + ", Y"  + current.getLocation().getY() + ", Z" + current.getLocation().getZ());
-						
 							
 							current.setType(Material.OBSIDIAN); 
 							current.getRelative(BlockFace.UP).setType(Material.AIR);
 							current.getRelative(BlockFace.UP).getRelative(BlockFace.UP).setType(Material.AIR);
 							
-							event.getPlayer().teleport(new Location(nether, netherX, loc2.getY(), netherZ).add(0.5, 1, 0.5));
+							event.getPlayer().teleport(new Location(nether, current.getLocation().getX(), current.getLocation().getY(), current.getLocation().getZ()).add(0.5, 1, 0.5));
 							
 							return true;
 						  //Teleports the caster from the overworld to the nether.
@@ -90,8 +82,8 @@ public class SpellRiftPortalization extends BaseSpell
 		if(event.getPlayer().getWorld().getEnvironment().equals(Environment.NETHER)) 
 		{
 			Location loc2 = event.getPlayer().getLocation();
-			int overworldX = (int) (loc2.getX() / 8);
-			int overworldZ = (int) (loc2.getZ() / 8);
+			int overworldX = (int) (loc2.getX() * 8);
+			int overworldZ = (int) (loc2.getZ() * 8);
 			Block target = Bukkit.getWorld("world").getHighestBlockAt(overworldX, overworldZ);
 			
 			event.getPlayer().teleport(new Location(overworld, overworldX, target.getLocation().getY(), overworldZ).add(0.5, 1, 0.5));
