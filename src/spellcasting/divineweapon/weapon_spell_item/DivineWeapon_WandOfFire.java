@@ -26,7 +26,17 @@ public class DivineWeapon_WandOfFire extends BaseSpell
 	@Override
 	public boolean cast(PlayerInteractEvent event)
 	{
-
+		if (event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) 
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
+			return false;
+		}
+		
+		if (event.getAction().equals(Action.LEFT_CLICK_BLOCK)) 
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
+			return false;
+		}
 		if (event.getAction().equals(Action.LEFT_CLICK_AIR)) 
 		{
 			PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 5);
@@ -57,8 +67,6 @@ public class DivineWeapon_WandOfFire extends BaseSpell
 			event.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 200, 0));
 			return true;
 		}
-		
 		return false;
-		
 	}
 }
