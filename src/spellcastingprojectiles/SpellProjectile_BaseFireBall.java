@@ -19,7 +19,7 @@ public class SpellProjectile_BaseFireBall extends ZenithProjectile implements Li
 	@Override
 	public void onExpire()
 	{
-		this.getRealProjectile().remove();
+		return;
 	}
 	@Override
 	public void refreshEffect()
