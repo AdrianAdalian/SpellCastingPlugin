@@ -1,6 +1,7 @@
 package spellcasting.spells.fire;
 
 import org.bukkit.Material;
+import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.SoundCategory;
 import org.bukkit.entity.Entity;
@@ -9,6 +10,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 
 import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
+import spellcasting.Source_Particles;
 import spellcasting.spells.BaseSpell;
 
 public class SpellHeatWave extends BaseSpell
@@ -28,14 +30,21 @@ public class SpellHeatWave extends BaseSpell
 			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
+		if (event.getPlayer().getNearbyEntities(10, 10, 10).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
+		Source_Particles.drawDisc(event.getPlayer().getLocation(), 1, 1, 10, Particle.LAVA, null);
+		event.getPlayer().getWorld().spawnParticle(Particle.FLAME, event.getPlayer().getLocation(), 20);
+		
+		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_BLAZE_AMBIENT, SoundCategory.MASTER, 1, 1);
+		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_BLAZE_SHOOT, SoundCategory.MASTER, 1, 1);
 		
 		for (Entity target : event.getPlayer().getNearbyEntities(10, 10, 10)) 
 		{
-			event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_BLAZE_AMBIENT, SoundCategory.MASTER, 1, 1);
-			event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_BLAZE_SHOOT, SoundCategory.MASTER, 1, 1);
 			target.setFireTicks(200);
-			return true; 
 		}
-		return false;
+		return true; 
 	}
 }

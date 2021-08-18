@@ -1,6 +1,7 @@
 package spellcasting.spells.fire;
 
 import org.bukkit.Material;
+import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.SoundCategory;
 import org.bukkit.event.block.Action;
@@ -12,6 +13,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import com.yukiemeralis.blogspot.zenith.Zenith;
 import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
+import spellcasting.Source_Particles;
 import spellcasting.spells.BaseSpell;
 
 public class SpellInsulationPowder extends BaseSpell
@@ -30,7 +32,11 @@ public class SpellInsulationPowder extends BaseSpell
 			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false; 
 		}
+		
+		Source_Particles.drawDisc(event.getPlayer().getLocation(), 1, 1, 10, Particle.LAVA, null);
+		
 		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_BEACON_ACTIVATE, SoundCategory.MASTER, 1, 1);
+		
 		event.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 1200, 4));
 		
 		new BukkitRunnable()

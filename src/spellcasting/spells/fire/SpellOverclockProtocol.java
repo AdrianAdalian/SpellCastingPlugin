@@ -1,6 +1,7 @@
 package spellcasting.spells.fire;
 
 import org.bukkit.Material;
+import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.SoundCategory;
 import org.bukkit.event.block.Action;
@@ -12,6 +13,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import com.yukiemeralis.blogspot.zenith.Zenith;
 import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
+import spellcasting.Source_Particles;
 import spellcasting.spells.BaseSpell;
 
 public class SpellOverclockProtocol extends BaseSpell
@@ -33,9 +35,11 @@ public class SpellOverclockProtocol extends BaseSpell
 		
 		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_BEACON_ACTIVATE, SoundCategory.MASTER, 1, 1);
 		
+		Source_Particles.drawDisc(event.getPlayer().getLocation(), 1, 1, 10, Particle.LAVA, null);
+		
 		event.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 600, 3));
 		event.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING, 600, 0));
-	
+		
 		new BukkitRunnable()
 		{
 			@Override

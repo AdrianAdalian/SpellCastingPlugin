@@ -28,6 +28,11 @@ public class SpellPoisonGas extends BaseSpell
 			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
+		if (event.getPlayer().getNearbyEntities(5, 5, 5).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
 		for (Entity target : event.getPlayer().getNearbyEntities(5, 5, 5)) 
 		{
 			if (target instanceof LivingEntity)
@@ -36,6 +41,6 @@ public class SpellPoisonGas extends BaseSpell
 	    		return true;
 	    	}  
 		}	
-		return true;
+		return false;
 	}
 }

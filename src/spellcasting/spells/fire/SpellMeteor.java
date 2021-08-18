@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.SoundCategory;
 import org.bukkit.block.Block;
@@ -18,6 +19,7 @@ import org.bukkit.util.Vector;
 
 import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
+import spellcasting.Source_Particles;
 import spellcasting.spells.BaseSpell;
 
 public class SpellMeteor extends BaseSpell
@@ -43,13 +45,15 @@ public class SpellMeteor extends BaseSpell
 		
 		Vector v = new Vector(0,-5,0);
 		
-		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_FIRECHARGE_USE, SoundCategory.MASTER, 1, 1);
-		
 		if (target == null) 
 		{
 			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
 			return false;
 		}
+		
+		Source_Particles.drawDisc(event.getPlayer().getLocation(), 1, 1, 10, Particle.LAVA, null);
+		
+		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_FIRECHARGE_USE, SoundCategory.MASTER, 1, 1);
 		
 		Location newlocation = target.getLocation().add(new Location(event.getPlayer().getWorld(), 0, 20, 0)) ;
 		newlocation.add(0, 20, 0);

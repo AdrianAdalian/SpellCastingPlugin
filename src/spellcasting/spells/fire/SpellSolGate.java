@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.SoundCategory;
 import org.bukkit.block.Block;
@@ -20,6 +21,7 @@ import org.bukkit.util.Vector;
 import com.yukiemeralis.blogspot.zenith.Zenith;
 import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
+import spellcasting.Source_Particles;
 import spellcasting.spells.BaseSpell;
 
 public class SpellSolGate extends BaseSpell
@@ -53,8 +55,11 @@ public class SpellSolGate extends BaseSpell
 		Location newlocation = target.getLocation().add(new Location(event.getPlayer().getWorld(), 0, 15, 0)) ;
 		newlocation.add(0, 15, 0);
 		
+		Source_Particles.drawDisc(event.getPlayer().getLocation(), 1, 1, 10, Particle.LAVA, null);
+		
 		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.MASTER, 1, 1); 
 		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_FIRECHARGE_USE, SoundCategory.MASTER, 1, 1);
+		
 		Fireball fireball = target.getWorld().spawn(newlocation, Fireball.class);
 		fireball.setShooter(event.getPlayer());
 		fireball.setDirection(v);

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.SoundCategory;
 import org.bukkit.block.Block;
@@ -17,6 +18,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import com.yukiemeralis.blogspot.zenith.module.java.annotations.Unimplemented;
 import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
+import spellcasting.Source_Particles;
 import spellcasting.spells.BaseSpell;
 @Unimplemented
 public class SpellIgnite extends BaseSpell
@@ -44,6 +46,8 @@ public class SpellIgnite extends BaseSpell
 			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
 			return false;
 		}
+		
+		Source_Particles.drawDisc(event.getPlayer().getLocation(), 1, 1, 10, Particle.LAVA, null);
 		
 		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_BLAZE_SHOOT, SoundCategory.MASTER, 1, 1);
 		

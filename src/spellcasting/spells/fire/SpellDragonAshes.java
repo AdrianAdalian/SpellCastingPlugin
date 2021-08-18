@@ -1,6 +1,9 @@
 package spellcasting.spells.fire;
 
+import java.awt.Color;
+
 import org.bukkit.Material;
+import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.SoundCategory;
 import org.bukkit.entity.DragonFireball;
@@ -9,6 +12,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 
 import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
+import spellcasting.Source_Particles;
 import spellcasting.spells.BaseSpell;
 
 public class SpellDragonAshes extends BaseSpell
@@ -31,6 +35,8 @@ public class SpellDragonAshes extends BaseSpell
 		}
 		
 		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_ENDER_DRAGON_SHOOT, SoundCategory.MASTER, 1, 1);
+		
+		Source_Particles.drawDisc(event.getPlayer().getLocation(), 1, 1, 10, Particle.LAVA, Color.MAGENTA);
 		
 		DragonFireball dragonfireball = event.getPlayer().launchProjectile(DragonFireball.class) ;
 		dragonfireball.setVelocity(dragonfireball.getVelocity().multiply(2));

@@ -1,6 +1,7 @@
 package spellcasting.spells.fire;
 
 import org.bukkit.Material;
+import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.SoundCategory;
 import org.bukkit.entity.LargeFireball;
@@ -12,6 +13,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import com.yukiemeralis.blogspot.zenith.Zenith;
 import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
+import spellcasting.Source_Particles;
 import spellcasting.spells.BaseSpell;
 
 public class SpellFlamethrower extends BaseSpell
@@ -33,6 +35,8 @@ public class SpellFlamethrower extends BaseSpell
 		}
 		
 		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_FIRECHARGE_USE, SoundCategory.MASTER, 1, 1);
+		
+		Source_Particles.drawDisc(event.getPlayer().getLocation(), 1, 1, 10, Particle.LAVA, null);
 		
 		SmallFireball largefireball = event.getPlayer().launchProjectile(SmallFireball.class) ;
 		largefireball.setVelocity(largefireball.getVelocity().multiply(10));

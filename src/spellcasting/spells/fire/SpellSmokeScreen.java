@@ -1,6 +1,7 @@
 package spellcasting.spells.fire;
 
 import org.bukkit.Material;
+import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.SoundCategory;
 import org.bukkit.entity.Entity;
@@ -12,6 +13,7 @@ import org.bukkit.potion.PotionEffectType;
 
 import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
+import spellcasting.Source_Particles;
 import spellcasting.spells.BaseSpell;
 
 public class SpellSmokeScreen extends BaseSpell
@@ -32,14 +34,22 @@ public class SpellSmokeScreen extends BaseSpell
 			return false;
 		}
 		
+		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_BONE_MEAL_USE, SoundCategory.MASTER, 1, 1);
+		
+		Source_Particles.drawDisc(event.getPlayer().getLocation(), 1, 1, 10, Particle.LAVA, null);
+		
+		if (event.getPlayer().getNearbyEntities(7, 7, 7).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
+		
 		for (Entity target : event.getPlayer().getNearbyEntities(7, 7, 7)) 
 		{
 			if (target instanceof LivingEntity)
 	    	{	
-				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_BONE_MEAL_USE, SoundCategory.MASTER, 1, 1);
 	    		((LivingEntity) target).addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 300, 0));
-	    		((LivingEntity) target).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 300, 0));
-	    		return true; 
+	    		((LivingEntity) target).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 300, 0));		
 	    	}  
 		}	
 		return true; 
