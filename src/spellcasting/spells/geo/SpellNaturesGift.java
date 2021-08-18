@@ -31,14 +31,15 @@ public class SpellNaturesGift extends BaseSpell
 			return false;
 		}
 		int radius = 10; 
-			try
-			{
-				event.getPlayer().setHealth(event.getPlayer().getHealth()+4);		
-			}
-			catch(IllegalArgumentException e)
-			{			
-				event.getPlayer().setHealth(event.getPlayer().getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue());
-			}	
+		
+		try
+		{
+			event.getPlayer().setHealth(event.getPlayer().getHealth()+4);		
+		}
+		catch(IllegalArgumentException e)
+		{			
+			event.getPlayer().setHealth(event.getPlayer().getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue());
+		}	
 		
 		for (int iy = (radius * -1); iy < (radius * 2); iy++)
 		{
@@ -53,14 +54,12 @@ public class SpellNaturesGift extends BaseSpell
 					{
 						if (target1.getBlockData() instanceof Ageable) // org.bukkit.blockdata.Ageable, not org.bukkit.entity.Ageable
 						{
-							
 							event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_BONE_MEAL_USE, SoundCategory.MASTER, 1, 1);
 							
 							Ageable data = (Ageable) target1.getBlockData();
 							data.getMaximumAge(); 
 							data.setAge(data.getMaximumAge());
 							target1.setBlockData(data);
-							return true;
 						}
 					}	
 				}

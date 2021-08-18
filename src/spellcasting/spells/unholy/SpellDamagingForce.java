@@ -29,6 +29,12 @@ public class SpellDamagingForce extends BaseSpell
 			return false;
 		}
 		
+		if (event.getPlayer().getNearbyEntities(4, 4, 4).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
+		
 		for (Entity target : event.getPlayer().getNearbyEntities(4, 4, 4))
 		{
 			
@@ -37,9 +43,9 @@ public class SpellDamagingForce extends BaseSpell
 			if (target instanceof Damageable)
 			{
 				((Damageable) target).damage(4, event.getPlayer());
-				return true;
+			
 			}
 		}
-		return false;
+		return true;
 	}
 }

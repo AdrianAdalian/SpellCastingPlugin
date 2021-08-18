@@ -33,17 +33,22 @@ public class SpellNaturesWrath extends BaseSpell
 			return false;
 		}
 		
-		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_NYLIUM_BREAK, SoundCategory.MASTER, 1, 1);
+		
 		
 		int radius = 10;
 		
+		if (event.getPlayer().getNearbyEntities(10, 10, 10).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
+		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_NYLIUM_BREAK, SoundCategory.MASTER, 1, 1);
 		for (Entity target : event.getPlayer().getNearbyEntities(10, 10, 10))
 		{
 			
 			if (target instanceof Damageable)
 			{
 				((Damageable) target).damage(4, event.getPlayer());
-				return true;
 			}
 		}
 		
@@ -63,10 +68,8 @@ public class SpellNaturesWrath extends BaseSpell
 							Ageable data = (Ageable) target.getBlockData();
 							if (data.getMaximumAge() == data.getAge())
 							{
-								
 								data.setAge(0);
 								target.setBlockData(data);
-								return true;
 							}
 						}
 					}	

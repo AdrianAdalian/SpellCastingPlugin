@@ -33,6 +33,12 @@ public class SpellDefile extends BaseSpell
 			return false;
 		}
 		
+		if (event.getPlayer().getNearbyEntities(10, 10, 10).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
+		
 		for (Entity target : event.getPlayer().getNearbyEntities(10, 10, 10)) 
 		{
 			if (target instanceof LivingEntity)

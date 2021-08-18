@@ -27,14 +27,21 @@ public class SpellExpandingForce extends BaseSpell
 			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
+		
+		if (event.getPlayer().getNearbyEntities(5, 5, 5).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
+		
 		for (Entity target : event.getPlayer().getNearbyEntities(5, 5, 5))
 		{
 			
 			event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.MASTER, 1, 1);
 			
 			target.setVelocity(target.getLocation().toVector().subtract(event.getPlayer().getLocation().toVector()));
-			return true;
+		
 		}
-		return false;
+		return true;
 	}
 }

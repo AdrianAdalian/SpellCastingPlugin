@@ -33,6 +33,12 @@ public class SpellRejuvenation extends BaseSpell
 			return false;
 		}
 		
+		if (event.getPlayer().getNearbyEntities(15, 15, 15).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
+		
 		for (Entity target : event.getPlayer().getNearbyEntities(15, 15, 15)) 
 		{
 			if (target instanceof Player)
@@ -48,8 +54,7 @@ public class SpellRejuvenation extends BaseSpell
 				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_BEACON_DEACTIVATE, SoundCategory.MASTER, 1, 1);
 			  }
 			}.runTaskLater(Zenith.getInstance(), 205);	
-			return true;
 		}	
-		return false;
+		return true;
 	}
 }

@@ -31,6 +31,12 @@ public class SpellEarthquake extends BaseSpell
 			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
+		if (event.getPlayer().getNearbyEntities(15, 15, 15).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
+		
 		for (Entity target : event.getPlayer().getNearbyEntities(15, 15, 15))
 		{
 			
@@ -41,7 +47,6 @@ public class SpellEarthquake extends BaseSpell
 			{
 				((Damageable) target).damage(2, event.getPlayer());
 				((LivingEntity) target).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 60, 99));
-				return true; 
 			}
 		}
 		return true; 

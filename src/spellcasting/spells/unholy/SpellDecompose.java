@@ -50,13 +50,6 @@ public class SpellDecompose extends BaseSpell
 			((LivingEntity) target).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 200, 0));
 			return true;
 		}
-		if ((target instanceof Player)) 
-		{
-			event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_WITHER_AMBIENT, SoundCategory.MASTER, 1, 1);
-			((Player) target).addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 200, 1));
-			((Player) target).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 200, 0));
-			return true;
-		}
 		return false;
 	}
 	private Entity getNearestEntityInSight(Player player, int range) 

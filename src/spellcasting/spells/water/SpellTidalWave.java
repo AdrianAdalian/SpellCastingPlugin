@@ -32,6 +32,13 @@ public class SpellTidalWave extends BaseSpell
 			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
+		
+		if (event.getPlayer().getNearbyEntities(10, 10, 10).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
+		
 		for (Entity target : event.getPlayer().getNearbyEntities(15, 15, 15)) 
 		{
 			
@@ -40,9 +47,8 @@ public class SpellTidalWave extends BaseSpell
 				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.AMBIENT_UNDERWATER_EXIT, SoundCategory.MASTER, 1, 1);
 				((Damageable) target).damage(6, event.getPlayer());
 				((LivingEntity) target).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 200, 0));
-				return true;
 			}
 		}
-		return false;
+		return true;
 	}
 }

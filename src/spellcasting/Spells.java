@@ -39,11 +39,11 @@ import spellcasting.spells.recipe.SpellRecipe_BookOfWater;
 //Adds safety measures respective to release type.
 @ModInfo
 (
-		description = "A spell casting system. Current loaded spells: 100", 
+		description = "A spell casting system. Current loaded spells: 101", 
 		maintainer = "AdrianAdalian", 
 		modIcon = Material.NETHER_STAR, 
 		modName = "SpellCasting", 
-		version = "1.1.1_b",
+		version = "1.3.0_b",
 		supportedApiVersions = {"v1_17_R1"}
 )
 

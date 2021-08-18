@@ -29,14 +29,20 @@ public class SpellLightningStorm extends BaseSpell
 			return false;
 		}
 		
+		if (event.getPlayer().getNearbyEntities(15, 15, 15).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
+		
 		for (Entity target : event.getPlayer().getNearbyEntities(15, 15, 15))
 		{
 			
 			event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_ENCHANTMENT_TABLE_USE, SoundCategory.MASTER, 1, 1);
 			
 			event.getPlayer().getWorld().strikeLightning(target.getLocation());
-			return true;
+			
 		}
-		return false;
+		return true;
 	}
 }

@@ -5,6 +5,7 @@ import org.bukkit.Sound;
 import org.bukkit.SoundCategory;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
+import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.potion.PotionEffect;
@@ -33,14 +34,20 @@ public class SpellRepentance extends BaseSpell
 			return false;
 		}
 		
+		if (event.getPlayer().getNearbyEntities(10, 10, 10).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
+		
 		for (Entity target : event.getPlayer().getNearbyEntities(10, 10, 10)) 
 		{
 			if (target instanceof LivingEntity)
 	    	{
 				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_BEACON_ACTIVATE, SoundCategory.MASTER, 1, 1);
 			
-	    		((LivingEntity) target).addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 400, 0));
-	    		((LivingEntity) target).addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, 400, 0));
+	    		((Player) target).addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 400, 0));
+	    		((Player) target).addPotionEffect(new PotionEffect(PotionEffectType.NIGHT_VISION, 400, 0));
 	    	}  
 			new BukkitRunnable()
 			{
@@ -50,8 +57,7 @@ public class SpellRepentance extends BaseSpell
 				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_BEACON_DEACTIVATE, SoundCategory.MASTER, 1, 1);
 			  }
 			}.runTaskLater(Zenith.getInstance(), 205);	
-			return true;
 		}	
-		return false;
+		return true;
 	}
 }

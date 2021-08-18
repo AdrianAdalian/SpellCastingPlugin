@@ -40,6 +40,12 @@ public class SpellSkullOfNight extends BaseSpell
 		
 		Entity target = getNearestEntityInSight(event.getPlayer(), 25);
 		
+		if (event.getPlayer().getNearbyEntities(10, 10, 10).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
+		
 		if (target == null) 
 		{
 			for (Entity target1 : event.getPlayer().getNearbyEntities(10, 10, 10)) 
@@ -57,7 +63,6 @@ public class SpellSkullOfNight extends BaseSpell
 					{
 						event.getPlayer().setHealth(event.getPlayer().getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue());
 					}
-					return true;
 				}
 			}
 		}
@@ -76,8 +81,7 @@ public class SpellSkullOfNight extends BaseSpell
 			}
 			return true;
 		}
-		PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
-		return false;
+		return true;
 	}
 	
 	private Entity getNearestEntityInSight(Player player, int range) 

@@ -32,7 +32,11 @@ public class SpellRadiance extends BaseSpell
 			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
-		
+		if (event.getPlayer().getNearbyEntities(30, 30, 30).size() == 0)
+		{
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
+		}
 		for (Entity target : event.getPlayer().getNearbyEntities(30, 30, 30)) 
 		{
 			if (target instanceof LivingEntity)
@@ -48,8 +52,7 @@ public class SpellRadiance extends BaseSpell
 				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_BEACON_DEACTIVATE, SoundCategory.MASTER, 1, 1);
 			  }
 			}.runTaskLater(Zenith.getInstance(), 405);	
-			return true;
 		}	
-		return false;
+		return true;
 	}
 }
