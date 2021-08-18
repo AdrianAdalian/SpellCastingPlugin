@@ -11,6 +11,7 @@ import com.yukiemeralis.blogspot.zenith.utils.FileUtils;
 
 import spellcasting.divineweapon.weapon_recipe.WeaponRecipe_NetherScythe;
 import spellcasting.divineweapon.weapon_recipe.WeaponRecipe_Penance;
+import spellcasting.divineweapon.weapon_recipe.WeaponRecipe_StaffOfElements;
 import spellcasting.divineweapon.weapon_recipe.WeaponRecipe_WandOfFire;
 import spellcasting.relics.recipe.RelicRecipe_CrystalShard;
 import spellcasting.relics.recipe.RelicRecipe_DaoCharm;
@@ -145,6 +146,9 @@ public class Spells extends ZenithModule
 		
 		WeaponRecipe_Penance.Init();
 		WeaponRecipe_Penance.Register();
+		
+		WeaponRecipe_StaffOfElements.Init();
+		WeaponRecipe_StaffOfElements.Register();
 		
 	}
 }

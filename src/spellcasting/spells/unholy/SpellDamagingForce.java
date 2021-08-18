@@ -43,7 +43,7 @@ public class SpellDamagingForce extends BaseSpell
 			if (target instanceof Damageable)
 			{
 				((Damageable) target).damage(4, event.getPlayer());
-			
+				target.setVelocity(target.getLocation().toVector().subtract(event.getPlayer().getLocation().toVector()));
 			}
 		}
 		return true;

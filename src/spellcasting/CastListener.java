@@ -12,6 +12,7 @@ import com.yukiemeralis.blogspot.zenith.utils.ItemUtils;
 
 import spellcasting.divineweapon.weapon_spell_item.DivineWeapon_NetherScythe;
 import spellcasting.divineweapon.weapon_spell_item.DivineWeapon_Penance;
+import spellcasting.divineweapon.weapon_spell_item.DivineWeapon_StaffOfElements;
 import spellcasting.divineweapon.weapon_spell_item.DivineWeapon_WandOfFire;
 import spellcasting.nightside.mana.PlayerDataMap;
 import spellcasting.nightside.mana.SpellManaInterface;
@@ -243,6 +244,7 @@ public class CastListener implements Listener
 	  put("DivineWeapon_WandOfFire", new DivineWeapon_WandOfFire()); //1.B (99)
 	  put("DivineWeapon_NetherScythe", new DivineWeapon_NetherScythe()); //2.B (100)
 	  put("DivineWeapon_Penance", new DivineWeapon_Penance()); //3.B (101)
+	  put("DivineWeapon_StaffOfElements", new DivineWeapon_StaffOfElements()); //4.B (102)
 	
 	}};
 	
@@ -261,4 +263,5 @@ public class CastListener implements Listener
 			return;
 		}
 	}
+	
 }

@@ -4,11 +4,15 @@ import java.util.ArrayList;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.SoundCategory;
 import org.bukkit.World.Environment;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
 import org.bukkit.entity.ArmorStand;
+import org.bukkit.entity.Boss;
+import org.bukkit.entity.Damageable;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LargeFireball;
 import org.bukkit.entity.LivingEntity;
@@ -20,18 +24,22 @@ import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import com.yukiemeralis.blogspot.zenith.Zenith;
+import com.yukiemeralis.blogspot.zenith.utils.ChatUtils;
 import com.yukiemeralis.blogspot.zenith.utils.PrintUtils;
 
+import spellcasting.Source_Particles;
+import spellcasting.SpellCastingPluginAsset_InvincibleFire;
 import spellcasting.nightside.mana.PlayerDataMap;
 import spellcasting.spells.BaseSpell;
-import spellcastingprojectiles.SpellProjectile_Boulder;
+import spellcastingprojectiles.DivineWeapon_StaffOfElements_IcicleSpear_Projectile;
+import spellcastingprojectiles.DivineWeapon_StaffOfElements_PowderSnow_Projectile;
 
 public class DivineWeapon_StaffOfElements extends BaseSpell
 {
 
 	public DivineWeapon_StaffOfElements()
 	{
-		super(Material.STICK, "Name PH", 0, true, "Lore");
+		super(Material.STICK, ChatUtils.of("Magic Weapon: Staff of Elements", "FFE748","FFFFFF","§l§o"), 0, true, "§r§fLore","§r§fPH","§r§fPH","§r§fPH");
 	}
 
 	@Override
@@ -166,10 +174,10 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 					target0.setVelocity(target0.getLocation().toVector().subtract(event.getPlayer().getLocation().toVector()));
 					target0.setFireTicks(200);
 					
-					return true; 
+					
 				}
 				//Spell Solar Expansion.
-				
+				return true; 
 			}
 			//Moderately hot climates.
 		}
@@ -210,10 +218,10 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 						target.setVelocity(target.getLocation().toVector().subtract(event.getPlayer().getLocation().toVector()).multiply(-1).normalize());
 						((LivingEntity) target).damage(4);
 			    		((LivingEntity) target).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 150, 0));
-			    		return true;
+			    		
 			    	}  
 				}	
-				
+				return true;
 				//Spell Collapsing Vortex.
 			}
 			
@@ -242,12 +250,13 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 						((LivingEntity) target2).damage(4);
 						((LivingEntity) target2).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 60, 99));
 						target2.setVelocity(target2.getLocation().toVector().subtract(event.getPlayer().getLocation().toVector()).multiply(1.5).normalize());
-						return true;
+						
 					}
 				}
-				
+				return true;
 				//Spell Expanding Tremor.
 			}
+		
 			//Temperate Only Climates.
 		}
 		
@@ -277,10 +286,10 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 				}
 				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_SNOWBALL_THROW, SoundCategory.MASTER, 1, 1);
 				
-				new SpellProjectile_Boulder().launch(event.getPlayer());
+				new DivineWeapon_StaffOfElements_PowderSnow_Projectile().launch(event.getPlayer());
 				return true;
 			}
-			//Spell: IcicleSpear
+			//Spell: Powder Snow.
 			
 			if (event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
 			{
@@ -327,33 +336,216 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 		{
 			if (event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) 
 			{
-				PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Cold].");
+				PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Frigid].");
 				return false;
 			}
 			
 			if (event.getAction().equals(Action.LEFT_CLICK_BLOCK)) 
 			{
-				PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Cold].");
+				PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Frigid].");
 				return false;
 			}
 			
+			if (event.getAction().equals(Action.LEFT_CLICK_AIR)) 
+			{
+				PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 15);
+				if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
+				{
+					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
+					PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
+					return false;
+				}
+				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_SNOWBALL_THROW, SoundCategory.MASTER, 1, 1);
+				
+				new DivineWeapon_StaffOfElements_IcicleSpear_Projectile().launch(event.getPlayer());
+				return true;
+			}
+			//spell: Icicle Spear.
+			if (event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
+			{
+				PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 15);
+				if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
+				{
+					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
+					PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
+					return false;
+				}
+				int radius = 10;
+				for (int iy = (radius * -1); iy < (radius * 2); iy++)
+				{
+					for (int ix = (radius * -1); ix < (radius * 2); ix++)
+					{
+						for (int iz = (radius * -1); iz < (radius * 2); iz++)
+						{
+							
+							Block target = event.getPlayer().getWorld().getBlockAt(event.getPlayer().getLocation().add(new Location(event.getPlayer().getWorld(), ix, iy, iz)));
+								
+							if (target.getBlockData() != null)
+							{
+								if (target.getType().equals(Material.WATER)) 
+								{
+									event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.AMBIENT_UNDERWATER_EXIT, SoundCategory.MASTER, 1, 1);
+									target.setType(Material.ICE);
+								}
+							}	
+						}
+					}
+				}
+				return true;
+			}
+			//Ability: Glaciate.
 			//Frigid Climates.
 		}
 		
 		if(event.getPlayer().getWorld().getEnvironment().equals(Environment.NETHER))
 		{
+			if (event.getAction().equals(Action.LEFT_CLICK_BLOCK)) 
+			{
+				PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Nether].");
+				return false;
+			}
 			
+			if (event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) 
+			{
+				PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 5);
+				if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
+				{
+					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
+					PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
+					return false;
+				}
+				if (event.getClickedBlock().getType().equals(Material.SOUL_FIRE) && event.getAction().equals(Action.RIGHT_CLICK_BLOCK))
+				{
+					event.setCancelled(true);
+					return false;
+				}
+				
+				int TARGETRANGE = 5;
+				
+				Block target = event.getPlayer().getTargetBlock(null, TARGETRANGE) ;
+				
+				if (target==null) 
+				{
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+					return false;
+				}
+				
+				Source_Particles.drawDisc(event.getPlayer().getLocation(), 1, 1, 10, Particle.SOUL_FIRE_FLAME, null);
+				
+				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_FLINTANDSTEEL_USE, SoundCategory.MASTER, 1, 1);
+				
+				
+				SpellCastingPluginAsset_InvincibleFire.invincibleFireBlocks.add(target.getRelative(BlockFace.UP));
+				
+				target.setType(Material.SOUL_FIRE);
+
+				return true; 
+				//Spell: Hell fire.
+			}
 			
+			if (event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
+			{
+				PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 20);
+				if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
+				{
+					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
+					PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
+					return false;
+				}
+				if (event.getPlayer().getNearbyEntities(15, 15, 15).size() == 0)
+				{
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+					return false;
+				}
+				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_BLAZE_AMBIENT, SoundCategory.MASTER, 1, 1);
+				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_BLAZE_SHOOT, SoundCategory.MASTER, 1, 1);
+				for (Entity target0 : event.getPlayer().getNearbyEntities(15, 15, 15)) 
+				{
+					((Damageable) target0).damage(6, event.getPlayer());
+					target0.setVelocity(target0.getLocation().toVector().subtract(event.getPlayer().getLocation().toVector()));
+					target0.setFireTicks(100);
+				}
+				//Spell Minor Eruption.
+				return true; 
+			}
+			
+			if (event.getAction().equals(Action.LEFT_CLICK_AIR)) 
+			{
+				PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 10);
+				if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
+				{
+					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
+					PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
+					return false;
+				}
+				
+				LivingEntity target = (LivingEntity) getNearestEntityInSight(event.getPlayer(), 10);
+				
+				if (target==null) 
+				{
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+					return false;
+				}
+				target.getWorld().createExplosion(target.getLocation(), 4);
+				
+				//Spell Spontaneous Combustion.
+				return true;
+			}
 			//You're in literal Hell, mate.
 		}
 		
 		if(event.getPlayer().getWorld().getEnvironment().equals(Environment.THE_END))
 		{
+			if (event.getAction().equals(Action.LEFT_CLICK_BLOCK)) 
+			{
+				PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [VOID].");
+				return false;
+			}
+			if (event.getAction().equals(Action.LEFT_CLICK_AIR)) 
+			{
+				PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [VOID].");
+				return false;
+			}
+			if (event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) 
+			{
+				PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [VOID].");
+				return false;
+			}
 			
-			
+			if (event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
+			{
+				PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 10);
+				if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
+				{
+					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
+					PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
+					return false;
+				}
+				Entity target = (Entity) getNearestEntityInSight(event.getPlayer(), 10);
+				
+				if (target==null) 
+				{
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+					return false;
+				}
+				if (target instanceof Player) 
+				{
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+					return false;
+				}
+				
+				if (target instanceof Boss) 
+				{
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+					return false;
+				}
+				
+				((Damageable)target).setHealth(0);
+				return true;
+				//Spell: Banish.
+			}
 			//Void Climate.
 		}
-		
 		return false;
 	}
 	private Entity getNearestEntityInSight(Player player, int range) 

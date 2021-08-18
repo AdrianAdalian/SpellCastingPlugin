@@ -33,8 +33,6 @@ public class SpellNaturesWrath extends BaseSpell
 			return false;
 		}
 		
-		
-		
 		int radius = 10;
 		
 		if (event.getPlayer().getNearbyEntities(10, 10, 10).size() == 0)
@@ -42,7 +40,9 @@ public class SpellNaturesWrath extends BaseSpell
 			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
 			return false;
 		}
+		
 		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_NYLIUM_BREAK, SoundCategory.MASTER, 1, 1);
+		
 		for (Entity target : event.getPlayer().getNearbyEntities(10, 10, 10))
 		{
 			

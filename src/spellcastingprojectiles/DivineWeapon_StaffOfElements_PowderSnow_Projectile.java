@@ -12,17 +12,17 @@ import com.yukiemeralis.blogspot.zenith.specialprojectile.ZenithProjectile;
 import com.yukiemeralis.blogspot.zenith.specialprojectile.ZenithProjectile.EntityDetonator;
 import com.yukiemeralis.blogspot.zenith.specialprojectile.ZenithProjectile.LifeExpiredDetonator;
 
-public class DivineWeapon_StaffOfElements_IcicleSpear extends ZenithProjectile implements EntityDetonator, LifeExpiredDetonator
+public class DivineWeapon_StaffOfElements_PowderSnow_Projectile extends ZenithProjectile implements EntityDetonator, LifeExpiredDetonator
 {
 	
-	public DivineWeapon_StaffOfElements_IcicleSpear()
+	public DivineWeapon_StaffOfElements_PowderSnow_Projectile()
 	{
-		super(Snowball.class, 15, ProjectileFlag.DESTROY_ON_COLLISION, ProjectileFlag.NULL_SHOOTER, ProjectileFlag.NO_GRAVITY);
+		super(Snowball.class, 10, ProjectileFlag.DESTROY_ON_COLLISION, ProjectileFlag.NULL_SHOOTER, ProjectileFlag.NO_GRAVITY);
 	}
 	@Override
 	public void onExpire()
 	{
-		return ;	
+		this.getRealProjectile().remove();
 	}
 	@Override
 	public void onEntityCollision(EntityDamageByEntityEvent event)
