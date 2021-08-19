@@ -170,6 +170,8 @@ public class Spells extends ZenithModule
 
 //TODO Spell for holy: Pacify: Pacifies agro entity.
 
+//TODO Hell Fire does not place and fires twice. 8/18/21
+
 //PrintUtils.log(event.getAction().name() , InfoType.INFO) ; 
 
 

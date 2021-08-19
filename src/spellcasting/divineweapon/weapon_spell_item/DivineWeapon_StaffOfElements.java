@@ -39,7 +39,11 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 
 	public DivineWeapon_StaffOfElements()
 	{
-		super(Material.STICK, ChatUtils.of("Magic Weapon: Staff of Elements", "FFE748","FFFFFF","§l§o"), 0, true, "§r§fLore","§r§fPH","§r§fPH","§r§fPH");
+		super(Material.STICK, ChatUtils.of("Magic Weapon: Staff of Elements", "FFE748","40E0D0","§l§o"), 0, true, "§r§fAn enchanted staff that behaves differently","§r§fdepending on surrounding environment.",
+				"§r§fIn §r§eDesert §r§fclimates:","§r§7§lSpell: §r§fSol Prime [Left Click Air].","§r§fSummon a super heated ball of fire costing 10 §9Mana§f/cast.","§r§6Ability:§r§f Metabolize [Right Click Air].","§r§fIncrease interact speeds and damage","§r§foutput at the cost of extreme hunger.","§r§fMana cost: 15 §r§9mana§r§f.",
+				"§r§fIn §r§2Savannah climates:","§r§7§lSpell: §r§fHeat Blast [Left Click Air].","§r§fExpel a burst of hot air that burns and launches the target.","§r§fRange: 7 meters.","§r§fMana cost: 5 §r§9mana§r§f.",
+				"§r§fIn §r§bRocky/Aquatic climates:", "§r§7§lSpell: §r§fCollapsing Vortex [Right Click Air]","§r§fSummon a wave around the caster, slowing and pulling those within range.","§r§fRange: 10 meters and 10 §r§9mana§r§f/cast.","§r§7§lSpell: §r§fExpanding Tremor [Left Click Air].","§r§fSummon a fissure around the caster.","§r§fDamage and launch those within range.","§r§fRange: 10 meters and 10 §r§9mana§r§f/cast.",
+				"§r§f");
 	}
 
 	@Override
@@ -51,13 +55,13 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 			{
 				if (event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) 
 				{
-					PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Savanna].");
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Desert].");
 					return false;
 				}
 				
 				if (event.getAction().equals(Action.LEFT_CLICK_BLOCK)) 
 				{
-					PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Savanna].");
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Desert].");
 					return false;
 				}
 				
@@ -113,26 +117,30 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 			{
 				if (event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) 
 				{
-					PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Desert].");
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Savannah].");
 					return false;
 				}
 				
 				if (event.getAction().equals(Action.LEFT_CLICK_BLOCK)) 
 				{
-					PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Desert].");
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Savannah].");
 					return false;
 				}
+				if (event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
+				{
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Savannah].");
+					return false;
+				}
+				LivingEntity target1 = (LivingEntity) getNearestEntityInSight(event.getPlayer(), 7);
 				
+				if (target1 == null) 
+				{
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+					return false;
+				}
 				if(event.getAction().equals(Action.LEFT_CLICK_AIR)) 
 				{
-					LivingEntity target1 = (LivingEntity) getNearestEntityInSight(event.getPlayer(), 5);
-					
-					if (target1 == null) 
-					{
-						PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
-						return false;
-					}
-					
+
 					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 5);
 					if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
 					{
@@ -150,36 +158,7 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 					
 					//Spell Heat Blast.
 				}
-				
-				if(event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
-				{
-					if (event.getPlayer().getNearbyEntities(7, 7, 7).size() == 0)
-					{
-						PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
-						return false;
-					}
-					
-					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 15);
-					if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
-					{
-						PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
-						PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
-						return false;
-					}
-					
-					for (Entity target0 : event.getPlayer().getNearbyEntities(7, 7, 7)) 
-					{
-						event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_BLAZE_AMBIENT, SoundCategory.MASTER, 1, 1);
-						event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_BLAZE_SHOOT, SoundCategory.MASTER, 1, 1);
-						
-						target0.setVelocity(target0.getLocation().toVector().subtract(event.getPlayer().getLocation().toVector()));
-						target0.setFireTicks(200);
-						
-						
-					}
-					//Spell Solar Expansion.
-					return true; 
-				}
+
 				//Moderately hot climates.
 			}
 			
@@ -236,7 +215,7 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 						return false;
 					}
 					
-					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 5);
+					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 10);
 					if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
 					{
 						PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
@@ -253,7 +232,7 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 							
 							((LivingEntity) target2).damage(4);
 							((LivingEntity) target2).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 60, 99));
-							target2.setVelocity(target2.getLocation().toVector().subtract(event.getPlayer().getLocation().toVector()).multiply(1.5).normalize());
+							target2.setVelocity(target2.getLocation().toVector().subtract(event.getPlayer().getLocation().toVector()).multiply(1).normalize());
 							
 						}
 					}
@@ -267,7 +246,7 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 			if(event.getPlayer().getLocation().getBlock().getTemperature() >= 0.2 && event.getPlayer().getLocation().getBlock().getTemperature() <= 0.3)
 			{
 				
-				if (event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) 
+				if (event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
 				{
 					PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method For Climate: [Cold].");
 					return false;
@@ -295,18 +274,22 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 				}
 				//Spell: Powder Snow.
 				
-				if (event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
+				if (event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) 
 				{
 					int TARGETRANGE = 5 ;
 					
 					Block target = event.getPlayer().getTargetBlock(null, TARGETRANGE) ;
 					
-					if (target.getType().equals(Material.AIR))
+//					if (target.getType().equals(Material.AIR))
+//					{
+//						PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+//						return false;			
+//					}
+					if (target==null) 
 					{
 						PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
-						return false;			
+						return false;
 					}
-					
 					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 5);
 					if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
 					{
@@ -314,27 +297,23 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 						PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
 						return false;
 					}
-					
-					event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_BONE_MEAL_USE, SoundCategory.MASTER, 1, 1);
-					
-					if (target.getType() != null)
+	
+					if (target.getType().equals(Material.WATER)) 
 					{
-						
-						if (target.getType().equals(Material.WATER)) 
-						{
-							event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.AMBIENT_UNDERWATER_EXIT, SoundCategory.MASTER, 1, 1);
-							target.setType(Material.ICE);
-							return true;
-						}
-						if (target.getType().equals(Material.ICE)) 
-						{
-							event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_GLASS_BREAK, SoundCategory.MASTER, 1, 1);
-							target.setType(Material.WATER);
-							return true;
-						}
+						event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_BONE_MEAL_USE, SoundCategory.MASTER, 1, 1);
+						event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.AMBIENT_UNDERWATER_EXIT, SoundCategory.MASTER, 1, 1);
+						target.setType(Material.ICE);
+						return true;
 					}
-				//Ability: Liquidate. Turns water into ice and vice versa.
+					if (target.getType().equals(Material.ICE)) 
+					{
+						event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_BONE_MEAL_USE, SoundCategory.MASTER, 1, 1);
+						event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_GLASS_BREAK, SoundCategory.MASTER, 1, 1);
+						target.setType(Material.WATER);
+						return true;
+					}
 				}
+				//Ability: Liquidate. Turns water into ice and vice versa.
 				//Cold Climates.
 			}
 			
@@ -393,6 +372,11 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 										event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.AMBIENT_UNDERWATER_EXIT, SoundCategory.MASTER, 1, 1);
 										target.setType(Material.ICE);
 									}
+									if (target.getType().equals(Material.ICE)) 
+									{
+										event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_GLASS_BREAK, SoundCategory.MASTER, 1, 1);
+										target.setType(Material.WATER);
+									}
 								}	
 							}
 						}
@@ -429,24 +413,53 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 					event.setCancelled(true);
 					return false;
 				}
-				
-				PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 5);
-				if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
+				if (event.getClickedBlock().getType().equals(Material.FIRE) && event.getAction().equals(Action.RIGHT_CLICK_BLOCK))
 				{
-					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
-					PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
+					event.setCancelled(true);
 					return false;
 				}
+				
+				if (target.getType().equals(Material.NETHERRACK))
+				{
+					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 5);
+					if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
+					{
+						PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
+						PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
+						return false;
+					}
+					Source_Particles.drawDisc(event.getPlayer().getLocation(), 1, 1, 10, Particle.FLAME, null);
+					
+					event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_FLINTANDSTEEL_USE, SoundCategory.MASTER, 1, 1);
+					
+					SpellCastingPluginAsset_InvincibleFire.invincibleFireBlocks.add(target.getRelative(BlockFace.UP));
+					
+					target.getRelative(BlockFace.UP).setType(Material.FIRE);
+					
+					return true;
+				}
+				
+				if (target.getType().equals(Material.SOUL_SAND)) 
+				{
+					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 5);
+					if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
+					{
+						PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
+						PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
+						return false;
+					}
+					Source_Particles.drawDisc(event.getPlayer().getLocation(), 1, 1, 10, Particle.SOUL_FIRE_FLAME, null);
+					
+					event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_FLINTANDSTEEL_USE, SoundCategory.MASTER, 1, 1);
+					
+					SpellCastingPluginAsset_InvincibleFire.invincibleFireBlocks.add(target.getRelative(BlockFace.UP));
+					
+					target.setType(Material.SOUL_FIRE);
 
-				Source_Particles.drawDisc(event.getPlayer().getLocation(), 1, 1, 10, Particle.SOUL_FIRE_FLAME, null);
-				
-				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_FLINTANDSTEEL_USE, SoundCategory.MASTER, 1, 1);
-				
-				SpellCastingPluginAsset_InvincibleFire.invincibleFireBlocks.add(target.getRelative(BlockFace.UP));
-				
-				target.setType(Material.SOUL_FIRE);
-
-				return true; 
+					return true; 
+				}
+				PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+				return false;
 				//Spell: Hell fire.
 			}
 			
@@ -477,6 +490,7 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 					target0.setVelocity(target0.getLocation().toVector().subtract(event.getPlayer().getLocation().toVector()));
 					target0.setFireTicks(100);
 				}
+				
 				//Spell Minor Eruption.
 				return true; 
 			}
@@ -536,13 +550,12 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 				}
 				if (target instanceof Player) 
 				{
-					PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Target: [PLAYER].");
 					return false;
 				}
-				
 				if (target instanceof Boss) 
 				{
-					PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+					PrintUtils.sendMessage(event.getPlayer(),"Invalid Target: [BOSS].");
 					return false;
 				}
 				
@@ -560,6 +573,7 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 			}
 			//Void Climate.
 		}
+		PrintUtils.sendMessage(event.getPlayer(),"Fizzle!");
 		return false;
 	}
 	private Entity getNearestEntityInSight(Player player, int range) 
@@ -597,3 +611,31 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 	}
 
 }
+//TODO Make Solar Expansion a spell.
+//if(event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
+//{
+//	if (event.getPlayer().getNearbyEntities(7, 7, 7).size() == 0)
+//	{
+//		PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+//		return false;
+//	}
+//	
+//	PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 15);
+//	if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
+//	{
+//		PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
+//		PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
+//		return false;
+//	}
+//	
+//	for (Entity target0 : event.getPlayer().getNearbyEntities(7, 7, 7)) 
+//	{
+//		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_BLAZE_AMBIENT, SoundCategory.MASTER, 1, 1);
+//		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_BLAZE_SHOOT, SoundCategory.MASTER, 1, 1);
+//		
+//		target0.setVelocity(target0.getLocation().toVector().subtract(event.getPlayer().getLocation().toVector()));
+//		target0.setFireTicks(200);	
+//	}
+//	//Spell Solar Expansion.
+//	return true; 
+//}

@@ -33,8 +33,6 @@ public class SpellTransmute extends BaseSpell
 		
 		Block target = event.getPlayer().getTargetBlock(null, TARGETRANGE) ;
 		
-		
-		
 		if (target.getType() != null)
 		{
 			
