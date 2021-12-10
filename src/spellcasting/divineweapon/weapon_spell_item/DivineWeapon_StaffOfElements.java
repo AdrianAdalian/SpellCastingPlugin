@@ -302,16 +302,17 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 					{
 						event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_BONE_MEAL_USE, SoundCategory.MASTER, 1, 1);
 						event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.AMBIENT_UNDERWATER_EXIT, SoundCategory.MASTER, 1, 1);
-						target.setType(Material.ICE);
+						target.getRelative(BlockFace.SELF).setType(Material.ICE);
 						return true;
 					}
 					if (target.getType().equals(Material.ICE)) 
 					{
 						event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_BONE_MEAL_USE, SoundCategory.MASTER, 1, 1);
 						event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.BLOCK_GLASS_BREAK, SoundCategory.MASTER, 1, 1);
-						target.setType(Material.WATER);
+						target.getRelative(BlockFace.SELF).setType(Material.WATER);
 						return true;
 					}
+					return false;
 				}
 				//Ability: Liquidate. Turns water into ice and vice versa.
 				//Cold Climates.
@@ -454,7 +455,7 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 					
 					SpellCastingPluginAsset_InvincibleFire.invincibleFireBlocks.add(target.getRelative(BlockFace.UP));
 					
-					target.setType(Material.SOUL_FIRE);
+					target.getRelative(BlockFace.UP).setType(Material.SOUL_FIRE);
 
 					return true; 
 				}
@@ -513,7 +514,7 @@ public class DivineWeapon_StaffOfElements extends BaseSpell
 					return false;
 				}
 				
-				target.getWorld().createExplosion(target.getLocation(), 1	);
+				target.getWorld().createExplosion(target.getLocation(), 2);
 				
 				//Spell Spontaneous Combustion.
 				return true;
