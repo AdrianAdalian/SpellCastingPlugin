@@ -14,7 +14,7 @@ public class SpellAntimatter extends BaseSpell
 
 	public SpellAntimatter()
 	{
-		super(Material.ENDER_PEARL, "§r§7§ko§r§7§lSpell: §r§fAntimatter§r§7§ko§r", 25, false, "§r§fElement: §r§3§lVOID§r§f.","§r§fSummon a small concentration of antimatter","§r§fthat causes an explosion at the target block.","§r§fRange: 30 meters.","§r§fMana cost: 25 §r§9mana§r§f.");
+		super(Material.ENDER_PEARL, "§r§7§ko§r§7§lSpell: §r§fAntimatter§r§7§ko§r", 25, false, "§r§fElement: §r§3§lVOID§r§f.","§r§fSummon a small concentration of §r§3§lVOID§r§f energy","§r§fthat causes an explosion at the target block.","§r§fRange: 30 meters.","§r§fMana cost: 25 §r§9mana§r§f.");
 	}
 
 	@Override

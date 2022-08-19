@@ -25,7 +25,7 @@ public class SpellRaiseDead extends BaseSpell
 	
 	public SpellRaiseDead()
 	{
-		super(Material.BONE, "§r§7§ko§r§7§lSpell: §r§fRaise Dead§r§7§ko§r", 20, false, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fSacrifice 1 heart of caster's life force.","§r§fReanimates any zombie villager to their living counter part.","§r§fRange: 5 meters.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.BONE, "§r§7§ko§r§7§lSpell: §r§fRaise Dead§r§7§ko§r", 20, false, "§r§fElement: §r§4§o§lUnholy§r§f.","§r§fThe caster harnesses enough §r§4§o§lUnholy§r§f energy to revive the undead.","§r§fSacrifice 1 heart of caster's life force.","§r§fReanimates any zombie villager to their living counter part.","§r§fRange: 5 meters.","§r§fMana cost: 500 §r§9mana§r§f.");
 	}
 
 	@Override
@@ -46,15 +46,15 @@ public class SpellRaiseDead extends BaseSpell
 			return false;
 		}
 		
-		if (target.getType().equals(EntityType.ZOMBIE_VILLAGER))
+		if (!(target.getType().equals(EntityType.ZOMBIE_VILLAGER)))
 		{
-			
-			event.getPlayer().damage(2);
-			event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_WITHER_AMBIENT, SoundCategory.MASTER, 1, 1);
-			((ZombieVillager) target).setConversionTime(0);
-			return true;
+			PrintUtils.sendMessage(event.getPlayer(),"Invalid Target.");
+			return false;
 		}
-		return false;
+		event.getPlayer().damage(2);
+		event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_WITHER_AMBIENT, SoundCategory.MASTER, 1, 1);
+		((ZombieVillager) target).setConversionTime(0);
+		return true;
 	}
 	
 	protected Entity getNearestEntityInSight(Player player, int range) 

@@ -16,7 +16,7 @@ public class SpellThunderStrike extends BaseSpell
 	
 	public SpellThunderStrike()
 	{
-		super(Material.PURPLE_DYE, "§r§7§ko§r§7§lSpell: §r§fThunderStrike§r§7§ko§r", 20, false, "§r§fElement: §r§dStorm§r§f.","§r§fSummons two consecutive lightning bolts.","§r§fRange: 20 meters.","§r§fDeals 5 hearts of §r§cdamage§r§f.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.PURPLE_DYE, "§r§7§ko§r§7§lSpell: §r§fThunderStrike§r§7§ko§r", 20, false, "§r§fElement: §r§dStorm§r§f.","§r§fSummons two consecutive lightning bolts.","§r§fRange: 20 meters.","§r§fMana cost: 20 §r§9mana§r§f.");
 	}
 
 	@Override

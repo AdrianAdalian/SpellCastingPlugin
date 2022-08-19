@@ -20,7 +20,7 @@ public class SpellEarthquake extends BaseSpell
 	
 	public SpellEarthquake()
 	{
-		super(Material.BROWN_DYE, "§r§7§ko§r§7§lSpell: §r§fEarthquake§r§7§ko§r", 20, true, "§r§fElement: §r§6Geo§r§f.","§r§fCause an earthquake that damages","§r§fand stuns all within the radius.","§r§fDeals 1 heart of §r§cdamage§r§f to all effected.","§r§fRange: 15 meters.","§r§fMana cost: 20 §r§9mana§r§f.");
+		super(Material.BROWN_DYE, "§r§7§ko§r§7§lSpell: §r§fEarthquake§r§7§ko§r", 20, true, "§r§fElement: §r§6Geo§r§f.","§r§fCause an earthquake that damages","§r§fand stuns all within the radius.","§r§fDeals 1 heart of §r§cdamage§r§f to all effected.","§r§fStun for 5 seconds.","§r§fRange: 15 meters.","§r§fMana cost: 20 §r§9mana§r§f.");
 	}
 
 	@Override
@@ -46,7 +46,7 @@ public class SpellEarthquake extends BaseSpell
 			if (target instanceof Damageable)
 			{
 				((Damageable) target).damage(2, event.getPlayer());
-				((LivingEntity) target).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 60, 99));
+				((LivingEntity) target).addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 100, 99));
 			}
 		}
 		return true; 

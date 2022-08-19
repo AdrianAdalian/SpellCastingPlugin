@@ -36,6 +36,7 @@ public class SpellAccelerate extends BaseSpell
 
 		if(event.getAction().equals(Action.LEFT_CLICK_AIR)) 
 		{
+			event.setCancelled(true);
 			PrintUtils.sendMessage(event.getPlayer(),"Invalid Cast Method.");
 			return false;
 		}
@@ -48,12 +49,45 @@ public class SpellAccelerate extends BaseSpell
 		int TARGETRANGE = 5 ;
 		
 		Block target = event.getPlayer().getTargetBlock(null, TARGETRANGE) ;
-		
-		if (target.getBlockData() != null)
+		if(event.getAction().equals(Action.RIGHT_CLICK_BLOCK)) 
 		{
-			if (target.getBlockData() instanceof Ageable) // org.bukkit.blockdata.Ageable, not org.bukkit.entity.Ageable
+			if (target.getBlockData() != null)
 			{
-				PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 5);
+				if (target.getBlockData() instanceof Ageable) // org.bukkit.blockdata.Ageable, not org.bukkit.entity.Ageable
+				{
+					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 5);
+					if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
+					{
+						PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
+						PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
+						return false;
+					}
+					
+					event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_BONE_MEAL_USE, SoundCategory.MASTER, 1, 1);
+					
+					Ageable data = (Ageable) target.getBlockData();
+					data.getMaximumAge(); 
+					data.setAge(data.getMaximumAge());
+					target.setBlockData(data);
+					
+					return true;
+				}
+			}	
+		}
+		
+		if(event.getAction().equals(Action.RIGHT_CLICK_AIR)) 
+		{
+			Entity target2 = getNearestEntityInSight(event.getPlayer(), 15);
+			
+			if (target2==null) 
+			{
+				PrintUtils.sendMessage("Invalid Target.");
+				return false;
+			}
+			
+			if (target2 instanceof LivingEntity) 
+			{
+				PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 15);
 				if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
 				{
 					PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
@@ -61,49 +95,13 @@ public class SpellAccelerate extends BaseSpell
 					return false;
 				}
 				
-				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ITEM_BONE_MEAL_USE, SoundCategory.MASTER, 1, 1);
+				event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_SHULKER_SHOOT, SoundCategory.MASTER, 1, 1);
 				
-				Ageable data = (Ageable) target.getBlockData();
-				data.getMaximumAge(); 
-				data.setAge(data.getMaximumAge());
-				target.setBlockData(data);
+				((LivingEntity) target2).addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 12000, 2));
 				
 				return true;
 			}
-		}	
-		
-		
-		Entity target2 = getNearestEntityInSight(event.getPlayer(), 15);
-		
-		if (target2==null) 
-		{
-			PrintUtils.sendMessage("Invalid Target.");
-			return false;
 		}
-		
-		if (target2 instanceof Player) 
-		{
-			PrintUtils.sendMessage("Invalid Target.");
-			return false;
-		}
-		
-		if (target2 instanceof LivingEntity) 
-		{
-			PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana() - 15);
-			if (PlayerDataMap.getPlayerData(event.getPlayer()).getCurrentMana()<PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana()) 
-			{
-				PlayerDataMap.getPlayerData(event.getPlayer()).setCurrentMana(PlayerDataMap.getPlayerData(event.getPlayer()).getMinMana());
-				PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
-				return false;
-			}
-			
-			event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_SHULKER_SHOOT, SoundCategory.MASTER, 1, 1);
-			
-			((LivingEntity) target2).addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 12000, 2));
-			
-			return true;
-		}
-		
 		
 		return false;
 	}

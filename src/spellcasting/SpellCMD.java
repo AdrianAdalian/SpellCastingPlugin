@@ -41,6 +41,7 @@ public class SpellCMD extends ZenithCommand
 			return;
 		}
 		
+		
 		ItemStack spellitem = CastListener.spell_registry.get(args[1]).toIcon();
 		
 		((Player) sender).getInventory().addItem(spellitem) ;

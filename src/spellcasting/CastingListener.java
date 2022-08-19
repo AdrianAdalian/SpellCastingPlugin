@@ -33,11 +33,12 @@ public class CastingListener implements Listener
 		{
 			return;
 		}
-		
+		//if in offhand, return.
 		if(held==null || held.getType().equals(Material.AIR))
 		{
 			return ;
 		}
+		//if a spell is being used in the air that otherwise would not be cast in, return.
 		if(ItemUtils.hasNamespacedKey(held, "spellname")) 
 		{
 			event.setCancelled(true);
@@ -56,7 +57,7 @@ public class CastingListener implements Listener
 				}
 				return;
 			}
-			
+			//mana cost
 			PrintUtils.sendMessage(event.getPlayer(), "Mana Insufficient.");
 			
 			return;
@@ -67,7 +68,7 @@ public class CastingListener implements Listener
 			if (!event.getAction().equals(Action.RIGHT_CLICK_AIR))
 			{
 				return;
-			}	
+			}
 			event.setCancelled(true);
 			SpellGUI_Storm gui = new SpellGUI_Storm();
 			gui.init();

@@ -1,6 +1,7 @@
 package spellcasting.spells.water;
 
 import org.bukkit.Material;
+import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.SoundCategory;
 import org.bukkit.event.block.Action;

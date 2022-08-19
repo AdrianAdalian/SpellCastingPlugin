@@ -37,7 +37,7 @@ public class SpellRecipe_BookOfVoid
 		recipe.shape("BI", "FA");
 
 		recipe.setIngredient('B', Material.BOOK);
-		recipe.setIngredient('A', Material.NETHER_STAR);
+		recipe.setIngredient('A', Material.ENDER_EYE);
 		recipe.setIngredient('F', Material.FEATHER);
 		recipe.setIngredient('I', Material.INK_SAC);
 		

@@ -72,6 +72,9 @@ public class Spells extends ZenithModule
 		
 		FileUtils.ensureFolder("./plugins/Spellcasting/data/");
 		
+		
+		
+		
 		SpellRecipe_BookOfStorm.Init(); 
 		SpellRecipe_BookOfStorm.Register();
 		
